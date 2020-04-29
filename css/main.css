@@ -74,11 +74,11 @@
 }
 
 .swiper-container.white .swiper-button-prev:after {
-  background-image: url("/assets/icons-white/icon-5.svg");
+  background-image: url("../assets/icons-white/icon-5.svg");
 }
 
 .swiper-container.white .swiper-button-next:after {
-  background-image: url("/assets/icons-white/icon-12.svg");
+  background-image: url("../assets/icons-white/icon-12.svg");
 }
 
 .swiper-container.dark .swiper-pagination-bullet {
@@ -90,11 +90,11 @@
 }
 
 .swiper-container.dark .swiper-button-prev:after {
-  background-image: url("/assets/icons-black/icon-5.svg");
+  background-image: url("../assets/icons-black/icon-5.svg");
 }
 
 .swiper-container.dark .swiper-button-next:after {
-  background-image: url("/assets/icons-black/icon-12.svg");
+  background-image: url("../assets/icons-black/icon-12.svg");
 }
 
 .swiper-container .swiper-wrapper {
@@ -146,19 +146,19 @@
 }
 
 .swiper-button-prev.dark:after {
-  background-image: url("/assets/icons-black/icon-5.svg");
+  background-image: url("../assets/icons-black/icon-5.svg");
 }
 
 .swiper-button-next.dark:after {
-  background-image: url("/assets/icons-black/icon-12.svg");
+  background-image: url("../assets/icons-black/icon-12.svg");
 }
 
 .swiper-button-prev.white:after {
-  background-image: url("/assets/icons-white/icon-5.svg");
+  background-image: url("../assets/icons-white/icon-5.svg");
 }
 
 .swiper-button-next.white:after {
-  background-image: url("/assets/icons-white/icon-12.svg");
+  background-image: url("../assets/icons-white/icon-12.svg");
 }
 
 .mainNav {
