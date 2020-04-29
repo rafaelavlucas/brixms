@@ -1,4 +1,4 @@
-const sliderHeadingContent = ["../assets/images/img01.jpg", "../assets/images/img02.jpg", "../assets/images/img03.jpg", "../assets/images/img04.jpg", "../assets/images/img05.jpg", ]
+const sliderHeadingContent = ["assets/images/img01.jpg", "../assets/images/img02.jpg", "assets/images/img03.jpg", "../assets/images/img04.jpg", "assets/images/img05.jpg", ]
 
 sliderHeadingContent.forEach(function (el) {
     let templateSlider = `
