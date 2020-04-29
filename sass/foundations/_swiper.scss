@@ -1,76 +1,39 @@
+// Containers
 .swiper-container {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+}
 
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        margin: 0px 8px !important;
-    }
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 
-    &.white {
-        .swiper-pagination-bullet {
-            background-color: white;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: white;
-        }
-
-        .swiper-button-prev {
-            &:after {
-                background-image: url("../assets/icons-white/icon-5.svg");
-            }
-        }
-
-        .swiper-button-next {
-            &:after {
-                background-image: url("../assets/icons-white/icon-12.svg");
-            }
-        }
-
-    }
-
-    &.dark {
-        .swiper-pagination-bullet {
-            background-color: $neu-08;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: $neu-08;
-        }
-
-        .swiper-button-prev {
-            &:after {
-                background-image: url("../assets/icons-black/icon-5.svg");
-            }
-        }
-
-        .swiper-button-next {
-            &:after {
-                background-image: url("../assets/icons-black/icon-12.svg");
-            }
-        }
-    }
-
-    .swiper-wrapper {
+.swiper-slide {
+    img {
         width: 100%;
         height: 100%;
-    }
-
-    .swiper-slide {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        object-fit: cover;
     }
 }
 
+// Bullets 
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0px 8px !important;
+    background-color: $neu-08;
+}
 
+.swiper-pagination-bullet-active {
+    background-color: $neu-08;
+}
+
+// Arrows
 .swiper-button-prev,
 .swiper-button-next {
-
     width: 32px;
     height: 32px;
     margin: 0;
@@ -88,8 +51,13 @@
 .swiper-button-prev {
     left: 5%;
 
+    &:after {
+        background-image: url("../assets/icons-black/icon-5.svg");
+    }
+
     &:hover {
         &:after {
+
             transform: translateX(-4px);
         }
     }
@@ -98,6 +66,10 @@
 .swiper-button-next {
     right: 5%;
 
+    &:after {
+        background-image: url("../assets/icons-black/icon-12.svg");
+    }
+
     &:hover {
         &:after {
             transform: translateX(4px);
@@ -105,26 +77,33 @@
     }
 }
 
-.swiper-button-prev.dark {
-    &:after {
-        background-image: url("../assets/icons-black/icon-5.svg");
-    }
-}
+// When Bullets and Arrows need to be white
 
-.swiper-button-next.dark {
-    &:after {
-        background-image: url("../assets/icons-black/icon-12.svg");
-    }
-}
+.white {
 
-.swiper-button-prev.white {
-    &:after {
-        background-image: url("../assets/icons-white/icon-5.svg");
-    }
-}
+    .swiper-pagination {
+        bottom: 24px;
 
-.swiper-button-next.white {
-    &:after {
-        background-image: url("../assets/icons-white/icon-12.svg");
     }
+
+    .swiper-pagination-bullet {
+        background-color: white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+
+    .swiper-button-prev {
+        &:after {
+            background-image: url("../assets/icons-white/icon-5.svg");
+        }
+    }
+
+    .swiper-button-next {
+        &:after {
+            background-image: url("../assets/icons-white/icon-12.svg");
+        }
+    }
+
 }

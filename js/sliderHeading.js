@@ -1,8 +1,21 @@
-const sliderHeadingContent = ["assets/images/img01.jpg", "../assets/images/img02.jpg", "assets/images/img03.jpg", "../assets/images/img04.jpg", "assets/images/img05.jpg", ]
+const sliderHeadingContent = [{
+        img: "assets/images/img01.jpg",
+        alt: "teste",
+    },
+    {
+        img: "assets/images/img02.jpg",
+        alt: "teste",
+    },
+    {
+        img: "assets/images/img03.jpg",
+        alt: "teste",
+    },
+
+];
 
 sliderHeadingContent.forEach(function (el) {
     let templateSlider = `
-<div class="swiper-slide"><img src="${el}"></div>
+<div class="swiper-slide"><img src="${el.img}" alt="${el.alt}"></div>
 `;
     document.querySelector(".sliderHeading .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
 
@@ -14,12 +27,12 @@ var mySwiper = new Swiper('.sliderHeading__slider.swiper-container', {
 
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.sliderHeading .swiper-pagination',
     },
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.sliderHeading .swiper-button-next',
+        prevEl: '.sliderHeading .swiper-button-prev',
     },
 });

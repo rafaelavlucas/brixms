@@ -4,7 +4,7 @@ const
     mainNav = document.querySelector('.mainNav'),
     templateNav = `
 <div class="mainNav__logo">
-    <img src="assets/images/img.svg" alt="Logo">
+    <img src="assets/images/logo-white.svg" alt="Logo">
 </div>
 <div class="mainNav__icon"><span></span></div>
 <div class="mainNav__wrapper">
@@ -18,13 +18,15 @@ const
 
 mainNav.insertAdjacentHTML('beforeend', templateNav);
 
-
+const logo = document.querySelector(".mainNav__logo img");
 // Sticky Nav Bar
 window.onscroll = function () {
     if (window.pageYOffset >= 100) {
         mainNav.classList.add("navSticky");
+        logo.src = "assets/images/logo.svg"
     } else {
         mainNav.classList.remove("navSticky");
+        logo.src = "assets/images/logo-white.svg"
     };
 }
 

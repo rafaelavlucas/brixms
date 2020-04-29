@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 
     &:before {
         @include transition;
@@ -25,6 +25,15 @@
 
     &__logo {
         @include transition();
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     &__wrapper {
@@ -67,12 +76,12 @@
         span {
             width: 100%;
             height: 2px;
-            background-color: $neu-08;
+            background-color: white;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all 0.2s ease;
+            transition: transform 0.2s ease;
 
             &:before,
             &:after {
@@ -81,7 +90,7 @@
                 height: 100%;
                 position: absolute;
                 background-color: inherit;
-                transition: all 0.2s ease, background-color 0.4s ease;
+                transition: transform 0.2s ease;
             }
 
             &:before {
@@ -144,6 +153,13 @@
 
             &__links {
                 color: $neu-08;
+            }
+
+            &__icon {
+                span {
+                    background-color: $neu-08;
+                }
+
             }
         }
     }
