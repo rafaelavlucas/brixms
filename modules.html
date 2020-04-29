@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quinta da Trovisca</title>
+    <title>Template - Modules</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 
@@ -17,6 +20,62 @@
     <nav class="mainNav"></nav>
     <!-- end Main Nav -->
 
+    <!-- Simple Heading -->
+    <header class="simpleHeading">
+        <div class="simpleHeading__bgImage">
+            <img src="assets/images/img04.jpg" alt="Image">
+        </div>
+        <div class="simpleHeading__text">
+            <h2 class="simpleHeading__title">Far far away, behind the world</h2>
+            <h3 class="simpleHeading__subtitle">Far far away, behind</h3>
+            <p class="simpleHeading__description">Far far away, behind the world mountains, far from the countries.</p>
+            <button class="cta cta01alt">cta button</button>
+        </div>
+    </header>
+    <!-- end Simple Heading -->
+
+    <!-- Slider Heading -->
+    <header class="sliderHeading">
+        <div class="sliderHeading__content">
+            <div class="sliderHeading__text">
+                <h2 class="sliderHeading__title">Website title</h2>
+                <h3 class="sliderHeading__subtitle">subtitle or description</h3>
+
+                <div class="sliderHeading__arrows">
+                    <div class="swiper-button-prev white"></div>
+                    <div class="swiper-button-next white"></div>
+                </div>
+            </div>
+
+            <div class="sliderHeading__slider swiper-container white">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- end Slider Heading -->
+
+    <!-- Highlight Slider -->
+    <section class="highlightSlider">
+        <div class="highlightSlider__content">
+
+            <div class="highlightSlider__slider swiper-container white">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end Slider Heading -->
 
     <div class="cenas"></div>
 
@@ -25,6 +84,10 @@
     <!-- end Footer -->
 
     <!-- Script Files -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/sliderHeading.js"></script>
+    <script src="js/highlightSlider.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
     <!-- end Script Files -->

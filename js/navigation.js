@@ -4,9 +4,9 @@ const
     mainNav = document.querySelector('.mainNav'),
     templateNav = `
 <div class="mainNav__logo">
-    <img src="assets/img.svg" alt="Logo">
+    <img src="assets/images/img.svg" alt="Logo">
 </div>
-<span class="mainNav__icon"></span>
+<div class="mainNav__icon"><span></span></div>
 <div class="mainNav__wrapper">
 <div class="mainNav__links">
     <a class="mainNav__linkItem" href="">Link</a>

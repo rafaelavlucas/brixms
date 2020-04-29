@@ -1,0 +1,130 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0px 8px !important;
+    }
+
+    &.white {
+        .swiper-pagination-bullet {
+            background-color: white;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: white;
+        }
+
+        .swiper-button-prev {
+            &:after {
+                background-image: url("/assets/icons-white/icon-5.svg");
+            }
+        }
+
+        .swiper-button-next {
+            &:after {
+                background-image: url("/assets/icons-white/icon-12.svg");
+            }
+        }
+
+    }
+
+    &.dark {
+        .swiper-pagination-bullet {
+            background-color: $neu-08;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $neu-08;
+        }
+
+        .swiper-button-prev {
+            &:after {
+                background-image: url("/assets/icons-black/icon-5.svg");
+            }
+        }
+
+        .swiper-button-next {
+            &:after {
+                background-image: url("/assets/icons-black/icon-12.svg");
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+
+    width: 32px;
+    height: 32px;
+    margin: 0;
+
+    &:after {
+        @include transition2();
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.swiper-button-prev {
+    left: 5%;
+
+    &:hover {
+        &:after {
+            transform: translateX(-4px);
+        }
+    }
+}
+
+.swiper-button-next {
+    right: 5%;
+
+    &:hover {
+        &:after {
+            transform: translateX(4px);
+        }
+    }
+}
+
+.swiper-button-prev.dark {
+    &:after {
+        background-image: url("/assets/icons-black/icon-5.svg");
+    }
+}
+
+.swiper-button-next.dark {
+    &:after {
+        background-image: url("/assets/icons-black/icon-12.svg");
+    }
+}
+
+.swiper-button-prev.white {
+    &:after {
+        background-image: url("/assets/icons-white/icon-5.svg");
+    }
+}
+
+.swiper-button-next.white {
+    &:after {
+        background-image: url("/assets/icons-white/icon-12.svg");
+    }
+}

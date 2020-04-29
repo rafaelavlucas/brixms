@@ -1,14 +1,16 @@
 .mainNav {
+    @include padding;
     @include transition;
     width: 100%;
     height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
     position: fixed;
+    z-index: 2;
 
     &:before {
+        @include transition;
         content: '';
         width: 100%;
         height: 100%;
@@ -18,7 +20,6 @@
         background-color: white;
         box-shadow: 0px 4px 20px rgba(black, 0.5);
         z-index: -1;
-        transition: all 0.4s ease;
         opacity: 0;
     }
 
@@ -40,7 +41,7 @@
             top: 0;
             position: fixed;
             width: 100%;
-            background-color: black;
+            background-color: $neu-08;
             padding: 0 10%;
             justify-content: flex-end;
             opacity: 0;
@@ -52,17 +53,60 @@
         width: 32px;
         height: 32px;
         display: none;
-        background-color: blue;
         position: absolute;
         right: 5%;
         z-index: 1;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
 
         @include sm {
             display: flex;
         }
+
+        span {
+            width: 100%;
+            height: 2px;
+            background-color: $neu-08;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s ease;
+
+            &:before,
+            &:after {
+                content: '';
+                width: 32px;
+                height: 100%;
+                position: absolute;
+                background-color: inherit;
+                transition: all 0.2s ease, background-color 0.4s ease;
+            }
+
+            &:before {
+                transform: translateY(-8px);
+            }
+
+            &:after {
+                transform: translateY(8px);
+            }
+        }
+
+        &:hover {
+            span {
+
+                &:before,
+                &:after {
+                    width: 28px;
+                }
+            }
+        }
     }
 
     &__links {
+        color: white;
+
         @include sm {
             display: none;
         }
@@ -97,13 +141,39 @@
             &__logo {
                 transform: scale(0.8);
             }
+
+            &__links {
+                color: $neu-08;
+            }
         }
     }
 
     &.navOpen {
         .mainNav {
             &__icon {
-                background-color: red;
+                span {
+                    background-color: $neu-01;
+                    width: 0;
+
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                &:hover {
+                    span {
+                        transform: rotate(90deg);
+
+                        &:before,
+                        &:after {
+                            width: 32px;
+                        }
+                    }
+                }
             }
 
             &__wrapper {
