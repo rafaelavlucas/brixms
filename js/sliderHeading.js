@@ -24,6 +24,7 @@ sliderHeadingContent.forEach(function (el) {
 var mySwiper = new Swiper('.sliderHeading__slider.swiper-container', {
     // Optional parameters
     loop: true,
+    speed: 500,
 
     // If we need pagination
     pagination: {

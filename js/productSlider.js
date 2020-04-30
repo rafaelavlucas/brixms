@@ -14,7 +14,8 @@ products.forEach(function (el) {
 
 var mySwiper = new Swiper('.productSlider__slider.swiper-container', {
     // Optional parameters
-    loop: false,
+    loop: true,
+    speed: 500,
     slidesPerView: 4,
     spaceBetween: 32,
     breakpoints: {
