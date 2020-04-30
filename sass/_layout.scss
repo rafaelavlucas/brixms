@@ -7,13 +7,7 @@ body {
     height: 200vh;
 }
 
-section,
-header {
-    @include transition;
-    transition-delay: 0.2s;
-    opacity: 0;
-    transform: translateY(80px);
-}
+
 
 .simpleHeading {
     min-height: 520px;
@@ -359,4 +353,144 @@ header {
             }
         }
     }
+}
+
+.contentTabs {
+    @include spacingL;
+    background-color: $neu-02;
+
+    &__wrapper {
+        @include wrapper;
+        @include transition;
+        display: flex;
+        position: relative;
+
+        @include sm {
+            flex-direction: column;
+        }
+    }
+
+    &__tabList {
+        width: 50%;
+        position: relative;
+
+        @include sm {
+            width: 100%;
+            display: flex;
+        }
+
+        @include xs {
+            margin-bottom: 40px;
+            flex-direction: column;
+        }
+    }
+
+    &__tabLink {
+        @include transition;
+        @include font-m;
+        cursor: pointer;
+        padding: 0 32px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-radius: $radius;
+        border: 2px solid $neu-04;
+        background-color: white;
+        width: 80%;
+        margin-bottom: 32px;
+        opacity: 0.5;
+        position: relative;
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include sm {
+            width: 100%;
+            height: 64px;
+            padding: 0 16px;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @include xs {
+            margin-bottom: 8px;
+        }
+
+        &.active {
+            opacity: 1;
+            border: 2px solid $neu-06;
+
+            &:before {
+                opacity: 1;
+                transform: translatex(0px);
+
+                @include sm {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:hover {
+                padding: 0 32px;
+
+                @include sm {
+                    padding: 0 16px;
+                }
+            }
+        }
+
+        &:hover {
+            border: 2px solid $neu-06;
+            padding: 0 40px;
+
+            @include sm {
+                padding: 0 16px;
+            }
+        }
+    }
+
+
+    &__tabContent {
+        @include transition;
+        width: 50%;
+        height: 0px;
+
+        @include sm {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &.active {
+            animation: enter 0.4s 0.2s ease backwards;
+            display: block;
+
+            @keyframes enter {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            }
+
+        }
+    }
+
+    &__download {
+        @include wrapper;
+
+        @include sm {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+    }
+
+
 }

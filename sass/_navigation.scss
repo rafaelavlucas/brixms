@@ -18,7 +18,7 @@
         top: -100%;
         left: 0;
         background-color: white;
-        box-shadow: 0px 4px 20px rgba(black, 0.5);
+        box-shadow: $shadow;
         z-index: -1;
         opacity: 0;
     }
@@ -192,11 +192,20 @@
 }
 
 .footer {
-    background-color: black;
+    @include paddingSide;
+    background-color: $neu-09;
     width: 100%;
     height: 80px;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    &__link {
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }

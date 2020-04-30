@@ -1,3 +1,9 @@
+// Styles Variables
+
+$shadow: 0px 8px 20px -20px $neu-09;
+$shadowHover: 0px 0px 10px -10px $neu-09;
+$radius: 4px;
+
 // Margins and Paddings
 
 @mixin paddingSide {
@@ -88,30 +94,23 @@
     }
 }
 
-@mixin defaultShadow {
-    box-shadow: 0px 8px 20px -20px black;
-}
-
-@mixin defaultShadowHover {
-    box-shadow: 0px 0px 10px -10px black;
-}
-
 @mixin cardStyle1 {
     @include transition;
-    @include defaultShadow;
     overflow: hidden;
     padding: 24px;
-    border-radius: 4px;
+    border-radius: $radius;
     border: 1px solid $neu-05;
+    box-shadow: $shadow;
 
 
     &:hover {
         transform: translateY(4px);
+        box-shadow: $shadowHover;
 
 
         @include sm {
             transform: translateY(0);
-            box-shadow: 0px 8px 20px -20px black;
+            box-shadow: $shadow;
         }
     }
 }

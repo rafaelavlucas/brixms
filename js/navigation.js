@@ -57,6 +57,12 @@ function openNavMobile() {
 
 // Footer
 const footer = document.querySelector('.footer'),
-    templateFooter = `<p>teste</p>`;
+    templateFooter = `
+    <p class="footer__text">teste</p>
+    <div class="footer__links">
+    <a href="" class="footer__link hiperlink">Link</a>
+    <a href="" class="footer__link hiperlink">Link</a>
+    </div>
+    `;
 
 footer.insertAdjacentHTML('beforeend', templateFooter);

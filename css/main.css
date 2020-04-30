@@ -19,16 +19,15 @@
 .cta {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  padding: 0 32px;
-  height: 48px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: 600;
-  cursor: pointer;
   margin-top: 40px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 32px;
+  height: 48px;
+  border-radius: 4px;
 }
 
 .cta:hover {
@@ -54,6 +53,132 @@
 .cta.cta02alt {
   border: solid 1px white;
   color: white;
+}
+
+.ctaLink {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ctaLink__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.ctaLink__text {
+  position: relative;
+}
+
+.ctaLink__text:before, .ctaLink__text:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #5C5C66;
+}
+
+.ctaLink__text:after {
+  left: 0;
+  width: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.ctaLink:hover .ctaLink__text:before {
+  width: 0;
+}
+
+.ctaLink:hover .ctaLink__text:after {
+  width: 100%;
+}
+
+section,
+header {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
+
+.infoIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.infoIcon:last-child {
+  margin-bottom: 0;
+}
+
+.infoIcon__icon {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .infoIcon__icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 24px;
+  }
+}
+
+.infoIcon__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infoIcon__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.infoIcon__title {
+  margin: 8px 0px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 799px) {
+  .infoIcon__title {
+    font-size: 18px;
+  }
+}
+
+.infoIcon__description {
+  margin: 8px 0px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .animeModules {
@@ -204,8 +329,8 @@
   top: -100%;
   left: 0;
   background-color: white;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 8px 20px -20px #363842;
+          box-shadow: 0px 8px 20px -20px #363842;
   z-index: -1;
   opacity: 0;
 }
@@ -414,19 +539,36 @@
 }
 
 .footer {
-  background-color: black;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #363842;
   width: 100%;
   height: 80px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 511px) {
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.footer__link {
+  margin-right: 32px;
+}
+
+.footer__link:last-child {
+  margin-right: 0;
 }
 
 body {
@@ -436,17 +578,6 @@ body {
 
 .cenas {
   height: 200vh;
-}
-
-section,
-header {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-  opacity: 0;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
 }
 
 .simpleHeading {
@@ -542,7 +673,7 @@ header {
 
 @media screen and (max-width: 799px) {
   .simpleHeading__subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -711,7 +842,7 @@ header {
 
 @media screen and (max-width: 799px) {
   .sliderHeading__subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -815,7 +946,7 @@ header {
 
 @media screen and (max-width: 799px) {
   .highlightSlider__description {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -863,7 +994,7 @@ header {
 
 @media screen and (max-width: 799px) {
   .productSlider__moduleSubtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -963,7 +1094,7 @@ header {
 
 @media screen and (max-width: 799px) {
   .productSlider__productTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -994,12 +1125,12 @@ header {
 .productSlider__card {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-box-shadow: 0px 8px 20px -20px black;
-          box-shadow: 0px 8px 20px -20px black;
   overflow: hidden;
   padding: 24px;
   border-radius: 4px;
   border: 1px solid #CECFD2;
+  -webkit-box-shadow: 0px 8px 20px -20px #363842;
+          box-shadow: 0px 8px 20px -20px #363842;
   height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,14 +1151,16 @@ header {
 .productSlider__card:hover {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+  -webkit-box-shadow: 0px 0px 10px -10px #363842;
+          box-shadow: 0px 0px 10px -10px #363842;
 }
 
 @media screen and (max-width: 799px) {
   .productSlider__card:hover {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-box-shadow: 0px 8px 20px -20px black;
-            box-shadow: 0px 8px 20px -20px black;
+    -webkit-box-shadow: 0px 8px 20px -20px #363842;
+            box-shadow: 0px 8px 20px -20px #363842;
   }
 }
 
@@ -1035,5 +1168,229 @@ header {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.contentTabs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F5F5F6;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.contentTabs__wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  max-width: 1440px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 511px) {
+  .contentTabs__wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contentTabs__tabList {
+  width: 50%;
+  position: relative;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabList {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .contentTabs__tabList {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contentTabs__tabLink {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 8px 0px;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0 32px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  border: 2px solid #E0E0E2;
+  background-color: white;
+  width: 80%;
+  margin-bottom: 32px;
+  opacity: 0.5;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabLink {
+    font-size: 18px;
+  }
+}
+
+.contentTabs__tabLink:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabLink {
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    margin-right: 16px;
+  }
+  .contentTabs__tabLink:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .contentTabs__tabLink {
+    margin-bottom: 8px;
+  }
+}
+
+.contentTabs__tabLink.active {
+  opacity: 1;
+  border: 2px solid #B4B4BA;
+}
+
+.contentTabs__tabLink.active:before {
+  opacity: 1;
+  -webkit-transform: translatex(0px);
+          transform: translatex(0px);
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabLink.active:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.contentTabs__tabLink.active:hover {
+  padding: 0 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabLink.active:hover {
+    padding: 0 16px;
+  }
+}
+
+.contentTabs__tabLink:hover {
+  border: 2px solid #B4B4BA;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabLink:hover {
+    padding: 0 16px;
+  }
+}
+
+.contentTabs__tabContent {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  width: 50%;
+  height: 0px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__tabContent {
+    width: 100%;
+  }
+}
+
+.contentTabs__content {
+  display: none;
+}
+
+.contentTabs__content.active {
+  -webkit-animation: enter 0.4s 0.2s ease backwards;
+          animation: enter 0.4s 0.2s ease backwards;
+  display: block;
+}
+
+@-webkit-keyframes enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+.contentTabs__download {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 511px) {
+  .contentTabs__download {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__download {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
