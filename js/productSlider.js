@@ -15,7 +15,27 @@ products.forEach(function (el) {
 var mySwiper = new Swiper('.productSlider__slider.swiper-container', {
     // Optional parameters
     loop: false,
-    slidesPerView: 'auto',
+    slidesPerView: 4,
+    spaceBetween: 32,
+    breakpoints: {
+        1023: {
+            slidesPerView: 4,
+        },
+        799: {
+            spaceBetween: 24,
+            slidesPerView: 3,
+        },
+        511: {
+            spaceBetween: 24,
+            slidesPerView: 2,
+        },
+        0: {
+            spaceBetween: 24,
+            slidesPerView: 1,
+        }
+
+    },
+
     // If we need pagination
     pagination: {
         el: '.productSlider .swiper-pagination',

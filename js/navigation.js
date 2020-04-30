@@ -19,14 +19,24 @@ const
 mainNav.insertAdjacentHTML('beforeend', templateNav);
 
 const logo = document.querySelector(".mainNav__logo img");
+
+if (mainNav.classList.contains("navDark")) {
+    logo.src = "assets/images/logo.svg"
+};
 // Sticky Nav Bar
 window.onscroll = function () {
-    if (window.pageYOffset >= 100) {
+
+    if (window.pageYOffset >= 72) {
         mainNav.classList.add("navSticky");
         logo.src = "assets/images/logo.svg"
     } else {
-        mainNav.classList.remove("navSticky");
-        logo.src = "assets/images/logo-white.svg"
+        if (mainNav.classList.contains("navDark")) {
+            mainNav.classList.remove("navSticky");
+
+        } else {
+            mainNav.classList.remove("navSticky");
+            logo.src = "assets/images/logo-white.svg"
+        }
     };
 }
 

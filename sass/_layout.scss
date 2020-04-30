@@ -7,6 +7,15 @@ body {
     height: 200vh;
 }
 
+section,
+header {
+    @include transition;
+    transition-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(80px);
+
+}
+
 .simpleHeading {
     min-height: 520px;
     background-color: $neu-08;
@@ -59,10 +68,8 @@ body {
     height: 670px;
 
     @include sm {
-        height: 800px;
-
+        height: 680px;
     }
-
 
     .swiper-container {
         height: calc(100% - 100px);
@@ -76,17 +83,16 @@ body {
     }
 
     &__content {
-        @include padding;
+        @include paddingSide;
         display: flex;
         height: 100%;
 
         @include sm {
+            padding: 0;
             flex-direction: column-reverse;
 
         }
     }
-
-
 
     &__text {
         width: 40%;
@@ -172,6 +178,10 @@ body {
 .highlightSlider {
     height: 600px;
 
+    @include sm {
+        height: 480px;
+    }
+
     .swiper-slide {
         display: flex;
         align-items: center;
@@ -197,12 +207,17 @@ body {
     }
 
     &__text {
-        @include padding;
         max-width: 800px;
         position: absolute;
         z-index: 1;
         text-align: center;
         color: white;
+        padding-left: calc(5% + 48px);
+        padding-right: calc(5% + 48px);
+
+        @include sm {
+            @include paddingSide;
+        }
     }
 
     &__title {
@@ -212,7 +227,6 @@ body {
     &__description {
         @include font-m;
     }
-
 }
 
 .productSlider {
@@ -226,18 +240,10 @@ body {
 
     .swiper-button-prev {
         left: -32px;
-
-        @include sm {
-            display: none;
-        }
     }
 
     .swiper-button-next {
         right: -32px;
-
-        @include sm {
-            display: none;
-        }
     }
 
     .swiper-pagination {
@@ -256,16 +262,23 @@ body {
         height: 100%;
         position: relative;
         margin: 0 auto;
-
+        text-align: center;
 
     }
 
     &__sliderContainer {
         position: relative;
+        padding: 0 40px;
+
 
         @include sm {
+            padding: 0px;
             padding-bottom: 40px;
         }
+    }
+
+    &__slider {
+        padding: 0 2px;
     }
 
     &__image {
@@ -310,24 +323,23 @@ body {
     }
 
     &__card {
-
         @include cardStyle1;
-        width: calc(25% - 40px);
+        //width: calc(25% - 40px);
         height: 360px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         position: relative;
-        margin: 0 20px;
+        //margin: 0 20px;
 
         @include md {
-            width: calc(33% - 40px);
+            //width: 33%;
         }
 
         @include sm {
-            margin: 0 16px;
-            width: calc(50% - 32px);
+            //margin: 0 16px;
+            //width: 50%;
 
             &:first-child {
                 //margin-left: 0px;
@@ -335,8 +347,8 @@ body {
         }
 
         @include xs {
-
-            width: calc(100% - 40px);
+            // margin: 0;
+            //width: 100%;
         }
 
         &:hover {
