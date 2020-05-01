@@ -257,7 +257,6 @@ body {
 .productSlider {
     @include spacingL;
     @include moduleDefault;
-    background-color: $neu-02;
 
     .swiper-wrapper {
         padding-bottom: 24px;
@@ -356,6 +355,111 @@ body {
                     opacity: 1;
                 }
             }
+        }
+    }
+}
+
+.productGrid {
+    @include spacingL;
+    @include moduleDefault;
+
+    &__wrapper {
+        @include wrapper;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: 1024px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+        @include sm {
+            grid-gap: 24px;
+        }
+
+        @include xs {
+            grid-gap: 24px;
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__image {
+        max-width: 240px;
+        height: 320px;
+        top: 0;
+
+        @include sm {
+            height: 280px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+
+        @include sm {
+            margin-top: 24px;
+        }
+    }
+
+    &__productTitle {
+        @include font-m;
+    }
+
+    &__productSubtitle {
+        @include font-s;
+        margin-top: 8px;
+
+        @include xs {
+            margin-top: 4px;
+        }
+    }
+
+    &__link {
+        @include transition2;
+        opacity: 0;
+        position: absolute;
+        bottom: 24px;
+        transform: translateY(20px);
+
+        @include sm {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    &__card {
+        @include cardStyle2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+
+        &:hover {
+            .productSlider {
+                &__link {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .cta {
+        margin-top: 32px;
+
+        @include sm {
+            margin-top: 24px;
         }
     }
 }
@@ -668,7 +772,46 @@ body {
 
             }
         }
+
+        &.product {
+            .contentMedia {
+                @include sm {
+                    &__content {
+                        text-align: center;
+                    }
+
+                    &__wrapper {
+                        max-width: 320px;
+                        margin: 0 auto;
+                    }
+
+                    &__title {
+                        //@include font-m;
+                    }
+                }
+
+                &__image {
+                    @include sm {
+                        width: 100%;
+                        max-width: 300px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    @include xs {
+                        max-width: 100%;
+                    }
+                }
+
+
+            }
+        }
     }
+
+
+
 }
 
 .wot {

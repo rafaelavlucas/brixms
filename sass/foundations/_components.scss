@@ -12,6 +12,8 @@
     @include ctaStyle;
     padding: 0 32px;
     height: 48px;
+    display: inline-flex;
+    align-items: center;
     border-radius: $radius;
 
     &:hover {
