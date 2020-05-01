@@ -1622,6 +1622,12 @@ header .anime2:nth-child(100) {
      object-fit: contain;
 }
 
+@media screen and (max-width: 799px) {
+  .mainNav__logo {
+    width: 80px;
+  }
+}
+
 .mainNav__wrapper {
   height: 100%;
   display: -webkit-box;
@@ -1747,14 +1753,19 @@ header .anime2:nth-child(100) {
   height: 72px;
 }
 
+@media screen and (max-width: 799px) {
+  .mainNav.navSticky {
+    height: 64px;
+  }
+}
+
 .mainNav.navSticky:before {
   opacity: 1;
   top: 0;
 }
 
 .mainNav.navSticky .mainNav__logo {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  width: 80px;
 }
 
 .mainNav.navSticky .mainNav__links {
@@ -2546,7 +2557,7 @@ body {
 @media screen and (max-width: 799px) {
   .contentTabs__tabLink {
     width: 100%;
-    height: 64px;
+    height: 56px;
     padding: 0 16px;
     margin-right: 16px;
   }
