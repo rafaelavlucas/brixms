@@ -54,14 +54,21 @@ function openNavMobile() {
     if (mainNav.classList.contains('navOpen')) {
         mainNav.classList.remove('navOpen');
         document.querySelector('body').style.overflowY = "initial";
+        if (window.innerWidth < 799) {
+            setTimeout(() => {
+                document.querySelector('.mainNav .mainNav__wrapper').style.height = "auto";
+            }, 600);
+        }
+
     } else {
         mainNav.classList.add('navOpen');
         document.querySelector('body').style.overflowY = "hidden";
+        if (window.innerWidth < 799) {
+            document.querySelector('.mainNav.navOpen .mainNav__wrapper').style.height = window.innerHeight + "px";
+        }
 
     }
 }
-
-document.querySelector('.mainNav__wrapper').style.height = window.innerHeight + "px";
 
 
 // Footer
