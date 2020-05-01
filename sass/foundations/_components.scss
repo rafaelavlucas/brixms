@@ -1,11 +1,39 @@
-@mixin ctaStyle {
-    margin-top: 40px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    cursor: pointer;
+section,
+header {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    transform: translateY(100px);
+
+    .anime {
+        @include delay;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    .anime2 {
+        @include delay;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        opacity: 0;
+        margin-top: 40px;
+    }
 }
+
+.animeModules {
+    opacity: 1;
+    transform: translateY(0);
+
+    .anime {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    .anime2 {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
 
 .cta {
     @include transition2;
@@ -15,7 +43,7 @@
     border-radius: $radius;
 
     &:hover {
-        transform: translateY(-4px);
+        transform: translateY(-4px)
     }
 
     &.cta01 {
@@ -93,13 +121,6 @@
 .hiperlink {}
 
 
-section,
-header {
-    @include transition;
-    opacity: 0;
-    transform: translateY(80px);
-}
-
 .infoIcon {
     display: flex;
     width: 100%;
@@ -141,9 +162,4 @@ header {
     &__description {
         @include font-s;
     }
-}
-
-.animeModules {
-    opacity: 1;
-    transform: translateY(0);
 }

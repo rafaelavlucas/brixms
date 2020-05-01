@@ -53,6 +53,15 @@ $radius: 4px;
     transition: all 0.2s ease;
 }
 
+@mixin delay {
+
+    @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+            transition-delay: #{0.4 + $i * 0.2}s;
+        }
+    }
+}
+
 // Modules Styles
 
 @mixin moduleHeading {

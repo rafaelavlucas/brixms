@@ -1,3 +1,4 @@
+// Product Content
 const tastingNotes = [{
         name: "Colour",
         icon: "assets/icons-black/icon-2.svg",
@@ -61,8 +62,40 @@ specs.forEach(function (el) {
 });
 
 let template2 = `
-<div class="contentTabs__download">
+<div class="contentTabs__download anime">
 <a href="" class="ctaLink"><img class="ctaLink__icon" src="assets/icons-black/icon-28.svg"><span class="ctaLink__text">Download wine file</span></a>
 </div>`;
 
 document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("afterend", template2);
+
+
+// Content Tabs
+const tabLink = document.querySelectorAll(".contentTabs__tabLink"),
+    tabContent = document.querySelectorAll(".contentTabs__tabContent");
+
+tabLink.forEach(function (el) {
+    el.addEventListener("click", openTabs);
+});
+
+function openTabs(e) {
+    var tabTarget = e.currentTarget;
+    var tabLabel = tabTarget.dataset.label;
+
+    tabContent.forEach(function (el) {
+        el.classList.remove("active");
+    });
+
+    tabLink.forEach(function (el) {
+        el.classList.remove("active");
+    });
+
+    document.querySelector("#" + tabLabel).classList.add("active");
+    tabTarget.classList.add("active");
+
+    getTabHeight();
+}
+
+function getTabHeight() {
+    document.querySelector(".contentTabs__content").style.height = document.querySelector(".contentTabs__tabContent.active").offsetHeight + "px";
+};
+getTabHeight();

@@ -22,6 +22,8 @@ body {
         width: 100%;
         height: 100%;
         position: absolute;
+        left: 0;
+        top: 0;
 
         img {
             width: 100%;
@@ -30,7 +32,7 @@ body {
         }
     }
 
-    &__text {
+    &__wrapper {
         @include wrapper;
         display: flex;
         flex-direction: column;
@@ -38,20 +40,18 @@ body {
         text-align: center;
         color: white;
         z-index: 1;
-        max-width: 1440px;
-        width: 100%;
     }
 
     &__title {
-        @include font-l;
+        @include font-xl;
     }
 
     &__subtitle {
-        @include font-m;
+        @include font-l;
     }
 
     &__description {
-        @include font-s;
+        @include font-m;
     }
 
 
@@ -75,7 +75,7 @@ body {
         }
     }
 
-    &__content {
+    &__wrapper {
         @include paddingSide;
         display: flex;
         height: 100%;
@@ -181,7 +181,7 @@ body {
         justify-content: center;
     }
 
-    &__content {
+    &__wrapper {
         height: 100%;
         position: relative;
     }
@@ -250,7 +250,7 @@ body {
         }
     }
 
-    &__content {
+    &__wrapper {
         @include wrapper;
         height: 100%;
         position: relative;
@@ -453,8 +453,7 @@ body {
         }
     }
 
-
-    &__tabContent {
+    &__content {
         @include transition;
         width: 50%;
         height: 0px;
@@ -464,7 +463,7 @@ body {
         }
     }
 
-    &__content {
+    &__tabContent {
         display: none;
 
         &.active {
@@ -491,6 +490,197 @@ body {
             margin-top: 40px;
         }
     }
+}
+
+.ctaBlock {
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 
+    &__wrapper {
+        @include spacingL;
+        width: 100%;
+        position: relative;
+
+    }
+
+    &__bgImage {
+        @include overlay;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        @include wrapper;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        z-index: 1;
+        margin: 0 auto;
+
+    }
+
+    &__title {
+        @include font-l;
+    }
+
+    &__subtitle {
+        @include font-m;
+    }
+
+    &__description {
+        @include font-s;
+    }
+
+    &.dual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @include xs {
+            grid-template-columns: 1fr;
+        }
+
+        .ctaBlock {
+            &__wrapper {
+                padding-left: 5vw;
+                padding-right: 5vw;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+    }
+
+
+}
+
+.contentMedia {
+    @include spacingL;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    &__wrapper {
+        @include wrapper;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        @include sm {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        width: 50%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include sm {
+                transform: translateX(-5vw);
+            }
+        }
+
+        @include sm {
+            width: calc(100% + 5vw);
+        }
+    }
+
+    &__content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $neu-08;
+        z-index: 1;
+
+        @include sm {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        @include font-l;
+    }
+
+    &__subtitle {
+        @include font-m;
+    }
+
+    &__description {
+        @include font-s;
+    }
+
+    &.right {
+        .contentMedia {
+            &__wrapper {
+                flex-direction: row-reverse;
+
+                @include sm {
+                    flex-direction: column;
+                }
+            }
+
+            &__image {
+                img {
+                    @include sm {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &.vertical {
+        @include paddingSide;
+
+        .contentMedia {
+            &__wrapper {
+                padding: 0;
+                max-width: 1024px;
+            }
+
+            &__image {
+                width: 40%;
+
+                @include sm {
+                    width: calc(100% + 5vw);
+                }
+            }
+
+            &__content {
+                width: 50%;
+
+                @include sm {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
 }

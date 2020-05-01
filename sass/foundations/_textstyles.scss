@@ -73,3 +73,13 @@ sans-serif;
 @mixin textMarginsSmall {
     margin: 8px 0px;
 }
+
+
+@mixin ctaStyle {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
