@@ -12,11 +12,17 @@
 }
 
 .swiper-slide {
-    img {
+
+    figure {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+
 }
 
 // Bullets 
@@ -64,7 +70,6 @@
 
     &:hover {
         &:after {
-
             transform: translateX(-4px);
         }
     }

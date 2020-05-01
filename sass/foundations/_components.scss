@@ -1,21 +1,19 @@
+$cubicModules: cubic-bezier(0.48, 0.14, 0.27, 0.94);
+
+$transitionModules: opacity 0.4s $cubicModules,
+transform 0.4s $cubicModules;
+
 section,
 header {
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition: $transitionModules;
     opacity: 0;
     transform: translateY(100px);
 
     .anime {
         @include delay;
-        transition: opacity 0.4s ease, transform 0.4s ease;
+        transition: $transitionModules;
         opacity: 0;
         transform: translateY(40px);
-    }
-
-    .anime2 {
-        @include delay;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-        opacity: 0;
-        margin-top: 40px;
     }
 }
 
@@ -25,15 +23,17 @@ header {
 
     .anime {
         opacity: 1;
-        transform: translateY(0)
-    }
-
-    .anime2 {
-        opacity: 1;
-        margin-top: 0px;
+        transform: translateY(0);
     }
 }
 
+
+.ctaContainer {
+    @include sm {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .cta {
     @include transition2;

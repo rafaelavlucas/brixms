@@ -87,6 +87,10 @@ body {
         }
     }
 
+    &__image {
+        height: 100%;
+    }
+
     &__text {
         width: 40%;
         position: relative;
@@ -397,6 +401,7 @@ body {
         border: 2px solid $neu-04;
         background-color: white;
         width: 80%;
+        margin-top: 0 !important;
         margin-bottom: 32px;
         opacity: 0.5;
         position: relative;
@@ -493,18 +498,16 @@ body {
 }
 
 .ctaBlock {
-    min-height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
-
     &__wrapper {
         @include spacingL;
+        min-height: 320px;
         width: 100%;
         position: relative;
-
     }
 
     &__bgImage {
@@ -567,8 +570,6 @@ body {
 
         }
     }
-
-
 }
 
 .contentMedia {
@@ -578,6 +579,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow-x: hidden;
 
 
     &__wrapper {
@@ -596,18 +598,20 @@ body {
         width: 50%;
         height: 100%;
 
+        @include sm {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
 
             @include sm {
-                transform: translateX(-5vw);
+                width: 100vw;
             }
-        }
-
-        @include sm {
-            width: calc(100% + 5vw);
         }
     }
 
@@ -621,6 +625,7 @@ body {
 
         @include sm {
             width: 100%;
+            margin-top: 32px;
         }
     }
 
@@ -647,11 +652,17 @@ body {
             }
 
             &__image {
+                @include sm {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
                 img {
                     @include sm {
-                        transform: translateX(0);
+                        width: 100vw;
                     }
                 }
+
             }
         }
     }
@@ -669,7 +680,7 @@ body {
                 width: 40%;
 
                 @include sm {
-                    width: calc(100% + 5vw);
+                    width: 100%;
                 }
             }
 

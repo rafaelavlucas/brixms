@@ -9,9 +9,11 @@ sans-serif;
     @include textMargins;
     font-size: 100px;
     font-weight: 800;
+    line-height: 108px;
 
     @include sm {
         font-size: 80px;
+        line-height: 88px;
     }
 }
 
@@ -19,9 +21,11 @@ sans-serif;
     @include textMargins;
     font-size: 60px;
     font-weight: 600;
+    line-height: 68px;
 
     @include sm {
         font-size: 50px;
+        line-height: 58px;
     }
 }
 
@@ -29,9 +33,11 @@ sans-serif;
     @include textMargins;
     font-size: 50px;
     font-weight: 600;
+    line-height: 58px;
 
     @include sm {
         font-size: 40px;
+        line-height: 48px;
     }
 }
 
@@ -39,19 +45,23 @@ sans-serif;
     @include textMargins;
     font-size: 36px;
     font-weight: 500;
+    line-height: 44px;
 
     @include sm {
         font-size: 28px;
+        line-height: 36px;
     }
 }
 
 @mixin font-m {
     @include textMarginsSmall;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
+    line-height: 32px;
 
     @include sm {
         font-size: 18px;
+        line-height: 28px;
     }
 }
 
@@ -59,19 +69,37 @@ sans-serif;
     @include textMarginsSmall;
     font-size: 16px;
     font-weight: 400;
+    line-height: 24px;
 }
 
 @mixin font-xs {
     @include textMarginsSmall;
     font-size: 14px;
+    line-height: 26px;
 }
 
 @mixin textMargins {
-    margin: 16px 0px;
+    margin-top: 40px;
+
+    @include sm {
+        margin-top: 32px;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 @mixin textMarginsSmall {
-    margin: 8px 0px;
+    margin-top: 32px;
+
+    @include sm {
+        margin-top: 16px;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 

@@ -15,7 +15,7 @@ const sliderHeadingContent = [{
 
 sliderHeadingContent.forEach(function (el) {
     let templateSlider = `
-<div class="swiper-slide anime"><img src="${el.img}" alt="${el.alt}"></div>
+<div class="swiper-slide"><figure class="sliderHeading__image anime"><img src="${el.img}" alt="${el.alt}"></figure></div>
 `;
     document.querySelector(".sliderHeading .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
 
