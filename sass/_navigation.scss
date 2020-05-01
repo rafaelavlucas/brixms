@@ -128,7 +128,6 @@
 
     &__links {
         @include transition;
-        color: white;
         z-index: 1;
 
         @include sm {
@@ -141,6 +140,7 @@
         font-weight: 700;
         margin-right: 64px;
         position: relative;
+
 
 
         &:last-child {
@@ -176,6 +176,7 @@
             font-size: 24px;
             font-weight: 600;
             opacity: 0;
+            color: white;
 
             &:last-child {
                 margin-bottom: 0px;
@@ -252,7 +253,6 @@
             &__wrapper {
                 visibility: visible;
 
-
                 &:before,
                 &:after {
                     transition: all 0.6s 0.2s ease;
@@ -265,19 +265,15 @@
             }
 
             &__links {
-                display: flex;
                 flex-direction: column;
                 align-items: center;
-                color: white;
+                display: flex;
             }
 
             &__linkItem {
                 @include transition;
                 @include animationEnter;
                 @include delayEnter;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 animation-delay: 0.2s;
                 opacity: 1;
 

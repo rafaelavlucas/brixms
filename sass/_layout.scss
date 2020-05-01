@@ -176,11 +176,18 @@ body {
 .simpleMedia {
     @include wrapper;
 
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &__image {
         max-width: 1024px;
         max-height: 576px;
         margin: 0 auto;
     }
+
+
 
 }
 
