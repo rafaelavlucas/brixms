@@ -24,7 +24,6 @@ $radius: 4px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
 }
 
 @mixin spacingL {
@@ -44,6 +43,90 @@ $radius: 4px;
     margin: 0 auto;
 }
 
+// Animations 
+
+$cubicModules: cubic-bezier(0.48, 0.14, 0.27, 0.94);
+$transitionModules: opacity 0.4s $cubicModules,
+transform 0.4s $cubicModules;
+
+@mixin delay {
+    @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+            transition-delay: #{0.4 + $i * 0.2}s;
+        }
+    }
+}
+
+@mixin delayEnter {
+    &:nth-child(1) {
+        animation-delay: 0;
+    }
+
+    @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.2}s;
+        }
+    }
+}
+
+@mixin anime {
+    .anime {
+        @include delay;
+        transition: $transitionModules;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@mixin animeImg {
+    .animeImg {
+        transition: transform 2s ease, opacity 1s ease-in;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@mixin animationEnter {
+    @include delayEnter;
+    animation: enter 0.4s ease backwards;
+
+    @keyframes enter {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+    }
+}
+
+
+header {
+    @include anime;
+    @include animeImg;
+    transition: $transitionModules;
+    opacity: 0;
+    overflow: hidden;
+}
+
+section {
+    @include anime;
+    @include animeImg;
+    transition: $transitionModules;
+    opacity: 0;
+    transform: translateY(100px);
+    overflow: hidden;
+}
+
+.animeModules {
+    opacity: 1;
+    transform: translateY(0);
+
+    .anime,
+    .animeImg {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 // Transitions
 
 @mixin transition {
@@ -54,35 +137,8 @@ $radius: 4px;
     transition: all 0.2s ease;
 }
 
-@mixin delay {
-
-    @for $i from 1 through 100 {
-        &:nth-child(#{$i}) {
-            transition-delay: #{0.4 + $i * 0.2}s;
-        }
-    }
-}
 
 // Modules Styles
-
-@mixin moduleHeading {
-    &__heading {
-        text-align: center;
-        margin-bottom: 64px;
-
-        @include sm {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__moduleTitle {
-        @include font-l;
-    }
-
-    &__moduleSubtitle {
-        @include font-m;
-    }
-}
 
 @mixin overlay {
 

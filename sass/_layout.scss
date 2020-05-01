@@ -1,6 +1,6 @@
 body {
     font-family: $font;
-    color: $neu-09;
+    color: $neu-08;
 }
 
 .cenas {
@@ -17,6 +17,10 @@ body {
     align-items: center;
     position: relative;
 
+    @include sm {
+        min-height: 480px;
+    }
+
     &__bgImage {
         @include overlay;
         width: 100%;
@@ -24,12 +28,6 @@ body {
         position: absolute;
         left: 0;
         top: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     &__wrapper {
@@ -53,25 +51,22 @@ body {
     &__description {
         @include font-m;
     }
-
-
 }
 
 .sliderHeading {
     height: 670px;
 
     @include sm {
-        height: 680px;
+        height: 560px;
     }
 
     .swiper-container {
         height: calc(100% - 100px);
         margin-top: 100px;
-    }
 
-    .swiper-pagination {
         @include sm {
-            bottom: 80px;
+            height: calc(100% - 64px);
+            margin-top: 64px;
         }
     }
 
@@ -79,11 +74,30 @@ body {
         @include paddingSide;
         display: flex;
         height: 100%;
+        position: relative;
 
         @include sm {
             padding: 0;
             flex-direction: column-reverse;
+        }
 
+        &:before {
+            content: '';
+            width: 50vw;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $neu-03;
+            z-index: -1;
+
+            @include sm {
+                width: calc((100% - 5vw) - 64px);
+            }
+
+            @include xs {
+                width: calc(100% - 80px);
+            }
         }
     }
 
@@ -93,35 +107,22 @@ body {
 
     &__text {
         width: 40%;
+        min-width: 300px;
         position: relative;
         padding: 48px 48px 48px 0px;
         padding-top: calc(48px + 100px);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        position: relative;
+        z-index: 2;
 
         @include sm {
-            width: 100%;
-            padding: 32px;
-            transform: translateY(-60px);
-            z-index: 2;
+            width: calc(100% - 80px);
+            padding: 24px 5vw;
         }
 
-        &:before {
-            content: '';
-            width: 50vw;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -5vw;
-            background-color: $neu-03;
-            z-index: -1;
-
-            @include sm {
-                z-index: 1;
-                width: 100%;
-            }
+        @include xs {
+            padding: 24px;
         }
     }
 
@@ -172,7 +173,19 @@ body {
 
 }
 
+.simpleMedia {
+    @include wrapper;
+
+    &__image {
+        max-width: 1024px;
+        max-height: 576px;
+        margin: 0 auto;
+    }
+
+}
+
 .highlightSlider {
+    @include moduleDefault;
     height: 600px;
 
     @include sm {
@@ -185,6 +198,28 @@ body {
         justify-content: center;
     }
 
+    .swiper-slide-active {
+        .highlightSlider {
+
+            &__title,
+            &__description {
+                @include animationEnter;
+            }
+        }
+    }
+
+    .swiper-slide-next,
+    .swiper-slide-prev {
+        .highlightSlider {
+
+            &__title,
+            &__description {
+                opacity: 0;
+            }
+        }
+    }
+
+
     &__wrapper {
         height: 100%;
         position: relative;
@@ -195,12 +230,6 @@ body {
         width: 100%;
         height: 100%;
         position: absolute;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     &__text {
@@ -216,19 +245,11 @@ body {
             @include paddingSide;
         }
     }
-
-    &__title {
-        @include font-l;
-    }
-
-    &__description {
-        @include font-m;
-    }
 }
 
 .productSlider {
     @include spacingL;
-    @include moduleHeading;
+    @include moduleDefault;
     background-color: $neu-02;
 
     .swiper-wrapper {
@@ -260,7 +281,6 @@ body {
         position: relative;
         margin: 0 auto;
         text-align: center;
-
     }
 
     &__sliderContainer {
@@ -282,12 +302,6 @@ body {
         width: 100%;
         height: 150px;
         top: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     &__text {
@@ -321,32 +335,12 @@ body {
 
     &__card {
         @include cardStyle1;
-        //width: calc(25% - 40px);
         height: 360px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         position: relative;
-        //margin: 0 20px;
-
-        @include md {
-            //width: 33%;
-        }
-
-        @include sm {
-            //margin: 0 16px;
-            //width: 50%;
-
-            &:first-child {
-                //margin-left: 0px;
-            }
-        }
-
-        @include xs {
-            // margin: 0;
-            //width: 100%;
-        }
 
         &:hover {
             .productSlider {
@@ -361,6 +355,7 @@ body {
 
 .contentTabs {
     @include spacingL;
+    @include moduleDefault;
     background-color: $neu-02;
 
     &__wrapper {
@@ -390,7 +385,7 @@ body {
     }
 
     &__tabLink {
-        @include transition;
+        @include transition2;
         @include font-m;
         cursor: pointer;
         padding: 0 32px;
@@ -472,15 +467,16 @@ body {
         display: none;
 
         &.active {
-            animation: enter 0.4s 0.2s ease backwards;
             display: block;
 
-            @keyframes enter {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
+            .contentTabs {
+                &__infoIcon {
+                    @include animationEnter;
+
                 }
             }
+
+
 
         }
     }
@@ -492,16 +488,18 @@ body {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 16px;
         }
     }
 }
 
 .ctaBlock {
+    @include moduleDefault;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+
 
     &__wrapper {
         @include spacingL;
@@ -517,12 +515,7 @@ body {
         position: absolute;
         left: 0;
         top: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        z-index: -1;
     }
 
     &__content {
@@ -535,18 +528,6 @@ body {
         z-index: 1;
         margin: 0 auto;
 
-    }
-
-    &__title {
-        @include font-l;
-    }
-
-    &__subtitle {
-        @include font-m;
-    }
-
-    &__description {
-        @include font-s;
     }
 
     &.dual {
@@ -570,10 +551,19 @@ body {
 
         }
     }
+
+    &.light {
+        .ctaBlock {
+            &__content {
+                color: $neu-08;
+            }
+        }
+    }
 }
 
 .contentMedia {
     @include spacingL;
+    @include moduleDefault;
     width: 100%;
     overflow-x: hidden;
 
@@ -601,10 +591,6 @@ body {
         }
 
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
             @include sm {
                 width: 100vw;
             }
@@ -616,25 +602,12 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: $neu-08;
         z-index: 1;
 
         @include sm {
             width: 100%;
             margin-top: 32px;
         }
-    }
-
-    &__title {
-        @include font-l;
-    }
-
-    &__subtitle {
-        @include font-m;
-    }
-
-    &__description {
-        @include font-s;
     }
 
     &.right {
@@ -658,7 +631,6 @@ body {
                         width: 100vw;
                     }
                 }
-
             }
         }
     }
@@ -695,6 +667,7 @@ body {
 .wot {
     @include spacingL;
     @include wrapper;
+    @include moduleDefault;
     width: 100%;
 
     &__wrapper {
@@ -710,20 +683,13 @@ body {
         }
     }
 
-    &__title {
-        @include font-l;
-    }
-
-    &__subtitle {
-        @include font-m;
+    &__heading {
+        text-align: left;
+        margin-bottom: 0;
     }
 
     &__text {
         @include textMarginsSmall;
-    }
-
-    &__description {
-        @include font-s;
     }
 
     &.aside {
@@ -738,12 +704,26 @@ body {
 
             &__text {
                 display: flex;
-                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column;
             }
+
 
             &__description {
                 width: 70%;
                 max-width: 720px;
+
+                @include sm {
+                    width: calc(100% - 40px);
+                }
+            }
+        }
+
+        .ctaContainer {
+            width: 70%;
+
+            @include sm {
+                width: 100%;
             }
         }
     }

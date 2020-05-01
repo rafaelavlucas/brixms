@@ -48,18 +48,15 @@
   background-color: #363842;
 }
 
-section,
 header {
   -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  overflow: hidden;
 }
 
-section .anime,
 header .anime {
   -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
@@ -70,604 +67,1045 @@ header .anime {
           transform: translateY(40px);
 }
 
-section .anime:nth-child(1),
 header .anime:nth-child(1) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-section .anime:nth-child(2),
 header .anime:nth-child(2) {
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-section .anime:nth-child(3),
 header .anime:nth-child(3) {
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
 
-section .anime:nth-child(4),
 header .anime:nth-child(4) {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
 }
 
-section .anime:nth-child(5),
 header .anime:nth-child(5) {
   -webkit-transition-delay: 1.4s;
           transition-delay: 1.4s;
 }
 
-section .anime:nth-child(6),
 header .anime:nth-child(6) {
   -webkit-transition-delay: 1.6s;
           transition-delay: 1.6s;
 }
 
-section .anime:nth-child(7),
 header .anime:nth-child(7) {
   -webkit-transition-delay: 1.8s;
           transition-delay: 1.8s;
 }
 
-section .anime:nth-child(8),
 header .anime:nth-child(8) {
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
 }
 
-section .anime:nth-child(9),
 header .anime:nth-child(9) {
   -webkit-transition-delay: 2.2s;
           transition-delay: 2.2s;
 }
 
-section .anime:nth-child(10),
 header .anime:nth-child(10) {
   -webkit-transition-delay: 2.4s;
           transition-delay: 2.4s;
 }
 
-section .anime:nth-child(11),
 header .anime:nth-child(11) {
   -webkit-transition-delay: 2.6s;
           transition-delay: 2.6s;
 }
 
-section .anime:nth-child(12),
 header .anime:nth-child(12) {
   -webkit-transition-delay: 2.8s;
           transition-delay: 2.8s;
 }
 
-section .anime:nth-child(13),
 header .anime:nth-child(13) {
   -webkit-transition-delay: 3s;
           transition-delay: 3s;
 }
 
-section .anime:nth-child(14),
 header .anime:nth-child(14) {
   -webkit-transition-delay: 3.2s;
           transition-delay: 3.2s;
 }
 
-section .anime:nth-child(15),
 header .anime:nth-child(15) {
   -webkit-transition-delay: 3.4s;
           transition-delay: 3.4s;
 }
 
-section .anime:nth-child(16),
 header .anime:nth-child(16) {
   -webkit-transition-delay: 3.6s;
           transition-delay: 3.6s;
 }
 
-section .anime:nth-child(17),
 header .anime:nth-child(17) {
   -webkit-transition-delay: 3.8s;
           transition-delay: 3.8s;
 }
 
-section .anime:nth-child(18),
 header .anime:nth-child(18) {
   -webkit-transition-delay: 4s;
           transition-delay: 4s;
 }
 
-section .anime:nth-child(19),
 header .anime:nth-child(19) {
   -webkit-transition-delay: 4.2s;
           transition-delay: 4.2s;
 }
 
-section .anime:nth-child(20),
 header .anime:nth-child(20) {
   -webkit-transition-delay: 4.4s;
           transition-delay: 4.4s;
 }
 
-section .anime:nth-child(21),
 header .anime:nth-child(21) {
   -webkit-transition-delay: 4.6s;
           transition-delay: 4.6s;
 }
 
-section .anime:nth-child(22),
 header .anime:nth-child(22) {
   -webkit-transition-delay: 4.8s;
           transition-delay: 4.8s;
 }
 
-section .anime:nth-child(23),
 header .anime:nth-child(23) {
   -webkit-transition-delay: 5s;
           transition-delay: 5s;
 }
 
-section .anime:nth-child(24),
 header .anime:nth-child(24) {
   -webkit-transition-delay: 5.2s;
           transition-delay: 5.2s;
 }
 
-section .anime:nth-child(25),
 header .anime:nth-child(25) {
   -webkit-transition-delay: 5.4s;
           transition-delay: 5.4s;
 }
 
-section .anime:nth-child(26),
 header .anime:nth-child(26) {
   -webkit-transition-delay: 5.6s;
           transition-delay: 5.6s;
 }
 
-section .anime:nth-child(27),
 header .anime:nth-child(27) {
   -webkit-transition-delay: 5.8s;
           transition-delay: 5.8s;
 }
 
-section .anime:nth-child(28),
 header .anime:nth-child(28) {
   -webkit-transition-delay: 6s;
           transition-delay: 6s;
 }
 
-section .anime:nth-child(29),
 header .anime:nth-child(29) {
   -webkit-transition-delay: 6.2s;
           transition-delay: 6.2s;
 }
 
-section .anime:nth-child(30),
 header .anime:nth-child(30) {
   -webkit-transition-delay: 6.4s;
           transition-delay: 6.4s;
 }
 
-section .anime:nth-child(31),
 header .anime:nth-child(31) {
   -webkit-transition-delay: 6.6s;
           transition-delay: 6.6s;
 }
 
-section .anime:nth-child(32),
 header .anime:nth-child(32) {
   -webkit-transition-delay: 6.8s;
           transition-delay: 6.8s;
 }
 
-section .anime:nth-child(33),
 header .anime:nth-child(33) {
   -webkit-transition-delay: 7s;
           transition-delay: 7s;
 }
 
-section .anime:nth-child(34),
 header .anime:nth-child(34) {
   -webkit-transition-delay: 7.2s;
           transition-delay: 7.2s;
 }
 
-section .anime:nth-child(35),
 header .anime:nth-child(35) {
   -webkit-transition-delay: 7.4s;
           transition-delay: 7.4s;
 }
 
-section .anime:nth-child(36),
 header .anime:nth-child(36) {
   -webkit-transition-delay: 7.6s;
           transition-delay: 7.6s;
 }
 
-section .anime:nth-child(37),
 header .anime:nth-child(37) {
   -webkit-transition-delay: 7.8s;
           transition-delay: 7.8s;
 }
 
-section .anime:nth-child(38),
 header .anime:nth-child(38) {
   -webkit-transition-delay: 8s;
           transition-delay: 8s;
 }
 
-section .anime:nth-child(39),
 header .anime:nth-child(39) {
   -webkit-transition-delay: 8.2s;
           transition-delay: 8.2s;
 }
 
-section .anime:nth-child(40),
 header .anime:nth-child(40) {
   -webkit-transition-delay: 8.4s;
           transition-delay: 8.4s;
 }
 
-section .anime:nth-child(41),
 header .anime:nth-child(41) {
   -webkit-transition-delay: 8.6s;
           transition-delay: 8.6s;
 }
 
-section .anime:nth-child(42),
 header .anime:nth-child(42) {
   -webkit-transition-delay: 8.8s;
           transition-delay: 8.8s;
 }
 
-section .anime:nth-child(43),
 header .anime:nth-child(43) {
   -webkit-transition-delay: 9s;
           transition-delay: 9s;
 }
 
-section .anime:nth-child(44),
 header .anime:nth-child(44) {
   -webkit-transition-delay: 9.2s;
           transition-delay: 9.2s;
 }
 
-section .anime:nth-child(45),
 header .anime:nth-child(45) {
   -webkit-transition-delay: 9.4s;
           transition-delay: 9.4s;
 }
 
-section .anime:nth-child(46),
 header .anime:nth-child(46) {
   -webkit-transition-delay: 9.6s;
           transition-delay: 9.6s;
 }
 
-section .anime:nth-child(47),
 header .anime:nth-child(47) {
   -webkit-transition-delay: 9.8s;
           transition-delay: 9.8s;
 }
 
-section .anime:nth-child(48),
 header .anime:nth-child(48) {
   -webkit-transition-delay: 10s;
           transition-delay: 10s;
 }
 
-section .anime:nth-child(49),
 header .anime:nth-child(49) {
   -webkit-transition-delay: 10.2s;
           transition-delay: 10.2s;
 }
 
-section .anime:nth-child(50),
 header .anime:nth-child(50) {
   -webkit-transition-delay: 10.4s;
           transition-delay: 10.4s;
 }
 
-section .anime:nth-child(51),
 header .anime:nth-child(51) {
   -webkit-transition-delay: 10.6s;
           transition-delay: 10.6s;
 }
 
-section .anime:nth-child(52),
 header .anime:nth-child(52) {
   -webkit-transition-delay: 10.8s;
           transition-delay: 10.8s;
 }
 
-section .anime:nth-child(53),
 header .anime:nth-child(53) {
   -webkit-transition-delay: 11s;
           transition-delay: 11s;
 }
 
-section .anime:nth-child(54),
 header .anime:nth-child(54) {
   -webkit-transition-delay: 11.2s;
           transition-delay: 11.2s;
 }
 
-section .anime:nth-child(55),
 header .anime:nth-child(55) {
   -webkit-transition-delay: 11.4s;
           transition-delay: 11.4s;
 }
 
-section .anime:nth-child(56),
 header .anime:nth-child(56) {
   -webkit-transition-delay: 11.6s;
           transition-delay: 11.6s;
 }
 
-section .anime:nth-child(57),
 header .anime:nth-child(57) {
   -webkit-transition-delay: 11.8s;
           transition-delay: 11.8s;
 }
 
-section .anime:nth-child(58),
 header .anime:nth-child(58) {
   -webkit-transition-delay: 12s;
           transition-delay: 12s;
 }
 
-section .anime:nth-child(59),
 header .anime:nth-child(59) {
   -webkit-transition-delay: 12.2s;
           transition-delay: 12.2s;
 }
 
-section .anime:nth-child(60),
 header .anime:nth-child(60) {
   -webkit-transition-delay: 12.4s;
           transition-delay: 12.4s;
 }
 
-section .anime:nth-child(61),
 header .anime:nth-child(61) {
   -webkit-transition-delay: 12.6s;
           transition-delay: 12.6s;
 }
 
-section .anime:nth-child(62),
 header .anime:nth-child(62) {
   -webkit-transition-delay: 12.8s;
           transition-delay: 12.8s;
 }
 
-section .anime:nth-child(63),
 header .anime:nth-child(63) {
   -webkit-transition-delay: 13s;
           transition-delay: 13s;
 }
 
-section .anime:nth-child(64),
 header .anime:nth-child(64) {
   -webkit-transition-delay: 13.2s;
           transition-delay: 13.2s;
 }
 
-section .anime:nth-child(65),
 header .anime:nth-child(65) {
   -webkit-transition-delay: 13.4s;
           transition-delay: 13.4s;
 }
 
-section .anime:nth-child(66),
 header .anime:nth-child(66) {
   -webkit-transition-delay: 13.6s;
           transition-delay: 13.6s;
 }
 
-section .anime:nth-child(67),
 header .anime:nth-child(67) {
   -webkit-transition-delay: 13.8s;
           transition-delay: 13.8s;
 }
 
-section .anime:nth-child(68),
 header .anime:nth-child(68) {
   -webkit-transition-delay: 14s;
           transition-delay: 14s;
 }
 
-section .anime:nth-child(69),
 header .anime:nth-child(69) {
   -webkit-transition-delay: 14.2s;
           transition-delay: 14.2s;
 }
 
-section .anime:nth-child(70),
 header .anime:nth-child(70) {
   -webkit-transition-delay: 14.4s;
           transition-delay: 14.4s;
 }
 
-section .anime:nth-child(71),
 header .anime:nth-child(71) {
   -webkit-transition-delay: 14.6s;
           transition-delay: 14.6s;
 }
 
-section .anime:nth-child(72),
 header .anime:nth-child(72) {
   -webkit-transition-delay: 14.8s;
           transition-delay: 14.8s;
 }
 
-section .anime:nth-child(73),
 header .anime:nth-child(73) {
   -webkit-transition-delay: 15s;
           transition-delay: 15s;
 }
 
-section .anime:nth-child(74),
 header .anime:nth-child(74) {
   -webkit-transition-delay: 15.2s;
           transition-delay: 15.2s;
 }
 
-section .anime:nth-child(75),
 header .anime:nth-child(75) {
   -webkit-transition-delay: 15.4s;
           transition-delay: 15.4s;
 }
 
-section .anime:nth-child(76),
 header .anime:nth-child(76) {
   -webkit-transition-delay: 15.6s;
           transition-delay: 15.6s;
 }
 
-section .anime:nth-child(77),
 header .anime:nth-child(77) {
   -webkit-transition-delay: 15.8s;
           transition-delay: 15.8s;
 }
 
-section .anime:nth-child(78),
 header .anime:nth-child(78) {
   -webkit-transition-delay: 16s;
           transition-delay: 16s;
 }
 
-section .anime:nth-child(79),
 header .anime:nth-child(79) {
   -webkit-transition-delay: 16.2s;
           transition-delay: 16.2s;
 }
 
-section .anime:nth-child(80),
 header .anime:nth-child(80) {
   -webkit-transition-delay: 16.4s;
           transition-delay: 16.4s;
 }
 
-section .anime:nth-child(81),
 header .anime:nth-child(81) {
   -webkit-transition-delay: 16.6s;
           transition-delay: 16.6s;
 }
 
-section .anime:nth-child(82),
 header .anime:nth-child(82) {
   -webkit-transition-delay: 16.8s;
           transition-delay: 16.8s;
 }
 
-section .anime:nth-child(83),
 header .anime:nth-child(83) {
   -webkit-transition-delay: 17s;
           transition-delay: 17s;
 }
 
-section .anime:nth-child(84),
 header .anime:nth-child(84) {
   -webkit-transition-delay: 17.2s;
           transition-delay: 17.2s;
 }
 
-section .anime:nth-child(85),
 header .anime:nth-child(85) {
   -webkit-transition-delay: 17.4s;
           transition-delay: 17.4s;
 }
 
-section .anime:nth-child(86),
 header .anime:nth-child(86) {
   -webkit-transition-delay: 17.6s;
           transition-delay: 17.6s;
 }
 
-section .anime:nth-child(87),
 header .anime:nth-child(87) {
   -webkit-transition-delay: 17.8s;
           transition-delay: 17.8s;
 }
 
-section .anime:nth-child(88),
 header .anime:nth-child(88) {
   -webkit-transition-delay: 18s;
           transition-delay: 18s;
 }
 
-section .anime:nth-child(89),
 header .anime:nth-child(89) {
   -webkit-transition-delay: 18.2s;
           transition-delay: 18.2s;
 }
 
-section .anime:nth-child(90),
 header .anime:nth-child(90) {
   -webkit-transition-delay: 18.4s;
           transition-delay: 18.4s;
 }
 
-section .anime:nth-child(91),
 header .anime:nth-child(91) {
   -webkit-transition-delay: 18.6s;
           transition-delay: 18.6s;
 }
 
-section .anime:nth-child(92),
 header .anime:nth-child(92) {
   -webkit-transition-delay: 18.8s;
           transition-delay: 18.8s;
 }
 
-section .anime:nth-child(93),
 header .anime:nth-child(93) {
   -webkit-transition-delay: 19s;
           transition-delay: 19s;
 }
 
-section .anime:nth-child(94),
 header .anime:nth-child(94) {
   -webkit-transition-delay: 19.2s;
           transition-delay: 19.2s;
 }
 
-section .anime:nth-child(95),
 header .anime:nth-child(95) {
   -webkit-transition-delay: 19.4s;
           transition-delay: 19.4s;
 }
 
-section .anime:nth-child(96),
 header .anime:nth-child(96) {
   -webkit-transition-delay: 19.6s;
           transition-delay: 19.6s;
 }
 
-section .anime:nth-child(97),
 header .anime:nth-child(97) {
   -webkit-transition-delay: 19.8s;
           transition-delay: 19.8s;
 }
 
-section .anime:nth-child(98),
 header .anime:nth-child(98) {
   -webkit-transition-delay: 20s;
           transition-delay: 20s;
 }
 
-section .anime:nth-child(99),
 header .anime:nth-child(99) {
   -webkit-transition-delay: 20.2s;
           transition-delay: 20.2s;
 }
 
-section .anime:nth-child(100),
 header .anime:nth-child(100) {
   -webkit-transition-delay: 20.4s;
           transition-delay: 20.4s;
+}
+
+header .animeImg {
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 2s ease;
+  transition: opacity 1s ease-in, -webkit-transform 2s ease;
+  transition: transform 2s ease, opacity 1s ease-in;
+  transition: transform 2s ease, opacity 1s ease-in, -webkit-transform 2s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
+section {
+  -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  overflow: hidden;
+}
+
+section .anime {
+  -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+section .anime:nth-child(1) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+section .anime:nth-child(2) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+section .anime:nth-child(3) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+section .anime:nth-child(4) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+section .anime:nth-child(5) {
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
+}
+
+section .anime:nth-child(6) {
+  -webkit-transition-delay: 1.6s;
+          transition-delay: 1.6s;
+}
+
+section .anime:nth-child(7) {
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+
+section .anime:nth-child(8) {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+section .anime:nth-child(9) {
+  -webkit-transition-delay: 2.2s;
+          transition-delay: 2.2s;
+}
+
+section .anime:nth-child(10) {
+  -webkit-transition-delay: 2.4s;
+          transition-delay: 2.4s;
+}
+
+section .anime:nth-child(11) {
+  -webkit-transition-delay: 2.6s;
+          transition-delay: 2.6s;
+}
+
+section .anime:nth-child(12) {
+  -webkit-transition-delay: 2.8s;
+          transition-delay: 2.8s;
+}
+
+section .anime:nth-child(13) {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+
+section .anime:nth-child(14) {
+  -webkit-transition-delay: 3.2s;
+          transition-delay: 3.2s;
+}
+
+section .anime:nth-child(15) {
+  -webkit-transition-delay: 3.4s;
+          transition-delay: 3.4s;
+}
+
+section .anime:nth-child(16) {
+  -webkit-transition-delay: 3.6s;
+          transition-delay: 3.6s;
+}
+
+section .anime:nth-child(17) {
+  -webkit-transition-delay: 3.8s;
+          transition-delay: 3.8s;
+}
+
+section .anime:nth-child(18) {
+  -webkit-transition-delay: 4s;
+          transition-delay: 4s;
+}
+
+section .anime:nth-child(19) {
+  -webkit-transition-delay: 4.2s;
+          transition-delay: 4.2s;
+}
+
+section .anime:nth-child(20) {
+  -webkit-transition-delay: 4.4s;
+          transition-delay: 4.4s;
+}
+
+section .anime:nth-child(21) {
+  -webkit-transition-delay: 4.6s;
+          transition-delay: 4.6s;
+}
+
+section .anime:nth-child(22) {
+  -webkit-transition-delay: 4.8s;
+          transition-delay: 4.8s;
+}
+
+section .anime:nth-child(23) {
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+}
+
+section .anime:nth-child(24) {
+  -webkit-transition-delay: 5.2s;
+          transition-delay: 5.2s;
+}
+
+section .anime:nth-child(25) {
+  -webkit-transition-delay: 5.4s;
+          transition-delay: 5.4s;
+}
+
+section .anime:nth-child(26) {
+  -webkit-transition-delay: 5.6s;
+          transition-delay: 5.6s;
+}
+
+section .anime:nth-child(27) {
+  -webkit-transition-delay: 5.8s;
+          transition-delay: 5.8s;
+}
+
+section .anime:nth-child(28) {
+  -webkit-transition-delay: 6s;
+          transition-delay: 6s;
+}
+
+section .anime:nth-child(29) {
+  -webkit-transition-delay: 6.2s;
+          transition-delay: 6.2s;
+}
+
+section .anime:nth-child(30) {
+  -webkit-transition-delay: 6.4s;
+          transition-delay: 6.4s;
+}
+
+section .anime:nth-child(31) {
+  -webkit-transition-delay: 6.6s;
+          transition-delay: 6.6s;
+}
+
+section .anime:nth-child(32) {
+  -webkit-transition-delay: 6.8s;
+          transition-delay: 6.8s;
+}
+
+section .anime:nth-child(33) {
+  -webkit-transition-delay: 7s;
+          transition-delay: 7s;
+}
+
+section .anime:nth-child(34) {
+  -webkit-transition-delay: 7.2s;
+          transition-delay: 7.2s;
+}
+
+section .anime:nth-child(35) {
+  -webkit-transition-delay: 7.4s;
+          transition-delay: 7.4s;
+}
+
+section .anime:nth-child(36) {
+  -webkit-transition-delay: 7.6s;
+          transition-delay: 7.6s;
+}
+
+section .anime:nth-child(37) {
+  -webkit-transition-delay: 7.8s;
+          transition-delay: 7.8s;
+}
+
+section .anime:nth-child(38) {
+  -webkit-transition-delay: 8s;
+          transition-delay: 8s;
+}
+
+section .anime:nth-child(39) {
+  -webkit-transition-delay: 8.2s;
+          transition-delay: 8.2s;
+}
+
+section .anime:nth-child(40) {
+  -webkit-transition-delay: 8.4s;
+          transition-delay: 8.4s;
+}
+
+section .anime:nth-child(41) {
+  -webkit-transition-delay: 8.6s;
+          transition-delay: 8.6s;
+}
+
+section .anime:nth-child(42) {
+  -webkit-transition-delay: 8.8s;
+          transition-delay: 8.8s;
+}
+
+section .anime:nth-child(43) {
+  -webkit-transition-delay: 9s;
+          transition-delay: 9s;
+}
+
+section .anime:nth-child(44) {
+  -webkit-transition-delay: 9.2s;
+          transition-delay: 9.2s;
+}
+
+section .anime:nth-child(45) {
+  -webkit-transition-delay: 9.4s;
+          transition-delay: 9.4s;
+}
+
+section .anime:nth-child(46) {
+  -webkit-transition-delay: 9.6s;
+          transition-delay: 9.6s;
+}
+
+section .anime:nth-child(47) {
+  -webkit-transition-delay: 9.8s;
+          transition-delay: 9.8s;
+}
+
+section .anime:nth-child(48) {
+  -webkit-transition-delay: 10s;
+          transition-delay: 10s;
+}
+
+section .anime:nth-child(49) {
+  -webkit-transition-delay: 10.2s;
+          transition-delay: 10.2s;
+}
+
+section .anime:nth-child(50) {
+  -webkit-transition-delay: 10.4s;
+          transition-delay: 10.4s;
+}
+
+section .anime:nth-child(51) {
+  -webkit-transition-delay: 10.6s;
+          transition-delay: 10.6s;
+}
+
+section .anime:nth-child(52) {
+  -webkit-transition-delay: 10.8s;
+          transition-delay: 10.8s;
+}
+
+section .anime:nth-child(53) {
+  -webkit-transition-delay: 11s;
+          transition-delay: 11s;
+}
+
+section .anime:nth-child(54) {
+  -webkit-transition-delay: 11.2s;
+          transition-delay: 11.2s;
+}
+
+section .anime:nth-child(55) {
+  -webkit-transition-delay: 11.4s;
+          transition-delay: 11.4s;
+}
+
+section .anime:nth-child(56) {
+  -webkit-transition-delay: 11.6s;
+          transition-delay: 11.6s;
+}
+
+section .anime:nth-child(57) {
+  -webkit-transition-delay: 11.8s;
+          transition-delay: 11.8s;
+}
+
+section .anime:nth-child(58) {
+  -webkit-transition-delay: 12s;
+          transition-delay: 12s;
+}
+
+section .anime:nth-child(59) {
+  -webkit-transition-delay: 12.2s;
+          transition-delay: 12.2s;
+}
+
+section .anime:nth-child(60) {
+  -webkit-transition-delay: 12.4s;
+          transition-delay: 12.4s;
+}
+
+section .anime:nth-child(61) {
+  -webkit-transition-delay: 12.6s;
+          transition-delay: 12.6s;
+}
+
+section .anime:nth-child(62) {
+  -webkit-transition-delay: 12.8s;
+          transition-delay: 12.8s;
+}
+
+section .anime:nth-child(63) {
+  -webkit-transition-delay: 13s;
+          transition-delay: 13s;
+}
+
+section .anime:nth-child(64) {
+  -webkit-transition-delay: 13.2s;
+          transition-delay: 13.2s;
+}
+
+section .anime:nth-child(65) {
+  -webkit-transition-delay: 13.4s;
+          transition-delay: 13.4s;
+}
+
+section .anime:nth-child(66) {
+  -webkit-transition-delay: 13.6s;
+          transition-delay: 13.6s;
+}
+
+section .anime:nth-child(67) {
+  -webkit-transition-delay: 13.8s;
+          transition-delay: 13.8s;
+}
+
+section .anime:nth-child(68) {
+  -webkit-transition-delay: 14s;
+          transition-delay: 14s;
+}
+
+section .anime:nth-child(69) {
+  -webkit-transition-delay: 14.2s;
+          transition-delay: 14.2s;
+}
+
+section .anime:nth-child(70) {
+  -webkit-transition-delay: 14.4s;
+          transition-delay: 14.4s;
+}
+
+section .anime:nth-child(71) {
+  -webkit-transition-delay: 14.6s;
+          transition-delay: 14.6s;
+}
+
+section .anime:nth-child(72) {
+  -webkit-transition-delay: 14.8s;
+          transition-delay: 14.8s;
+}
+
+section .anime:nth-child(73) {
+  -webkit-transition-delay: 15s;
+          transition-delay: 15s;
+}
+
+section .anime:nth-child(74) {
+  -webkit-transition-delay: 15.2s;
+          transition-delay: 15.2s;
+}
+
+section .anime:nth-child(75) {
+  -webkit-transition-delay: 15.4s;
+          transition-delay: 15.4s;
+}
+
+section .anime:nth-child(76) {
+  -webkit-transition-delay: 15.6s;
+          transition-delay: 15.6s;
+}
+
+section .anime:nth-child(77) {
+  -webkit-transition-delay: 15.8s;
+          transition-delay: 15.8s;
+}
+
+section .anime:nth-child(78) {
+  -webkit-transition-delay: 16s;
+          transition-delay: 16s;
+}
+
+section .anime:nth-child(79) {
+  -webkit-transition-delay: 16.2s;
+          transition-delay: 16.2s;
+}
+
+section .anime:nth-child(80) {
+  -webkit-transition-delay: 16.4s;
+          transition-delay: 16.4s;
+}
+
+section .anime:nth-child(81) {
+  -webkit-transition-delay: 16.6s;
+          transition-delay: 16.6s;
+}
+
+section .anime:nth-child(82) {
+  -webkit-transition-delay: 16.8s;
+          transition-delay: 16.8s;
+}
+
+section .anime:nth-child(83) {
+  -webkit-transition-delay: 17s;
+          transition-delay: 17s;
+}
+
+section .anime:nth-child(84) {
+  -webkit-transition-delay: 17.2s;
+          transition-delay: 17.2s;
+}
+
+section .anime:nth-child(85) {
+  -webkit-transition-delay: 17.4s;
+          transition-delay: 17.4s;
+}
+
+section .anime:nth-child(86) {
+  -webkit-transition-delay: 17.6s;
+          transition-delay: 17.6s;
+}
+
+section .anime:nth-child(87) {
+  -webkit-transition-delay: 17.8s;
+          transition-delay: 17.8s;
+}
+
+section .anime:nth-child(88) {
+  -webkit-transition-delay: 18s;
+          transition-delay: 18s;
+}
+
+section .anime:nth-child(89) {
+  -webkit-transition-delay: 18.2s;
+          transition-delay: 18.2s;
+}
+
+section .anime:nth-child(90) {
+  -webkit-transition-delay: 18.4s;
+          transition-delay: 18.4s;
+}
+
+section .anime:nth-child(91) {
+  -webkit-transition-delay: 18.6s;
+          transition-delay: 18.6s;
+}
+
+section .anime:nth-child(92) {
+  -webkit-transition-delay: 18.8s;
+          transition-delay: 18.8s;
+}
+
+section .anime:nth-child(93) {
+  -webkit-transition-delay: 19s;
+          transition-delay: 19s;
+}
+
+section .anime:nth-child(94) {
+  -webkit-transition-delay: 19.2s;
+          transition-delay: 19.2s;
+}
+
+section .anime:nth-child(95) {
+  -webkit-transition-delay: 19.4s;
+          transition-delay: 19.4s;
+}
+
+section .anime:nth-child(96) {
+  -webkit-transition-delay: 19.6s;
+          transition-delay: 19.6s;
+}
+
+section .anime:nth-child(97) {
+  -webkit-transition-delay: 19.8s;
+          transition-delay: 19.8s;
+}
+
+section .anime:nth-child(98) {
+  -webkit-transition-delay: 20s;
+          transition-delay: 20s;
+}
+
+section .anime:nth-child(99) {
+  -webkit-transition-delay: 20.2s;
+          transition-delay: 20.2s;
+}
+
+section .anime:nth-child(100) {
+  -webkit-transition-delay: 20.4s;
+          transition-delay: 20.4s;
+}
+
+section .animeImg {
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 2s ease;
+  transition: opacity 1s ease-in, -webkit-transform 2s ease;
+  transition: transform 2s ease, opacity 1s ease-in;
+  transition: transform 2s ease, opacity 1s ease-in, -webkit-transform 2s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
 }
 
 .animeModules {
@@ -676,10 +1114,15 @@ header .anime:nth-child(100) {
           transform: translateY(0);
 }
 
-.animeModules .anime {
+.animeModules .anime,
+.animeModules .animeImg {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: none;
+          transform: none;
+}
+
+.ctaContainer {
+  width: 100%;
 }
 
 @media screen and (max-width: 799px) {
@@ -698,7 +1141,7 @@ header .anime:nth-child(100) {
   transition: all 0.2s ease;
   margin-top: 40px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   cursor: pointer;
@@ -735,7 +1178,7 @@ header .anime:nth-child(100) {
 .ctaLink {
   margin-top: 40px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   cursor: pointer;
@@ -752,7 +1195,7 @@ header .anime:nth-child(100) {
 .ctaLink__icon {
   width: 24px;
   height: 24px;
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .ctaLink__text {
@@ -786,12 +1229,19 @@ header .anime:nth-child(100) {
   width: 100%;
 }
 
+figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .infoIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .infoIcon:last-child {
@@ -799,9 +1249,9 @@ header .anime:nth-child(100) {
 }
 
 .infoIcon__icon {
-  width: 80px;
-  min-width: 80px;
-  height: 80px;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
   margin-right: 32px;
 }
 
@@ -832,9 +1282,9 @@ header .anime:nth-child(100) {
 }
 
 .infoIcon__title {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
 }
 
@@ -856,10 +1306,11 @@ header .anime:nth-child(100) {
 }
 
 .infoIcon__description {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 799px) {
@@ -895,19 +1346,27 @@ header .anime:nth-child(100) {
      object-fit: cover;
 }
 
+.swiper-pagination {
+  bottom: 24px !important;
+}
+
 .swiper-pagination-bullet {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: 10px;
   height: 10px;
   margin: 0px 8px !important;
-  background-color: #5C5C66;
-  opacity: 0.4;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 5px #7F8088;
+          box-shadow: inset 0px 0px 0px 5px #7F8088;
+  opacity: 0.3;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #5C5C66;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #7F8088;
+          box-shadow: inset 0px 0px 0px 2px #7F8088;
   opacity: 1;
+  border-radius: 6px;
 }
 
 .swiper-button-prev,
@@ -961,16 +1420,17 @@ header .anime:nth-child(100) {
           transform: translateX(4px);
 }
 
-.white .swiper-pagination {
-  bottom: 24px;
-}
-
 .white .swiper-pagination-bullet {
-  background-color: white;
+  opacity: 0.4;
+  -webkit-box-shadow: inset 0px 0px 0px 5px white;
+          box-shadow: inset 0px 0px 0px 5px white;
 }
 
 .white .swiper-pagination-bullet-active {
-  background-color: white;
+  opacity: 1;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+          box-shadow: inset 0px 0px 0px 2px white;
 }
 
 .white .swiper-button-prev:after {
@@ -1071,20 +1531,38 @@ header .anime:nth-child(100) {
   .mainNav__wrapper {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
     height: 100vh;
     right: 0;
     top: 0;
     position: fixed;
     width: 100%;
-    background-color: #5C5C66;
     padding: 0 10%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    opacity: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     visibility: hidden;
+  }
+  .mainNav__wrapper:before, .mainNav__wrapper:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: rgba(54, 56, 66, 0.5);
+    opacity: 1;
+    -webkit-transition: all 0.4s 0.2s ease;
+    transition: all 0.4s 0.2s ease;
+  }
+  .mainNav__wrapper:after {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background-color: #5C5C66;
   }
 }
 
@@ -1124,10 +1602,8 @@ header .anime:nth-child(100) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .mainNav__icon span:before, .mainNav__icon span:after {
@@ -1151,7 +1627,10 @@ header .anime:nth-child(100) {
 }
 
 .mainNav__links {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   color: white;
+  z-index: 1;
 }
 
 @media screen and (max-width: 799px) {
@@ -1161,17 +1640,51 @@ header .anime:nth-child(100) {
 }
 
 .mainNav__linkItem {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
   margin-right: 64px;
+  position: relative;
 }
 
 .mainNav__linkItem:last-child {
   margin-right: 0px;
 }
 
+.mainNav__linkItem:before {
+  content: '';
+  width: calc(100% + 12px);
+  height: 2px;
+  left: -6px;
+  bottom: -10px;
+  position: absolute;
+  background-color: #E0E0E2;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mainNav__linkItem:hover:before {
+  bottom: -2px;
+  opacity: 0.5;
+  height: calc(100% + 4px);
+}
+
 @media screen and (max-width: 799px) {
   .mainNav__linkItem {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     margin-right: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
   }
   .mainNav__linkItem:last-child {
     margin-bottom: 0px;
@@ -1211,6 +1724,14 @@ header .anime:nth-child(100) {
   background-color: #5C5C66;
 }
 
+.mainNav.navDark .mainNav__links {
+  color: #5C5C66;
+}
+
+.mainNav.navDark .mainNav__icon span {
+  background-color: #5C5C66;
+}
+
 .mainNav.navOpen .mainNav__icon span {
   background-color: #ffffff;
   width: 0;
@@ -1229,10 +1750,19 @@ header .anime:nth-child(100) {
 }
 
 .mainNav.navOpen .mainNav__wrapper {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
   visibility: visible;
+}
+
+.mainNav.navOpen .mainNav__wrapper:before, .mainNav.navOpen .mainNav__wrapper:after {
+  -webkit-transition: all 0.6s 0.2s ease;
+  transition: all 0.6s 0.2s ease;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.mainNav.navOpen .mainNav__wrapper:after {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .mainNav.navOpen .mainNav__links {
@@ -1243,11 +1773,1059 @@ header .anime:nth-child(100) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
 }
 
-.mainNav.navDark .mainNav__links {
-  color: #5C5C66;
+.mainNav.navOpen .mainNav__linkItem {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-animation: enter 0.4s ease backwards;
+          animation: enter 0.4s ease backwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  opacity: 1;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(9) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(10) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(11) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(12) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(13) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(14) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(15) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(16) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(17) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(18) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(19) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(20) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(21) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(22) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(23) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(24) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(25) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(26) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(27) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(28) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(29) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(30) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(31) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(32) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(33) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(34) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(35) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(36) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(37) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(38) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(39) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(40) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(41) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(42) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(43) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(44) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(45) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(46) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(47) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(48) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(49) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(50) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(51) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(52) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(53) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(54) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(55) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(56) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(57) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(58) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(59) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(60) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(61) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(62) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(63) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(64) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(65) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(66) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(67) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(68) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(69) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(70) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(71) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(72) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(73) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(74) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(75) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(76) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(77) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(78) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(79) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(80) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(81) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(82) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(83) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(84) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(85) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(86) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(87) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(88) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(89) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(90) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(91) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(92) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(93) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(94) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(95) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(96) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(97) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(98) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(99) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(100) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+@-webkit-keyframes enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(9) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(10) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(11) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(12) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(13) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(14) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(15) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(16) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(17) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(18) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(19) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(20) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(21) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(22) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(23) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(24) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(25) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(26) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(27) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(28) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(29) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(30) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(31) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(32) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(33) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(34) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(35) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(36) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(37) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(38) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(39) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(40) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(41) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(42) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(43) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(44) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(45) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(46) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(47) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(48) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(49) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(50) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(51) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(52) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(53) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(54) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(55) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(56) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(57) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(58) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(59) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(60) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(61) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(62) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(63) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(64) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(65) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(66) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(67) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(68) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(69) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(70) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(71) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(72) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(73) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(74) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(75) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(76) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(77) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(78) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(79) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(80) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(81) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(82) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(83) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(84) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(85) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(86) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(87) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(88) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(89) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(90) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(91) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(92) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(93) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(94) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(95) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(96) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(97) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(98) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(99) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:nth-child(100) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.mainNav.navOpen .mainNav__linkItem:before {
+  display: none;
 }
 
 .footer {
@@ -1285,7 +2863,7 @@ header .anime:nth-child(100) {
 
 body {
   font-family: "Muli", sans-serif;
-  color: #363842;
+  color: #5C5C66;
 }
 
 .cenas {
@@ -1305,6 +2883,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 799px) {
+  .simpleHeading {
+    min-height: 480px;
+  }
 }
 
 .simpleHeading__bgImage {
@@ -1329,13 +2913,6 @@ body {
 .simpleHeading__bgImage:after {
   background-color: #363842;
   opacity: 0.5;
-}
-
-.simpleHeading__bgImage img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .simpleHeading__wrapper {
@@ -1367,15 +2944,15 @@ body {
 }
 
 .simpleHeading__title {
-  margin-top: 40px;
-  font-size: 50px;
-  font-weight: 600;
+  margin-top: 32px;
+  font-size: 42px;
+  font-weight: 500;
   line-height: 58px;
 }
 
 @media screen and (max-width: 799px) {
   .simpleHeading__title {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }
 
@@ -1385,21 +2962,21 @@ body {
 
 @media screen and (max-width: 799px) {
   .simpleHeading__title {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 46px;
   }
 }
 
 .simpleHeading__subtitle {
-  margin-top: 40px;
-  font-size: 36px;
+  margin-top: 32px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 44px;
 }
 
 @media screen and (max-width: 799px) {
   .simpleHeading__subtitle {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }
 
@@ -1409,15 +2986,15 @@ body {
 
 @media screen and (max-width: 799px) {
   .simpleHeading__subtitle {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
   }
 }
 
 .simpleHeading__description {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
 }
 
@@ -1444,7 +3021,7 @@ body {
 
 @media screen and (max-width: 799px) {
   .sliderHeading {
-    height: 680px;
+    height: 560px;
   }
 }
 
@@ -1454,8 +3031,9 @@ body {
 }
 
 @media screen and (max-width: 799px) {
-  .sliderHeading .swiper-pagination {
-    bottom: 80px;
+  .sliderHeading .swiper-container {
+    height: calc(100% - 64px);
+    margin-top: 64px;
   }
 }
 
@@ -1466,6 +3044,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 511px) {
@@ -1485,12 +3064,36 @@ body {
   }
 }
 
+.sliderHeading__wrapper:before {
+  content: '';
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ECEDEE;
+  z-index: -1;
+}
+
+@media screen and (max-width: 799px) {
+  .sliderHeading__wrapper:before {
+    width: calc((100% - 5vw) - 64px);
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .sliderHeading__wrapper:before {
+    width: calc(100% - 80px);
+  }
+}
+
 .sliderHeading__image {
   height: 100%;
 }
 
 .sliderHeading__text {
   width: 40%;
+  min-width: 300px;
   position: relative;
   padding: 48px 48px 48px 0px;
   padding-top: calc(48px + 100px);
@@ -1504,34 +3107,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 799px) {
   .sliderHeading__text {
-    width: 100%;
-    padding: 32px;
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
-    z-index: 2;
+    width: calc(100% - 80px);
+    padding: 24px 5vw;
   }
 }
 
-.sliderHeading__text:before {
-  content: '';
-  width: 50vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: -5vw;
-  background-color: #ECEDEE;
-  z-index: -1;
-}
-
-@media screen and (max-width: 799px) {
-  .sliderHeading__text:before {
-    z-index: 1;
-    width: 100%;
+@media screen and (max-width: 511px) {
+  .sliderHeading__text {
+    padding: 24px;
   }
 }
 
@@ -1580,16 +3168,16 @@ body {
 }
 
 .sliderHeading__title {
-  margin-top: 40px;
-  font-size: 50px;
-  font-weight: 600;
+  margin-top: 32px;
+  font-size: 42px;
+  font-weight: 500;
   line-height: 58px;
   z-index: 1;
 }
 
 @media screen and (max-width: 799px) {
   .sliderHeading__title {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 }
 
@@ -1599,15 +3187,15 @@ body {
 
 @media screen and (max-width: 799px) {
   .sliderHeading__title {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 46px;
   }
 }
 
 .sliderHeading__subtitle {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   z-index: 1;
 }
@@ -1629,8 +3217,105 @@ body {
   }
 }
 
+.simpleMedia {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 511px) {
+  .simpleMedia {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.simpleMedia__image {
+  max-width: 1024px;
+  max-height: 576px;
+  margin: 0 auto;
+}
+
 .highlightSlider {
   height: 600px;
+}
+
+.highlightSlider__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.highlightSlider__title {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__title {
+    margin-top: 24px;
+  }
+}
+
+.highlightSlider__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.highlightSlider__subtitle {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.highlightSlider__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.highlightSlider__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider__description {
+    margin-top: 16px;
+  }
+}
+
+.highlightSlider__description:first-child {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 799px) {
@@ -1649,6 +3334,530 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title, .highlightSlider .swiper-slide-active .highlightSlider__description {
+  -webkit-animation: enter 0.4s ease backwards;
+          animation: enter 0.4s ease backwards;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(1), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(1), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(2), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(3), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(4), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(5), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(6), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(7), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(8), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(9), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(9) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(10), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(10) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(11), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(11) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(12), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(12) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(13), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(13) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(14), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(14) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(15), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(15) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(16), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(16) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(17), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(17) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(18), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(18) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(19), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(19) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(20), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(20) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(21), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(21) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(22), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(22) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(23), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(23) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(24), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(24) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(25), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(25) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(26), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(26) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(27), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(27) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(28), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(28) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(29), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(29) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(30), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(30) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(31), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(31) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(32), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(32) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(33), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(33) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(34), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(34) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(35), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(35) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(36), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(36) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(37), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(37) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(38), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(38) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(39), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(39) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(40), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(40) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(41), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(41) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(42), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(42) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(43), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(43) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(44), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(44) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(45), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(45) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(46), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(46) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(47), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(47) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(48), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(48) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(49), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(49) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(50), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(50) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(51), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(51) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(52), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(52) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(53), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(53) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(54), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(54) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(55), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(55) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(56), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(56) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(57), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(57) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(58), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(58) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(59), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(59) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(60), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(60) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(61), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(61) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(62), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(62) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(63), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(63) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(64), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(64) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(65), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(65) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(66), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(66) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(67), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(67) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(68), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(68) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(69), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(69) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(70), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(70) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(71), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(71) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(72), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(72) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(73), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(73) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(74), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(74) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(75), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(75) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(76), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(76) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(77), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(77) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(78), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(78) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(79), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(79) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(80), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(80) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(81), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(81) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(82), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(82) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(83), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(83) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(84), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(84) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(85), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(85) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(86), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(86) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(87), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(87) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(88), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(88) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(89), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(89) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(90), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(90) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(91), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(91) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(92), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(92) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(93), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(93) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(94), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(94) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(95), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(95) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(96), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(96) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(97), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(97) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(98), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(98) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(99), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(99) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.highlightSlider .swiper-slide-active .highlightSlider__title:nth-child(100), .highlightSlider .swiper-slide-active .highlightSlider__description:nth-child(100) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+.highlightSlider .swiper-slide-next .highlightSlider__title, .highlightSlider .swiper-slide-next .highlightSlider__description,
+.highlightSlider .swiper-slide-prev .highlightSlider__title,
+.highlightSlider .swiper-slide-prev .highlightSlider__description {
+  opacity: 0;
 }
 
 .highlightSlider__wrapper {
@@ -1678,13 +3887,6 @@ body {
   opacity: 0.5;
 }
 
-.highlightSlider__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .highlightSlider__text {
   max-width: 800px;
   position: absolute;
@@ -1706,54 +3908,6 @@ body {
   .highlightSlider__text {
     padding-left: 24px;
     padding-right: 24px;
-  }
-}
-
-.highlightSlider__title {
-  margin-top: 40px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 44px;
-}
-
-@media screen and (max-width: 799px) {
-  .highlightSlider__title {
-    margin-top: 32px;
-  }
-}
-
-.highlightSlider__title:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .highlightSlider__title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-.highlightSlider__description {
-  margin-top: 32px;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 32px;
-}
-
-@media screen and (max-width: 799px) {
-  .highlightSlider__description {
-    margin-top: 16px;
-  }
-}
-
-.highlightSlider__description:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .highlightSlider__description {
-    font-size: 18px;
-    line-height: 28px;
   }
 }
 
@@ -1781,52 +3935,69 @@ body {
   }
 }
 
-.productSlider__moduleTitle {
-  margin-top: 40px;
-  font-size: 36px;
+.productSlider__title {
+  margin-top: 32px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 44px;
 }
 
 @media screen and (max-width: 799px) {
-  .productSlider__moduleTitle {
-    margin-top: 32px;
+  .productSlider__title {
+    margin-top: 24px;
   }
 }
 
-.productSlider__moduleTitle:first-child {
+.productSlider__title:first-child {
   margin-top: 0;
 }
 
 @media screen and (max-width: 799px) {
-  .productSlider__moduleTitle {
-    font-size: 28px;
+  .productSlider__title {
+    font-size: 22px;
     line-height: 36px;
   }
 }
 
-.productSlider__moduleSubtitle {
-  margin-top: 32px;
+.productSlider__subtitle {
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
 }
 
 @media screen and (max-width: 799px) {
-  .productSlider__moduleSubtitle {
+  .productSlider__subtitle {
     margin-top: 16px;
   }
 }
 
-.productSlider__moduleSubtitle:first-child {
+.productSlider__subtitle:first-child {
   margin-top: 0;
 }
 
 @media screen and (max-width: 799px) {
-  .productSlider__moduleSubtitle {
+  .productSlider__subtitle {
     font-size: 18px;
     line-height: 28px;
   }
+}
+
+.productSlider__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .productSlider__description {
+    margin-top: 16px;
+  }
+}
+
+.productSlider__description:first-child {
+  margin-top: 0;
 }
 
 .productSlider .swiper-wrapper {
@@ -1896,13 +4067,6 @@ body {
   top: 0;
 }
 
-.productSlider__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .productSlider__text {
   text-align: center;
   display: -webkit-box;
@@ -1919,9 +4083,9 @@ body {
 }
 
 .productSlider__productTitle {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
 }
 
@@ -1943,10 +4107,10 @@ body {
 }
 
 .productSlider__productSubtitle {
-  margin-top: 32px;
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 799px) {
@@ -2038,6 +4202,82 @@ body {
   }
 }
 
+.contentTabs__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.contentTabs__title {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__title {
+    margin-top: 24px;
+  }
+}
+
+.contentTabs__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.contentTabs__subtitle {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.contentTabs__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.contentTabs__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentTabs__description {
+    margin-top: 16px;
+  }
+}
+
+.contentTabs__description:first-child {
+  margin-top: 0;
+}
+
 .contentTabs__wrapper {
   padding-left: 5%;
   padding-right: 5%;
@@ -2093,11 +4333,11 @@ body {
 }
 
 .contentTabs__tabLink {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  margin-top: 32px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 24px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   cursor: pointer;
   padding: 0 32px;
@@ -2215,24 +4455,524 @@ body {
 }
 
 .contentTabs__tabContent.active {
-  -webkit-animation: enter 0.4s 0.2s ease backwards;
-          animation: enter 0.4s 0.2s ease backwards;
   display: block;
 }
 
-@-webkit-keyframes enter {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
+.contentTabs__tabContent.active .contentTabs__infoIcon {
+  -webkit-animation: enter 0.4s ease backwards;
+          animation: enter 0.4s ease backwards;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(1) {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(6) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(9) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(10) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(11) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(12) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(13) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(14) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(15) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(16) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(17) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(18) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(19) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(20) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(21) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(22) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(23) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(24) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(25) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(26) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(27) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(28) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(29) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(30) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(31) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(32) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(33) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(34) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(35) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(36) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(37) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(38) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(39) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(40) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(41) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(42) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(43) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(44) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(45) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(46) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(47) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(48) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(49) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(50) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(51) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(52) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(53) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(54) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(55) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(56) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(57) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(58) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(59) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(60) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(61) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(62) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(63) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(64) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(65) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(66) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(67) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(68) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(69) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(70) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(71) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(72) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(73) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(74) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(75) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(76) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(77) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(78) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(79) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(80) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(81) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(82) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(83) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(84) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(85) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(86) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(87) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(88) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(89) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(90) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(91) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(92) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(93) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(94) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(95) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(96) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(97) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(98) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(99) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.contentTabs__tabContent.active .contentTabs__infoIcon:nth-child(100) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 
 @keyframes enter {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
 }
 
@@ -2260,7 +5000,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 40px;
+    margin-top: 16px;
   }
 }
 
@@ -2275,6 +5015,82 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.ctaBlock__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.ctaBlock__title {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__title {
+    margin-top: 24px;
+  }
+}
+
+.ctaBlock__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.ctaBlock__subtitle {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.ctaBlock__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.ctaBlock__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .ctaBlock__description {
+    margin-top: 16px;
+  }
+}
+
+.ctaBlock__description:first-child {
+  margin-top: 0;
 }
 
 .ctaBlock__wrapper {
@@ -2298,6 +5114,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -1;
 }
 
 .ctaBlock__bgImage:before, .ctaBlock__bgImage:after {
@@ -2314,13 +5131,6 @@ body {
 .ctaBlock__bgImage:after {
   background-color: #363842;
   opacity: 0.5;
-}
-
-.ctaBlock__bgImage img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .ctaBlock__content {
@@ -2350,71 +5160,6 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
-}
-
-.ctaBlock__title {
-  margin-top: 40px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 44px;
-}
-
-@media screen and (max-width: 799px) {
-  .ctaBlock__title {
-    margin-top: 32px;
-  }
-}
-
-.ctaBlock__title:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .ctaBlock__title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-.ctaBlock__subtitle {
-  margin-top: 32px;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 32px;
-}
-
-@media screen and (max-width: 799px) {
-  .ctaBlock__subtitle {
-    margin-top: 16px;
-  }
-}
-
-.ctaBlock__subtitle:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .ctaBlock__subtitle {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-.ctaBlock__description {
-  margin-top: 32px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@media screen and (max-width: 799px) {
-  .ctaBlock__description {
-    margin-top: 16px;
-  }
-}
-
-.ctaBlock__description:first-child {
-  margin-top: 0;
 }
 
 .ctaBlock.dual {
@@ -2449,6 +5194,10 @@ body {
           justify-content: center;
 }
 
+.ctaBlock.light .ctaBlock__content {
+  color: #5C5C66;
+}
+
 .contentMedia {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -2461,6 +5210,82 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+
+.contentMedia__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.contentMedia__title {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__title {
+    margin-top: 24px;
+  }
+}
+
+.contentMedia__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.contentMedia__subtitle {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.contentMedia__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.contentMedia__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia__description {
+    margin-top: 16px;
+  }
+}
+
+.contentMedia__description:first-child {
+  margin-top: 0;
 }
 
 .contentMedia__wrapper {
@@ -2513,13 +5338,6 @@ body {
   }
 }
 
-.contentMedia__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media screen and (max-width: 799px) {
   .contentMedia__image img {
     width: 100vw;
@@ -2538,7 +5356,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #5C5C66;
   z-index: 1;
 }
 
@@ -2547,71 +5364,6 @@ body {
     width: 100%;
     margin-top: 32px;
   }
-}
-
-.contentMedia__title {
-  margin-top: 40px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 44px;
-}
-
-@media screen and (max-width: 799px) {
-  .contentMedia__title {
-    margin-top: 32px;
-  }
-}
-
-.contentMedia__title:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .contentMedia__title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-.contentMedia__subtitle {
-  margin-top: 32px;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 32px;
-}
-
-@media screen and (max-width: 799px) {
-  .contentMedia__subtitle {
-    margin-top: 16px;
-  }
-}
-
-.contentMedia__subtitle:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .contentMedia__subtitle {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-.contentMedia__description {
-  margin-top: 32px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@media screen and (max-width: 799px) {
-  .contentMedia__description {
-    margin-top: 16px;
-  }
-}
-
-.contentMedia__description:first-child {
-  margin-top: 0;
 }
 
 .contentMedia.right .contentMedia__wrapper {
@@ -2709,6 +5461,82 @@ body {
   }
 }
 
+.wot__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__heading {
+    margin-bottom: 40px;
+  }
+}
+
+.wot__title {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__title {
+    margin-top: 24px;
+  }
+}
+
+.wot__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__title {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+.wot__subtitle {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.wot__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.wot__description {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .wot__description {
+    margin-top: 16px;
+  }
+}
+
+.wot__description:first-child {
+  margin-top: 0;
+}
+
 .wot__wrapper {
   max-width: 720px;
   width: 100%;
@@ -2732,56 +5560,13 @@ body {
   }
 }
 
-.wot__title {
-  margin-top: 40px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 44px;
-}
-
-@media screen and (max-width: 799px) {
-  .wot__title {
-    margin-top: 32px;
-  }
-}
-
-.wot__title:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .wot__title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-.wot__subtitle {
-  margin-top: 32px;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 32px;
-}
-
-@media screen and (max-width: 799px) {
-  .wot__subtitle {
-    margin-top: 16px;
-  }
-}
-
-.wot__subtitle:first-child {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 799px) {
-  .wot__subtitle {
-    font-size: 18px;
-    line-height: 28px;
-  }
+.wot__heading {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .wot__text {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 799px) {
@@ -2791,23 +5576,6 @@ body {
 }
 
 .wot__text:first-child {
-  margin-top: 0;
-}
-
-.wot__description {
-  margin-top: 32px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@media screen and (max-width: 799px) {
-  .wot__description {
-    margin-top: 16px;
-  }
-}
-
-.wot__description:first-child {
   margin-top: 0;
 }
 
@@ -2823,13 +5591,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .wot.aside .wot__description {
   width: 70%;
   max-width: 720px;
+}
+
+@media screen and (max-width: 799px) {
+  .wot.aside .wot__description {
+    width: calc(100% - 40px);
+  }
+}
+
+.wot.aside .ctaContainer {
+  width: 70%;
+}
+
+@media screen and (max-width: 799px) {
+  .wot.aside .ctaContainer {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

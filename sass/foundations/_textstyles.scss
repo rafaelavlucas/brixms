@@ -8,7 +8,7 @@ sans-serif;
 @mixin font-giant {
     @include textMargins;
     font-size: 100px;
-    font-weight: 800;
+    font-weight: 300;
     line-height: 108px;
 
     @include sm {
@@ -20,7 +20,7 @@ sans-serif;
 @mixin font-xxl {
     @include textMargins;
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 68px;
 
     @include sm {
@@ -31,24 +31,24 @@ sans-serif;
 
 @mixin font-xl {
     @include textMargins;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 42px;
+    font-weight: 500;
     line-height: 58px;
 
     @include sm {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 30px;
+        line-height: 46px;
     }
 }
 
 @mixin font-l {
     @include textMargins;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 44px;
 
     @include sm {
-        font-size: 28px;
+        font-size: 22px;
         line-height: 36px;
     }
 }
@@ -56,7 +56,7 @@ sans-serif;
 @mixin font-m {
     @include textMarginsSmall;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
 
     @include sm {
@@ -69,7 +69,7 @@ sans-serif;
     @include textMarginsSmall;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
 }
 
 @mixin font-xs {
@@ -78,11 +78,13 @@ sans-serif;
     line-height: 26px;
 }
 
+// Default Styles
+
 @mixin textMargins {
-    margin-top: 40px;
+    margin-top: 32px;
 
     @include sm {
-        margin-top: 32px;
+        margin-top: 24px;
     }
 
     &:first-child {
@@ -91,7 +93,7 @@ sans-serif;
 }
 
 @mixin textMarginsSmall {
-    margin-top: 32px;
+    margin-top: 24px;
 
     @include sm {
         margin-top: 16px;
@@ -102,12 +104,37 @@ sans-serif;
     }
 }
 
-
 @mixin ctaStyle {
     margin-top: 40px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+//Default Text Styles for Modules
+
+@mixin moduleDefault {
+    &__heading {
+        text-align: center;
+        margin-bottom: 64px;
+
+        @include sm {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        @include font-l;
+    }
+
+    &__subtitle {
+        @include font-m;
+    }
+
+    &__description {
+        @include font-s;
+    }
 }

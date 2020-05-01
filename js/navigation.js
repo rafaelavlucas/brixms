@@ -25,7 +25,11 @@ if (mainNav.classList.contains("navDark")) {
 };
 // Sticky Nav Bar
 window.onscroll = function () {
+    getSticky();
 
+}
+
+function getSticky() {
     if (window.pageYOffset >= 72) {
         mainNav.classList.add("navSticky");
         logo.src = "assets/images/logo.svg"
@@ -40,6 +44,7 @@ window.onscroll = function () {
     };
 }
 
+getSticky();
 
 // Open Menu Mobile
 const iconNav = document.querySelector('.mainNav__icon');

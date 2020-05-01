@@ -1,11 +1,17 @@
 const highlightSliderContent = [{
-        img: "assets/images/img01.jpg",
+        img: "assets/images/img08.jpg",
         alt: "teste",
         title: "Highlight Slider",
         description: "Far far away, behind the world mountains, far from the countries",
     },
     {
-        img: "assets/images/img02.jpg",
+        img: "assets/images/img10.jpg",
+        alt: "teste",
+        title: "Far far away, behind the world mountains",
+        description: "Far far away, behind the world mountains, far from the countries",
+    },
+    {
+        img: "assets/images/img11.jpg",
         alt: "teste",
         title: "Far far away, behind the world mountains",
         description: "Far far away, behind the world mountains, far from the countries",
@@ -15,11 +21,11 @@ const highlightSliderContent = [{
 highlightSliderContent.forEach(function (el) {
     let templateSlider2 = `
 <div class="swiper-slide">
-<div class="highlightSlider__text anime">
+<div class="highlightSlider__text">
 <h4 class="highlightSlider__title anime">${el.title}</h4>
 <p class="highlightSlider__description anime">${el.description}</p>
 </div>
-<figure class="highlightSlider__image"><img src="${el.img}" alt="${el.alt}"></figure>
+<figure class="highlightSlider__image animeImg"><img src="${el.img}" alt="${el.alt}"></figure>
 
 </div>
 `;

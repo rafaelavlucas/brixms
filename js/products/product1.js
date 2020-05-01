@@ -1,41 +1,41 @@
 // Product Content
 const tastingNotes = [{
-        name: "Colour",
-        icon: "assets/icons-black/icon-2.svg",
-        text: "cenas",
+        name: "Topic 1",
+        icon: "assets/icons-brand/bra007.svg",
+        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
     },
     {
-        name: "Aroma",
-        icon: "assets/icons-black/icon-27.svg",
-        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres",
+        name: "Topic 2",
+        icon: "assets/icons-brand/bra007.svg",
+        text: "Far far away, behind the world mountains",
     },
     {
-        name: "Palate",
-        icon: "assets/icons-black/icon-28.svg",
-        text: "cenas3",
+        name: "Topic 3",
+        icon: "assets/icons-brand/bra007.svg",
+        text: "Far far away, behind the world mountains, far from the countries.",
     }
 ];
 
 const specs = [{
-        name: "Grapes",
-        icon: "assets/icons-black/icon-32.svg",
-        text: "cenas<br>cenas2<br>cenas3",
+        name: "Topic 1",
+        icon: "assets/icons-brand/bra007.svg",
+        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia.",
     },
     {
-        name: "Specs",
-        icon: "assets/icons-black/icon-35.svg",
-        text: "cenas2",
+        name: "Topic 2",
+        icon: "assets/icons-brand/bra007.svg",
+        text: "Far far away, behind the world mountains, far from the countries.",
     },
     {
-        name: "Life",
-        icon: "assets/icons-black/icon-40.svg",
+        name: "Topic 3",
+        icon: "assets/icons-brand/bra007.svg",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres",
     }
 ];
 
 tastingNotes.forEach(function (el) {
     let template = `
-        <div class="infoIcon">
+        <div class="contentTabs__infoIcon infoIcon anime">
         <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
         <div class="infoIcon__text">
         <p class="infoIcon__title">${el.name}</p>
@@ -49,7 +49,7 @@ tastingNotes.forEach(function (el) {
 
 specs.forEach(function (el) {
     let template = `
-        <div class="infoIcon">
+        <div class="contentTabs__infoIcon infoIcon anime">
         <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
         <div class="infoIcon__text">
         <p class="infoIcon__title">${el.name}</p>
@@ -63,7 +63,7 @@ specs.forEach(function (el) {
 
 let template2 = `
 <div class="contentTabs__download anime">
-<a href="" class="ctaLink"><img class="ctaLink__icon" src="assets/icons-black/icon-28.svg"><span class="ctaLink__text">Download wine file</span></a>
+<a href="" class="ctaLink"><img class="ctaLink__icon" src="assets/icons-black/icon-88.svg"><span class="ctaLink__text">Download wine file</span></a>
 </div>`;
 
 document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("afterend", template2);

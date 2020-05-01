@@ -1,13 +1,13 @@
 const sliderHeadingContent = [{
-        img: "assets/images/img01.jpg",
+        img: "assets/images/img09.jpg",
         alt: "teste",
     },
     {
-        img: "assets/images/img02.jpg",
+        img: "assets/images/img11.jpg",
         alt: "teste",
     },
     {
-        img: "assets/images/img03.jpg",
+        img: "assets/images/img10.jpg",
         alt: "teste",
     },
 

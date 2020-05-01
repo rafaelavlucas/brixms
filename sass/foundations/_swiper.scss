@@ -26,18 +26,26 @@
 }
 
 // Bullets 
+.swiper-pagination {
+    bottom: 24px !important;
+}
+
 .swiper-pagination-bullet {
     @include transition;
     width: 10px;
     height: 10px;
     margin: 0px 8px !important;
-    background-color: $neu-08;
-    opacity: 0.4;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 5px $neu-07;
+    opacity: 0.3;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: $neu-08;
+    box-shadow: inset 0px 0px 0px 2px $neu-07;
     opacity: 1;
+    border-radius: 6px;
+
+
 }
 
 // Arrows
@@ -92,16 +100,16 @@
 // When Bullets and Arrows need to be white
 
 .white {
-    .swiper-pagination {
-        bottom: 24px;
-    }
 
     .swiper-pagination-bullet {
-        background-color: white;
+        opacity: 0.4;
+        box-shadow: inset 0px 0px 0px 5px white;
     }
 
     .swiper-pagination-bullet-active {
-        background-color: white;
+        opacity: 1;
+        background-color: transparent;
+        box-shadow: inset 0px 0px 0px 2px white;
     }
 
     .swiper-button-prev {

@@ -51,17 +51,35 @@
 
         @include sm {
             @include transition;
-            transform: translateX(100%);
             height: 100vh;
             right: 0;
             top: 0;
             position: fixed;
             width: 100%;
-            background-color: $neu-08;
             padding: 0 10%;
-            justify-content: flex-end;
-            opacity: 0;
+            justify-content: center;
+            display: flex;
             visibility: hidden;
+
+            &:before,
+            &:after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                background-color: rgba($neu-09, 0.5);
+                opacity: 1;
+                transition: all 0.4s 0.2s ease;
+            }
+
+            &:after {
+                transition: all 0.4s ease;
+                background-color: $neu-08;
+            }
+
         }
     }
 
@@ -86,7 +104,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: transform 0.2s ease;
+            transition: all 0.2s ease;
 
             &:before,
             &:after {
@@ -109,7 +127,9 @@
     }
 
     &__links {
+        @include transition;
         color: white;
+        z-index: 1;
 
         @include sm {
             display: none;
@@ -117,19 +137,50 @@
     }
 
     &__linkItem {
+        @include ctaStyle;
+        font-weight: 700;
         margin-right: 64px;
+        position: relative;
+
 
         &:last-child {
             margin-right: 0px;
         }
 
+        &:before {
+            content: '';
+            width: calc(100% + 12px);
+            height: 2px;
+            left: -6px;
+            bottom: -10px;
+            position: absolute;
+            background-color: $neu-04;
+            opacity: 0;
+            z-index: -1;
+            border-radius: $radius;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            &:before {
+                bottom: -2px;
+                opacity: 0.5;
+                height: calc(100% + 4px);
+            }
+        }
+
         @include sm {
+            @include transition;
             margin-right: 0px;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-weight: 600;
+            opacity: 0;
 
             &:last-child {
                 margin-bottom: 0px;
             }
+
         }
     }
 
@@ -166,6 +217,20 @@
         }
     }
 
+    &.navDark {
+        .mainNav {
+            &__links {
+                color: $neu-08;
+            }
+
+            &__icon {
+                span {
+                    background-color: $neu-08;
+                }
+            }
+        }
+    }
+
     &.navOpen {
         .mainNav {
             &__icon {
@@ -185,26 +250,45 @@
             }
 
             &__wrapper {
-                transform: translateX(0px);
-                opacity: 1;
                 visibility: visible;
+
+
+                &:before,
+                &:after {
+                    transition: all 0.6s 0.2s ease;
+                    transform: translateX(0%);
+                }
+
+                &:after {
+                    transition-delay: 0.3s;
+                }
             }
 
             &__links {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 color: white;
+            }
+
+            &__linkItem {
+                @include transition;
+                @include animationEnter;
+                @include delayEnter;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation-delay: 0.2s;
+                opacity: 1;
+
+                &:before {
+                    display: none;
+                }
+
             }
         }
     }
 
-    &.navDark {
-        .mainNav {
-            &__links {
-                color: $neu-08;
-            }
-        }
-    }
 }
 
 .footer {
