@@ -53,11 +53,15 @@ iconNav.addEventListener('click', openNavMobile);
 function openNavMobile() {
     if (mainNav.classList.contains('navOpen')) {
         mainNav.classList.remove('navOpen');
+        document.querySelector('body').style.overflowY = "initial";
     } else {
         mainNav.classList.add('navOpen');
+        document.querySelector('body').style.overflowY = "hidden";
+
     }
 }
 
+document.querySelector('.mainNav__wrapper').style.height = window.innerHeight + "px";
 
 
 // Footer
