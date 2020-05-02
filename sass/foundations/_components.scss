@@ -144,4 +144,27 @@ figure {
         @include font-s;
         margin-top: 8px;
     }
+
+    &.vertical {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+
+        .infoIcon {
+
+            &__icon {
+                width: 56px;
+                min-width: 56px;
+                height: 56px;
+                margin-right: 0px;
+                margin-bottom: 24px;
+
+            }
+
+            &__title {
+                @include font-s;
+            }
+        }
+    }
 }

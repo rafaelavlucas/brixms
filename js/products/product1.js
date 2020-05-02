@@ -61,12 +61,12 @@ specs.forEach(function (el) {
 
 });
 
-let template2 = `
+let templateLink = `
 <div class="contentTabs__download anime">
 <a href="" class="ctaLink"><img class="ctaLink__icon" src="assets/icons-black/icon-88.svg"><span class="ctaLink__text">Download wine file</span></a>
 </div>`;
 
-document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("afterend", template2);
+document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("afterend", templateLink);
 
 
 // Content Tabs
@@ -99,3 +99,44 @@ function getTabHeight() {
     document.querySelector(".contentTabs__content").style.height = document.querySelector(".contentTabs__tabContent.active").offsetHeight + "px";
 };
 getTabHeight();
+
+
+// Info Icons
+const foodPairing = [{
+        name: "Info Icon 1",
+        icon: "assets/icons-brand/bra007w.svg"
+    },
+    {
+        name: "Info Icon 2 with long text",
+        icon: "assets/icons-brand/bra007w.svg"
+    },
+    {
+        name: "Info Icon 3",
+        icon: "assets/icons-brand/bra007w.svg"
+    },
+    {
+        name: "Info Icon 4",
+        icon: "assets/icons-brand/bra007w.svg"
+    },
+    {
+        name: "Info Icon 5 with long text",
+        icon: "assets/icons-brand/bra007w.svg"
+    },
+    {
+        name: "Info Icon 6",
+        icon: "assets/icons-brand/bra007w.svg"
+    }
+];
+
+foodPairing.forEach(function (el) {
+    let template = `
+        <div class="infoIcons__infoIcon infoIcon vertical anime">
+            <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
+            <div class="infoIcon__text">
+                <p class="infoIcon__title">${el.name}</p>
+            </div>
+        </div>`;
+
+    document.querySelector(".infoIcons__icons").insertAdjacentHTML("beforeend", template);
+
+});

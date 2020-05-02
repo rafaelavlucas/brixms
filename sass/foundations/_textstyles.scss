@@ -4,6 +4,8 @@
 $font: 'Muli',
 sans-serif;
 
+$textMaxWidth: 720px;
+
 
 @mixin font-giant {
     @include textMargins;

@@ -240,7 +240,7 @@ body {
     }
 
     &__text {
-        max-width: 800px;
+        max-width: $textMaxWidth;
         position: absolute;
         z-index: 1;
         text-align: center;
@@ -821,7 +821,7 @@ body {
     width: 100%;
 
     &__wrapper {
-        max-width: 720px;
+        max-width: $textMaxWidth;
         width: 100%;
         margin: 0 auto;
         position: relative;
@@ -849,7 +849,7 @@ body {
             }
 
             &__heading {
-                max-width: 720px;
+                max-width: $textMaxWidth;
             }
 
             &__text {
@@ -861,7 +861,7 @@ body {
 
             &__description {
                 width: 70%;
-                max-width: 720px;
+                max-width: $textMaxWidth;
 
                 @include sm {
                     width: calc(100% - 40px);
@@ -877,4 +877,49 @@ body {
             }
         }
     }
+}
+
+.infoIcons {
+    @include moduleDefault;
+    @include spacingL;
+    min-height: 520px;
+    background-color: $neu-08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__bgImage {
+        @include overlay;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__wrapper {
+        @include wrapper;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+
+    &__content {
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__icons {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 32px;
+        grid-row-gap: 40px;
+    }
+
+
 }
