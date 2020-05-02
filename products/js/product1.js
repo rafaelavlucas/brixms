@@ -49,6 +49,9 @@ const specs = [{
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres",
     }
 ];
+const techSheet = {
+    url: "google.com",
+};
 
 const foodPairing = [{
         name: "Info Icon 1",
@@ -75,10 +78,6 @@ const foodPairing = [{
         icon: "icons-brand/bra007w.svg"
     }
 ];
-
-const techSheet = {
-    url: "google.com",
-};
 
 const testimonials = [{
         name: "John doe",

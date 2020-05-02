@@ -38,53 +38,53 @@ templateAbout();
 
 
 /*********************************/
-// Content Tabs 
+// Content Tabs  - Tasting Notes and Specifications
 
 function templateTabs() {
-    // Content Tabs Content - Tasting Notes
+    // Tasting Notes
     tastingNotes.forEach(function (el) {
         let template = `
-        <div class="contentTabs__infoIcon infoIcon anime">
-            <figure class="infoIcon__icon">
-                <img src="${pathAssets}/${el.icon}" alt="${el.name}">
-            </figure>
-            <div class="infoIcon__text">
-                <p class="infoIcon__title">${el.name}</p>
-                p class="infoIcon__description">${el.text}</p>
-            </div>
-        </div>`;
+            <div class="contentTabs__infoIcon infoIcon anime">
+                <figure class="infoIcon__icon">
+                    <img src="${pathAssets}/${el.icon}" alt="${el.name}">
+                </figure>
+                <div class="infoIcon__text">
+                    <p class="infoIcon__title">${el.name}</p>
+                    <p class="infoIcon__description">${el.text}</p>
+                </div>
+            </div>`;
 
         document.getElementById("tab1").insertAdjacentHTML("beforeend", template);
     });
 
-    // Content Tabs Content - Specs
+    // Specs
     specs.forEach(function (el) {
         let template = `
-        <div class="contentTabs__infoIcon infoIcon anime">
-            <figure class="infoIcon__icon">
-                <img src="${pathAssets}/${el.icon}" alt="${el.name}">
-            </figure>
-            <div class="infoIcon__text">
-                <p class="infoIcon__title">${el.name}</p>
-                p class="infoIcon__description">${el.text}</p>
-            </div>
-        </div>`;
+            <div class="contentTabs__infoIcon infoIcon anime">
+                <figure class="infoIcon__icon">
+                    <img src="${pathAssets}/${el.icon}" alt="${el.name}">
+                </figure>
+                <div class="infoIcon__text">
+                    <p class="infoIcon__title">${el.name}</p>
+                    <p class="infoIcon__description">${el.text}</p>
+                </div>
+            </div>`;
 
         document.getElementById("tab2").insertAdjacentHTML("beforeend", template);
     });
 
-    // Content Tabs - Download Tech Sheet Link
+    // Download Tech Sheet Link
     let templateLink = `
-<div class="contentTabs__download anime">
-    <a href="${techSheet.url}" class="ctaLink">
-        <img class="ctaLink__icon" src="${pathAssets}/icons-black/icon-88.svg">
-        <span class="ctaLink__text">Download wine file</span>
-    </a>
-</div>`;
+        <div class="contentTabs__download anime">
+            <a href="${techSheet.url}" class="ctaLink">
+                <img class="ctaLink__icon" src="${pathAssets}/icons-black/icon-88.svg">
+                <span class="ctaLink__text">Download wine file</span>
+            </a>
+        </div>`;
 
     document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("afterend", templateLink);
 
-    // Content Tabs - Functionality
+    // Functionality
     const tabLink = document.querySelectorAll(".contentTabs__tabLink"),
         tabContent = document.querySelectorAll(".contentTabs__tabContent");
 
@@ -109,12 +109,11 @@ function templateTabs() {
 
         getTabHeight();
     }
-    // Content Tabs - Get tab Height to anime
+    // Get tab Height to anime
     function getTabHeight() {
         document.querySelector(".contentTabs__content").style.height = document.querySelector(".contentTabs__tabContent.active").offsetHeight + "px";
     };
     getTabHeight();
-
 }
 templateTabs();
 
@@ -133,14 +132,14 @@ function templateInfoIcons() {
             </div>`;
 
         document.querySelector(".foodPairing .infoIcons__icons").insertAdjacentHTML("beforeend", template);
-
     });
 }
 templateInfoIcons();
 
 
 /*********************************/
-// Testimonials 
+// Highlight Slider -  Testimonials 
+
 function templateTestimonials() {
     testimonials.forEach(function (el) {
         let templateTestimonials = `
@@ -156,7 +155,6 @@ function templateTestimonials() {
         if (testimonialsContent) {
             document.querySelector(".highlightSlider.testimonials .swiper-wrapper").insertAdjacentHTML("beforeend", templateTestimonials);
         };
-
     });
 
     var mySwiper = new Swiper('.testimonials .highlightSlider__slider.swiper-container', {
