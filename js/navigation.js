@@ -4,7 +4,7 @@ const
     mainNav = document.querySelector('.mainNav'),
     templateNav = `
 <div class="mainNav__logo">
-    <img src="../assets/images/logo-white.svg" alt="Logo">
+    <img src="/../assets/images/logo-white.svg" alt="Logo">
 </div>
 <div class="mainNav__icon"><span></span></div>
 <div class="mainNav__wrapper">
@@ -21,7 +21,7 @@ mainNav.insertAdjacentHTML('beforeend', templateNav);
 const logo = document.querySelector(".mainNav__logo img");
 
 if (mainNav.classList.contains("navDark")) {
-    logo.src = "../assets/images/logo.svg"
+    logo.src = "/../assets/images/logo.svg"
 };
 // Sticky Nav Bar
 window.onscroll = function () {
@@ -32,14 +32,14 @@ window.onscroll = function () {
 function getSticky() {
     if (window.pageYOffset >= 72) {
         mainNav.classList.add("navSticky");
-        logo.src = "../assets/images/logo.svg"
+        logo.src = "/../assets/images/logo.svg"
     } else {
         if (mainNav.classList.contains("navDark")) {
             mainNav.classList.remove("navSticky");
 
         } else {
             mainNav.classList.remove("navSticky");
-            logo.src = "../assets/images/logo-white.svg"
+            logo.src = "/../assets/images/logo-white.svg"
         }
     };
 }

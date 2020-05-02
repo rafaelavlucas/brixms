@@ -31,7 +31,7 @@ specs.forEach(function (el) {
 let templateLink = `
 <div class="contentTabs__download anime">
     <a href="${techSheet.url}" class="ctaLink">
-        <img class="ctaLink__icon" src="../assets/icons-black/icon-88.svg">
+        <img class="ctaLink__icon" src="/../assets/icons-black/icon-88.svg">
         <span class="ctaLink__text">Download wine file</span>
     </a>
 </div>`;
