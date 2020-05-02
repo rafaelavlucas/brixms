@@ -1,8 +1,11 @@
+pathAssets =
+    "https://rafaelavlucas.github.io/template/assets";
+
 // Content Tabs Content - Tasting Notes
 tastingNotes.forEach(function (el) {
     let template = `
         <div class="contentTabs__infoIcon infoIcon anime">
-        <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
+        <figure class="infoIcon__icon"><img src="${pathAssets}/${el.icon}" alt="${el.name}"></figure>
         <div class="infoIcon__text">
         <p class="infoIcon__title">${el.name}</p>
         <p class="infoIcon__description">${el.text}</p>
@@ -16,7 +19,7 @@ tastingNotes.forEach(function (el) {
 specs.forEach(function (el) {
     let template = `
         <div class="contentTabs__infoIcon infoIcon anime">
-        <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
+        <figure class="infoIcon__icon"><img src="${pathAssets}/${el.icon}" alt="${el.name}"></figure>
         <div class="infoIcon__text">
         <p class="infoIcon__title">${el.name}</p>
         <p class="infoIcon__description">${el.text}</p>
@@ -31,7 +34,7 @@ specs.forEach(function (el) {
 let templateLink = `
 <div class="contentTabs__download anime">
     <a href="${techSheet.url}" class="ctaLink">
-        <img class="ctaLink__icon" src="../assets/icons-black/icon-88.svg">
+        <img class="ctaLink__icon" src="${pathAssets}/icons-black/icon-88.svg">
         <span class="ctaLink__text">Download wine file</span>
     </a>
 </div>`;
@@ -75,7 +78,7 @@ getTabHeight();
 foodPairing.forEach(function (el) {
     let template = `
         <div class="infoIcons__infoIcon infoIcon vertical anime">
-            <figure class="infoIcon__icon"><img src="${el.icon}" alt="${el.name}"></figure>
+            <figure class="infoIcon__icon"><img src="${pathAssets}/${el.icon}" alt="${el.name}"></figure>
             <div class="infoIcon__text">
                 <p class="infoIcon__title">${el.name}</p>
             </div>

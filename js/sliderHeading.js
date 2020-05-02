@@ -1,13 +1,16 @@
+pathAssets =
+    "https://rafaelavlucas.github.io/template/assets";
+
 const sliderHeadingContent = [{
-        img: "../assets/images/img09.jpg",
+        img: "images/img09.jpg",
         alt: "teste",
     },
     {
-        img: "../assets/images/img11.jpg",
+        img: "images/img11.jpg",
         alt: "teste",
     },
     {
-        img: "../assets/images/img10.jpg",
+        img: "images/img10.jpg",
         alt: "teste",
     },
 
@@ -15,7 +18,7 @@ const sliderHeadingContent = [{
 
 sliderHeadingContent.forEach(function (el) {
     let templateSlider = `
-<div class="swiper-slide"><figure class="sliderHeading__image anime"><img src="${el.img}" alt="${el.alt}"></figure></div>
+<div class="swiper-slide"><figure class="sliderHeading__image anime"><img src="${pathAssets}/${el.img}" alt="${el.alt}"></figure></div>
 `;
     document.querySelector(".sliderHeading .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
 

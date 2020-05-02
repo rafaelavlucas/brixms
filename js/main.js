@@ -1,5 +1,6 @@
-window.addEventListener("load", event => {
+const pathAssets = "https://rafaelavlucas.github.io/template/assets";
 
+window.addEventListener("load", event => {
     // Anime Modules
     let delay = 1;
     observer = new IntersectionObserver(entries => {
