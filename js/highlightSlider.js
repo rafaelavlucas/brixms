@@ -25,7 +25,7 @@ highlightSliderContent.forEach(function (el) {
     let templateSlider2 = `
 <div class="swiper-slide">
 <div class="highlightSlider__text">
-<h4 class="highlightSlider__title anime">${el.title}</h4>
+<h4 class="highlightSlider__subtitle anime">${el.title}</h4>
 <p class="highlightSlider__description anime">${el.description}</p>
 </div>
 <figure class="highlightSlider__image animeImg"><img src="${pathAssets}/${el.img}" alt="${el.alt}"></figure>

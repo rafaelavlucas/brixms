@@ -209,8 +209,22 @@ body {
         .highlightSlider {
 
             &__title,
+            &__subtitle,
             &__description {
-                @include animationEnter;
+                @include delayEnter;
+                animation: enter2 0.6s ease backwards;
+
+                @keyframes enter2 {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(40px);
+                    }
+
+                    40% {
+                        opacity: 0;
+                        transform: translateY(40px);
+                    }
+                }
             }
         }
     }
@@ -220,12 +234,13 @@ body {
         .highlightSlider {
 
             &__title,
+            &__subtitle,
             &__description {
+                transition: transform 0.4s ease;
                 opacity: 0;
             }
         }
     }
-
 
     &__wrapper {
         height: 100%;
@@ -259,6 +274,90 @@ body {
 
         @include sm {
             @include paddingSide;
+        }
+    }
+
+    &.testimonials {
+        .swiper-slide-active {
+            .highlightSlider {
+
+                &__title,
+                &__subtitle,
+                &__description {
+                    animation: none;
+                }
+            }
+        }
+
+        .swiper-slide-next,
+        .swiper-slide-prev {
+            .highlightSlider {
+
+                &__title,
+                &__subtitle,
+                &__description {
+                    transition: all 0.4s ease;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .highlightSlider {
+
+            &__heading {
+                @include paddingSide;
+                position: absolute;
+                width: 100%;
+                text-align: left;
+
+            }
+
+            &__title {
+                color: white;
+                max-width: 1024px;
+                margin: 0 auto;
+            }
+
+
+            &__content {
+                max-width: 1024px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 0;
+
+            }
+
+            &__text {
+
+                width: 70%;
+                text-align: left;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                position: initial;
+                padding-left: 0;
+                margin-right: 0;
+
+                @include sm {
+                    width: 100%;
+                    @include paddingSide;
+                }
+            }
+
+            &__subtitle,
+            &__description {
+                max-width: $textMaxWidth;
+                width: 100%;
+
+                @include sm {
+                    width: calc(100% - 40px);
+                    margin-left: 40px;
+                }
+            }
         }
     }
 }
@@ -883,6 +982,29 @@ body {
 
             @include sm {
                 width: 100%;
+            }
+        }
+    }
+
+    &.overlap {
+        padding-top: 0;
+        margin-top: -64px;
+        z-index: 1;
+
+        @include sm {
+            margin-top: -32px;
+        }
+
+        .wot {
+            &__wrapper {
+                max-width: calc(720px + 16vw);
+                padding: 80px 8vw;
+                background-color: $neu-02;
+
+                @include sm {
+                    max-width: calc(720px + 10vw);
+                    padding: 32px 5vw;
+                }
             }
         }
     }

@@ -4,7 +4,7 @@ pathAssets =
 // Product Content
 
 const simpleHeading = {
-    title: "product 1",
+    title: "Product Name",
     subtitle: "",
     img: "images/img01.jpg",
     alt: "alt image"
@@ -12,6 +12,7 @@ const simpleHeading = {
 
 const aboutProduct = {
     img: "images/img18.jpg",
+    alt: "teste",
     title: "Winemaking Details1",
     text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic living month!"
 };
@@ -34,23 +35,30 @@ const tastingNotes = [{
 ];
 
 const specs = [{
-        name: "Topic 1",
+        name: "Topic 4",
         icon: "icons-brand/bra007.svg",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia.",
     },
     {
-        name: "Topic 2",
+        name: "Topic 5",
         icon: "icons-brand/bra007.svg",
         text: "Far far away, behind the world mountains, far from the countries.",
     },
     {
-        name: "Topic 3",
+        name: "Topic 6",
         icon: "icons-brand/bra007.svg",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres",
     }
 ];
 const techSheet = {
     url: "google.com",
+};
+
+const infoIcons = {
+    title: "Food Pairing",
+    subtitle: "subtitle",
+    img: "images/img09.jpg",
+    alt: "alt"
 };
 
 const foodPairing = [{
@@ -79,12 +87,24 @@ const foodPairing = [{
     }
 ];
 
-const testimonials = [{
+const recipe = {
+    title: "Recipe",
+    subtitle: "subtitle",
+    text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic living month!"
+};
+
+const testimonials = {
+    title: "What out slients Say",
+    img: "images/img07.jpg",
+    alt: "teste"
+}
+
+const quotes = [{
         name: "John doe",
-        text: "teste",
+        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics",
     },
     {
         name: "Maria doe",
-        text: "teste",
+        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by the",
     }
 ];
