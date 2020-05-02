@@ -33,7 +33,7 @@ window.onscroll = function () {
 function getSticky() {
     if (window.pageYOffset >= 72) {
         mainNav.classList.add("navSticky");
-        logo.src = "/assets/images/logo.svg"
+        logo.src = `${pathAssets}/images/logo.svg`
     } else {
         if (mainNav.classList.contains("navDark")) {
             mainNav.classList.remove("navSticky");
