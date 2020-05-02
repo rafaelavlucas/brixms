@@ -32,7 +32,7 @@ highlightSliderContent.forEach(function (el) {
 
 </div>
 `;
-    document.querySelector(".highlightSlider .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider2);
+    document.querySelector(".highlightSlider.photos .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider2);
 
 });
 

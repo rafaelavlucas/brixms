@@ -2,10 +2,24 @@ pathAssets =
     "https://rafaelavlucas.github.io/template/assets";
 
 // Product Content
+
+const simpleHeading = {
+    title: "product 2",
+    subtitle: "subtitle",
+    img: "images/img02.jpg",
+    alt: "alt image"
+};
+
+const aboutProduct = {
+    img: "images/img02.jpg",
+    title: "Winemaking Details",
+    text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic living month!"
+};
+
 const tastingNotes = [{
         name: "Topic 1",
         icon: "icons-brand/bra007.svg",
-        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+        text: "TesteFar far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
     },
     {
         name: "Topic 2",
@@ -65,3 +79,13 @@ const foodPairing = [{
 const techSheet = {
     url: "google.com",
 };
+
+const testimonials = [{
+        name: "John doe",
+        text: "teste",
+    },
+    {
+        name: "Maria doe",
+        text: "teste",
+    }
+];

@@ -88,14 +88,18 @@ products.forEach(function (el) {
         </div>
     </div>`;
 
-    if (el.premium) {
+
+    const productGrid = document.querySelector('.productGrid'),
+        contentMediaBio = document.querySelector('.contentMedia.bio');
+
+    if (productGrid && el.premium) {
         document.querySelector(".premium .productGrid__content").insertAdjacentHTML("beforeend", templateProducts);
     };
 
-    if (el.young) {
+    if (productGrid && el.young) {
         document.querySelector(".young .productGrid__content").insertAdjacentHTML("beforeend", templateProducts);
     };
-    if (el.bio) {
+    if (contentMediaBio && el.bio) {
         document.querySelector(".bio .contentMedia__wrapper").insertAdjacentHTML("beforeend", templateBio);
     };
 
