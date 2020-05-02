@@ -1,17 +1,20 @@
+pathAssets =
+    "https://rafaelavlucas.github.io/template/assets";
+
 const highlightSliderContent = [{
-        img: "../assets/images/img08.jpg",
+        img: "images/img08.jpg",
         alt: "teste",
         title: "Highlight Slider",
         description: "Far far away, behind the world mountains, far from the countries",
     },
     {
-        img: "../assets/images/img10.jpg",
+        img: "images/img10.jpg",
         alt: "teste",
         title: "Far far away, behind the world mountains",
         description: "Far far away, behind the world mountains, far from the countries",
     },
     {
-        img: "../assets/images/img11.jpg",
+        img: "images/img11.jpg",
         alt: "teste",
         title: "Far far away, behind the world mountains",
         description: "Far far away, behind the world mountains, far from the countries",
@@ -25,7 +28,7 @@ highlightSliderContent.forEach(function (el) {
 <h4 class="highlightSlider__title anime">${el.title}</h4>
 <p class="highlightSlider__description anime">${el.description}</p>
 </div>
-<figure class="highlightSlider__image animeImg"><img src="${el.img}" alt="${el.alt}"></figure>
+<figure class="highlightSlider__image animeImg"><img src="${pathAssets}/${el.img}" alt="${el.alt}"></figure>
 
 </div>
 `;

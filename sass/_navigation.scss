@@ -129,6 +129,7 @@
     &__links {
         @include transition;
         z-index: 1;
+        color: white;
 
         @include sm {
             display: none;
@@ -140,7 +141,6 @@
         font-weight: 700;
         margin-right: 64px;
         position: relative;
-
 
 
         &:last-child {
