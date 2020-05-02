@@ -1444,7 +1444,7 @@ figure img {
 }
 
 .swiper-button-prev:after {
-  background-image: url("../assets/icons-black/icon-5.svg");
+  background-image: url("/assets/icons-black/icon-5.svg");
 }
 
 .swiper-button-prev:hover:after {
@@ -1457,7 +1457,7 @@ figure img {
 }
 
 .swiper-button-next:after {
-  background-image: url("../assets/icons-black/icon-12.svg");
+  background-image: url("/assets/icons-black/icon-12.svg");
 }
 
 .swiper-button-next:hover:after {
@@ -1479,11 +1479,11 @@ figure img {
 }
 
 .white .swiper-button-prev:after {
-  background-image: url("../assets/icons-white/icon-5.svg");
+  background-image: url("/assets/icons-white/icon-5.svg");
 }
 
 .white .swiper-button-next:after {
-  background-image: url("../assets/icons-white/icon-12.svg");
+  background-image: url("/assets/icons-white/icon-12.svg");
 }
 
 .mainNav {

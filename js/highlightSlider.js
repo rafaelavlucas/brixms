@@ -1,17 +1,17 @@
 const highlightSliderContent = [{
-        img: "assets/images/img08.jpg",
+        img: "/assets/images/img08.jpg",
         alt: "teste",
         title: "Highlight Slider",
         description: "Far far away, behind the world mountains, far from the countries",
     },
     {
-        img: "assets/images/img10.jpg",
+        img: "/assets/images/img10.jpg",
         alt: "teste",
         title: "Far far away, behind the world mountains",
         description: "Far far away, behind the world mountains, far from the countries",
     },
     {
-        img: "assets/images/img11.jpg",
+        img: "/assets/images/img11.jpg",
         alt: "teste",
         title: "Far far away, behind the world mountains",
         description: "Far far away, behind the world mountains, far from the countries",
