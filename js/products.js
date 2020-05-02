@@ -1,5 +1,8 @@
+pathAssets =
+    "https://rafaelavlucas.github.io/template/assets";
+
 const products = [{
-        img: "../assets/images/img12.jpg",
+        img: "images/img12.jpg",
         title: "product 1",
         subtitle: "subtitle",
         url: "#",
@@ -9,7 +12,7 @@ const products = [{
 
     },
     {
-        img: "../assets/images/img13.jpg",
+        img: "images/img13.jpg",
         title: "product 2",
         subtitle: "subtitle",
         url: "#",
@@ -18,7 +21,7 @@ const products = [{
         bio: false,
     },
     {
-        img: "../assets/images/img14.jpg",
+        img: "images/img14.jpg",
         title: "product 3",
         subtitle: "subtitle",
         url: "#",
@@ -27,7 +30,7 @@ const products = [{
         bio: true,
     },
     {
-        img: "../assets/images/img15.jpg",
+        img: "images/img15.jpg",
         title: "product 4",
         subtitle: "subtitle",
         url: "#",
@@ -36,7 +39,7 @@ const products = [{
         bio: false,
     },
     {
-        img: "../assets/images/img16.jpg",
+        img: "images/img16.jpg",
         title: "product 5",
         subtitle: "subtitle",
         url: "#",
@@ -45,7 +48,7 @@ const products = [{
         bio: false,
     },
     {
-        img: "../assets/images/img17.jpg",
+        img: "images/img17.jpg",
         title: "product 6",
         subtitle: "subtitle",
         url: "#",
@@ -60,7 +63,7 @@ products.forEach(function (el) {
     <div class="productGrid__product anime">
         <div class="productGrid__card">
             <figure class="productGrid__image">
-                <img src="${el.img}" alt="${el.title}">
+                <img src="${pathAssets}/${el.img}" alt="${el.title}">
             </figure>
             <div class="productGrid__text">
                 <h4 class="productGrid__productTitle">${el.title}</h4>
@@ -74,7 +77,7 @@ products.forEach(function (el) {
 
     let templateBio = `
     <figure class="contentMedia__image anime">
-        <img src="${el.img}" alt="${el.title}">
+        <img src="${pathAssets}/${el.img}" alt="${el.title}">
     </figure>
     <div class="contentMedia__content">
         <h2 class="contentMedia__title anime">${el.title}</h2>
