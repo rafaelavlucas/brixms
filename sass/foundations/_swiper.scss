@@ -73,7 +73,7 @@
     left: 5%;
 
     &:after {
-        background-image: url("/../assets/icons-black/icon-5.svg");
+        background-image: url("/assets/icons-black/icon-5.svg");
     }
 
     &:hover {
@@ -87,7 +87,7 @@
     right: 5%;
 
     &:after {
-        background-image: url("/../assets/icons-black/icon-12.svg");
+        background-image: url("/assets/icons-black/icon-12.svg");
     }
 
     &:hover {
@@ -114,13 +114,13 @@
 
     .swiper-button-prev {
         &:after {
-            background-image: url("/../assets/icons-white/icon-5.svg");
+            background-image: url("/assets/icons-white/icon-5.svg");
         }
     }
 
     .swiper-button-next {
         &:after {
-            background-image: url("/../assets/icons-white/icon-12.svg");
+            background-image: url("/assets/icons-white/icon-12.svg");
         }
     }
 }
