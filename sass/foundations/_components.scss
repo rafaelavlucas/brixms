@@ -7,6 +7,7 @@
     }
 }
 
+
 .cta {
     @include transition2;
     @include ctaStyle;
@@ -21,25 +22,20 @@
     }
 
     &.cta01 {
-        background-color: $neu-08;
-        color: white;
+        @include cta01;
     }
 
     &.cta01alt {
-        background-color: white;
-        color: $neu-08;
+        @include cta01alt;
     }
 
     &.cta02 {
-        border: solid 1px $neu-08;
-        color: $neu-08;
+        @include cta02;
     }
 
     &.cta02alt {
-        border: solid 1px white;
-        color: white;
+        @include cta02alt;
     }
-
 }
 
 .ctaLink {

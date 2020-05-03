@@ -279,6 +279,29 @@ body {
 
     &.testimonials {
         height: auto;
+        position: relative;
+        overflow: visible;
+
+        &:before {
+
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: -40px;
+            left: 5vw;
+            background-image: url("/assets/images/quote.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 1;
+
+            @include sm {
+                width: 64px;
+                height: 64px;
+                top: -32px;
+            }
+        }
 
         .swiper-slide-active {
             .highlightSlider {
@@ -305,8 +328,6 @@ body {
         }
 
         .highlightSlider {
-
-
             &__heading {
                 @include paddingSide;
                 @include spacingL;
@@ -691,9 +712,6 @@ body {
 
                 }
             }
-
-
-
         }
     }
 
@@ -740,10 +758,13 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color: white;
         z-index: 1;
         margin: 0 auto;
 
+    }
+
+    &__text {
+        max-width: $textMaxWidth;
     }
 
     &.dual {
@@ -944,11 +965,13 @@ body {
 
 .wot {
     @include spacingL;
-    @include wrapper;
+    @include paddingSide;
     @include moduleDefault;
     width: 100%;
 
     &__wrapper {
+        @include wrapper;
+        padding: 0;
         max-width: $textMaxWidth;
         width: 100%;
         margin: 0 auto;
@@ -1028,13 +1051,22 @@ body {
             }
         }
     }
+
+    &.center {
+        text-align: center;
+
+        .wot {
+            &__heading {
+                text-align: center;
+            }
+        }
+    }
 }
 
 .infoIcons {
     @include moduleDefault;
     @include spacingL;
     min-height: 520px;
-    background-color: $neu-08;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1055,7 +1087,6 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color: white;
         z-index: 1;
     }
 
