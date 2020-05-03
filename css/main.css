@@ -5927,9 +5927,6 @@ body {
 }
 
 @media screen and (max-width: 799px) {
-  .contentMedia.vertical.product .contentMedia__content {
-    text-align: center;
-  }
   .contentMedia.vertical.product .contentMedia__wrapper {
     margin: 0 auto;
   }
