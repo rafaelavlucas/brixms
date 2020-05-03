@@ -593,7 +593,6 @@ body {
 .contentTabs {
     @include spacingL;
     @include moduleDefault;
-    background-color: $neu-02;
 
     &__wrapper {
         @include wrapper;
@@ -723,6 +722,15 @@ body {
             display: flex;
             justify-content: center;
             margin-top: 16px;
+        }
+    }
+
+    &.dark {
+        .contentTabs {
+            &__tabLink {
+                background-color: $neu-09;
+                border: 2px solid $neu-07;
+            }
         }
     }
 }

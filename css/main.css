@@ -4794,7 +4794,6 @@ body {
 .contentTabs {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #F5F5F6;
 }
 
 @media screen and (max-width: 799px) {
@@ -5604,6 +5603,11 @@ body {
             justify-content: center;
     margin-top: 16px;
   }
+}
+
+.contentTabs.dark .contentTabs__tabLink {
+  background-color: #363842;
+  border: 2px solid #7F8088;
 }
 
 .ctaBlock {

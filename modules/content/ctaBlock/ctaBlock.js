@@ -75,10 +75,13 @@ function ctaBlock() {
     const module = document.querySelectorAll(".ctaBlock");
 
     module.forEach(function (el) {
-        const image = document.querySelector(".ctaBlock__bgImage img");
+        const image = el.querySelector(".ctaBlock__bgImage img");
+        console.log(image)
         if (!image.src) {
-            el.closest(".ctaBlock__bgImage").style.display = "none";
+            image.style.display = "none"
         }
     });
+
+
 };
 ctaBlock();

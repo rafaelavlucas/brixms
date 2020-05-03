@@ -41,7 +41,7 @@ function contentTabs() {
 
     function templateContentTabs() {
         let template = `
-            <section class="contentTabs">
+            <section class="contentTabs neu-02">
                 <div class="contentTabs__wrapper">
                     <div class="contentTabs__tabList anime">
                         <div class="contentTabs__tabLink active" data-label="tab1">Tasting Notes</div>
@@ -143,34 +143,32 @@ function contentTabs() {
 }
 
 contentTabs();
-
-
 /*********************************/
 // Content Tabs  - General
 function contentTabs2() {
 
     const content = [{
-            name: "Topic 1",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
+            name: "Title 1",
+            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
             class: "active",
-            id: "tab1"
+            id: "item1"
         },
         {
-            name: "Topic 2",
+            name: "Title 2",
             text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts.",
             class: "",
-            id: "tab2"
+            id: "item2"
         },
     ];
 
 
-    function templateContentTabs2() {
+    function templateContentTabs() {
         let template = `
-            <section class="contentTabs version2">
+            <section class="contentTabs version2 dark neu-08">
                 <div class="contentTabs__wrapper">
                     <div class="contentTabs__tabList anime">
-                        <div class="contentTabs__tabLink active" data-tab="tab1">Tab 1</div>
-                        <div class="contentTabs__tabLink" data-tab="tab2">Tab 2</div>
+                        <div class="contentTabs__tabLink active" data-tag="item1">Tab 1</div>
+                        <div class="contentTabs__tabLink" data-tag="item2">Tab 2</div>
                     </div>
                     <div class="contentTabs__content">
                     </div>
@@ -179,7 +177,7 @@ function contentTabs2() {
         document.querySelector('.module2').insertAdjacentHTML("beforeend", template);
     }
 
-    function templateTabsItem2() {
+    function templateTabsItem() {
 
         // Content
         content.forEach(function (el) {
@@ -198,18 +196,18 @@ function contentTabs2() {
 
     };
     // Functionality
-    function tabsFuncionality2() {
+    function tabsFuncionality() {
 
         const tabLink = document.querySelectorAll(".version2 .contentTabs__tabLink"),
             tabContent = document.querySelectorAll(".version2 .contentTabs__tabContent");
 
         tabLink.forEach(function (el) {
-            el.addEventListener("click", openTabs2);
+            el.addEventListener("click", openTabs);
         });
 
-        function openTabs2(e) {
+        function openTabs(e) {
             var tabTarget = e.currentTarget;
-            var tabLabel = tabTarget.dataset.tab;
+            var tabTag = tabTarget.dataset.tag;
 
             tabContent.forEach(function (el) {
                 el.classList.remove("active");
@@ -219,24 +217,22 @@ function contentTabs2() {
                 el.classList.remove("active");
             });
 
-            document.querySelector("#" + tabLabel).classList.add("active");
+            document.querySelector("#" + tabTag).classList.add("active");
             tabTarget.classList.add("active");
 
-            getTabHeight2();
+            getTabHeight();
         }
-
     };
 
     // Get tab Height to anime
-    function getTabHeight2() {
+    function getTabHeight() {
         document.querySelector(".version2 .contentTabs__content").style.height = document.querySelector(".version2 .contentTabs__tabContent.active").offsetHeight + "px";
-
     };
 
-    templateContentTabs2();
-    templateTabsItem2();
-    tabsFuncionality2();
-    getTabHeight2();
+    templateContentTabs();
+    templateTabsItem();
+    tabsFuncionality();
+    getTabHeight();
 }
 
 contentTabs2();
