@@ -22,6 +22,24 @@ function templateSimpleHeading() {
 };
 templateSimpleHeading();
 
+/*********************************/
+// Content Media - Detail Intro
+
+function templateDetail() {
+    let template = `
+    <div class="contentMedia__wrapper">
+        <figure class="contentMedia__image anime">
+            <img src="${pathAssets}/${detailIntro.img}" alt="${detailIntro.alt}">
+        </figure>
+        <div class="contentMedia__content">
+            <p class="contentMedia__subtitle anime">${detailIntro.text}.</p> 
+        </div> 
+     </div>`;
+
+    document.querySelector('.contentMedia.detail').insertAdjacentHTML("beforeend", template);
+}
+templateDetail();
+
 
 /*********************************/
 // Content Media - About
@@ -38,7 +56,7 @@ function templateAbout() {
         </div> 
      </div>`;
 
-    document.querySelector('.contentMedia').insertAdjacentHTML("beforeend", template);
+    document.querySelector('.contentMedia.product').insertAdjacentHTML("beforeend", template);
 }
 templateAbout();
 

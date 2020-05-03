@@ -10,6 +10,12 @@ const simpleHeading = {
     alt: "alt image"
 };
 
+const detailIntro = {
+    img: "images/img02.jpg",
+    alt: "teste",
+    text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts."
+};
+
 const aboutProduct = {
     img: "images/img18.jpg",
     alt: "teste",
