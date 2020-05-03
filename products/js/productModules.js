@@ -6,13 +6,13 @@ pathAssets =
 
 function templateSimpleHeading() {
     let template = ` 
-    <figure class="simpleHeading__bgImage animeImg">
-        <img src="${pathAssets}/${simpleHeading.img}" alt="${simpleHeading.alt}">
-    </figure>
-    <div class="simpleHeading__wrapper">
-         <h2 class="simpleHeading__title anime">${simpleHeading.title}</h2>
-        <h3 class="simpleHeading__subtitle anime">${simpleHeading.subtitle}</h3>
-    </div>`;
+        <figure class="simpleHeading__bgImage animeImg">
+            <img src="${pathAssets}/${simpleHeading.img}" alt="${simpleHeading.alt}">
+        </figure>
+        <div class="simpleHeading__wrapper">
+            <h2 class="simpleHeading__title anime">${simpleHeading.title}</h2>
+            <h3 class="simpleHeading__subtitle anime">${simpleHeading.subtitle}</h3>
+        </div>`;
 
     document.querySelector('.simpleHeading').insertAdjacentHTML("beforeend", template);
 
@@ -28,15 +28,17 @@ templateSimpleHeading();
 
 function templateAbout() {
     let template = `
-    <figure class="contentMedia__image anime">
-         <img src="${pathAssets}/${aboutProduct.img}" alt="${aboutProduct.alt}">
-    </figure>
-     <div class="contentMedia__content">
-        <h2 class="contentMedia__title anime">${aboutProduct.title}</h2>
-        <p class="contentMedia__description anime">${aboutProduct.text}.</p>  
+    <div class="contentMedia__wrapper">
+        <figure class="contentMedia__image anime">
+            <img src="${pathAssets}/${aboutProduct.img}" alt="${aboutProduct.alt}">
+        </figure>
+        <div class="contentMedia__content">
+            <h2 class="contentMedia__title anime">${aboutProduct.title}</h2>
+            <p class="contentMedia__description anime">${aboutProduct.text}.</p> 
+        </div> 
      </div>`;
 
-    document.querySelector('.contentMedia__wrapper').insertAdjacentHTML("beforeend", template);
+    document.querySelector('.contentMedia').insertAdjacentHTML("beforeend", template);
 }
 templateAbout();
 
@@ -46,15 +48,17 @@ templateAbout();
 
 function templateContentTabs() {
     let template = `
-        <div class="contentTabs__tabList anime">
-            <div class="contentTabs__tabLink active" data-label="tab1">Tasting Notes</div>
-            <div class="contentTabs__tabLink" data-label="tab2">Technical Information</div>
-        </div>
-        <div class="contentTabs__content">
-            <div class="contentTabs__tabContent active" id="tab1"></div>
-            <div class="contentTabs__tabContent" id="tab2"></div>
+        <div class="contentTabs__wrapper">
+            <div class="contentTabs__tabList anime">
+                <div class="contentTabs__tabLink active" data-label="tab1">Tasting Notes</div>
+                <div class="contentTabs__tabLink" data-label="tab2">Technical Information</div>
+            </div>
+            <div class="contentTabs__content">
+                <div class="contentTabs__tabContent active" id="tab1"></div>
+                <div class="contentTabs__tabContent" id="tab2"></div>
+            </div>
         </div>`;
-    document.querySelector('.contentTabs__wrapper').insertAdjacentHTML("beforeend", template);
+    document.querySelector('.contentTabs').insertAdjacentHTML("beforeend", template);
 }
 
 function templateTabsItem() {
@@ -147,19 +151,21 @@ getTabHeight();
 
 function templateInfoIcons() {
     let template = `
-        <figure class="infoIcons__bgImage animeImg">
-            <img src="${pathAssets}/${infoIcons.img}" alt="${infoIcons.alt}">
-        </figure>
-        <div class="infoIcons__content">
-            <div class="infoIcons__heading">
-                <h3 class="infoIcons__title anime">${infoIcons.title}</h3>
-                <h4 class="infoIcons__subtitle anime">${infoIcons.subtitle}</h4>
-            </div>
-            <div class="infoIcons__icons">
+        <div class="infoIcons__wrapper">
+            <figure class="infoIcons__bgImage animeImg">
+                <img src="${pathAssets}/${infoIcons.img}" alt="${infoIcons.alt}">
+            </figure>
+            <div class="infoIcons__content">
+                <div class="infoIcons__heading">
+                    <h3 class="infoIcons__title anime">${infoIcons.title}</h3>
+                    <h4 class="infoIcons__subtitle anime">${infoIcons.subtitle}</h4>
+                </div>
+                <div class="infoIcons__icons">
+                </div>
             </div>
         </div>`;
 
-    document.querySelector(".foodPairing .infoIcons__wrapper").insertAdjacentHTML("beforeend", template);
+    document.querySelector(".foodPairing.infoIcons").insertAdjacentHTML("beforeend", template);
 };
 
 function templateIconsItem() {
@@ -186,14 +192,16 @@ templateIconsItem();
 
 function recipeTemplate() {
     let template = `
-        <div class="wot__heading anime">
-            <h2 class="wot__title">${recipe.title}</h2>
-            <h3 class="wot__subtitle">${recipe.subtitle}</h3>
-        </div>
-        <div class="wot__text anime">
-            <p class="wot__description">${recipe.text}</p>
+        <div class="wot__wrapper">
+            <div class="wot__heading anime">
+                <h2 class="wot__title">${recipe.title}</h2>
+                <h3 class="wot__subtitle">${recipe.subtitle}</h3>
+            </div>
+            <div class="wot__text anime">
+                <p class="wot__description">${recipe.text}</p>
+            </div>
         </div>`;
-    document.querySelector('.recipe .wot__wrapper').insertAdjacentHTML("beforeend", template);
+    document.querySelector('.recipe.wot').insertAdjacentHTML("beforeend", template);
 };
 
 recipeTemplate();

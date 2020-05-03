@@ -278,6 +278,8 @@ body {
     }
 
     &.testimonials {
+        height: auto;
+
         .swiper-slide-active {
             .highlightSlider {
 
@@ -304,47 +306,42 @@ body {
 
         .highlightSlider {
 
+
             &__heading {
                 @include paddingSide;
+                @include spacingL;
                 position: absolute;
                 width: 100%;
                 text-align: left;
+                color: white;
 
             }
 
             &__title {
-                color: white;
-                max-width: 1024px;
                 margin: 0 auto;
+                max-width: 1024px;
             }
 
-
             &__content {
-                max-width: 1024px;
+                @include paddingSide;
+                @include spacingL;
+                margin-top: 100px;
+                max-width: calc(1024px + 10vw);
                 width: 100%;
-                height: 100%;
-                margin: 0 auto;
                 display: flex;
                 justify-content: flex-end;
-                align-items: center;
-                padding-right: 0;
-
             }
 
             &__text {
-
-                width: 70%;
+                width: 80%;
                 text-align: left;
-                flex-direction: column;
-                align-items: flex-end;
-                justify-content: flex-end;
                 position: initial;
-                padding-left: 0;
-                margin-right: 0;
+                padding: 0;
+                padding-right: 64px;
 
                 @include sm {
                     width: 100%;
-                    @include paddingSide;
+                    padding: 0;
                 }
             }
 

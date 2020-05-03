@@ -5,7 +5,7 @@ pathAssets =
 
 const simpleHeading = {
     title: "Product Name",
-    subtitle: "",
+    subtitle: "Product subtitle",
     img: "images/img01.jpg",
     alt: "alt image"
 };
@@ -13,7 +13,7 @@ const simpleHeading = {
 const aboutProduct = {
     img: "images/img18.jpg",
     alt: "teste",
-    title: "Winemaking Details1",
+    title: "Far far away, behind the world",
     text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic living month!"
 };
 
@@ -94,7 +94,7 @@ const recipe = {
 };
 
 const testimonials = {
-    title: "What out slients Say",
+    title: "What Our Clients Think",
     img: "images/img07.jpg",
     alt: "teste"
 }

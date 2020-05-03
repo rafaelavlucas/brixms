@@ -13,24 +13,26 @@ const productSlider = {
 
 function templateProductSlider() {
     let template = `
-        <div class="productSlider__heading">
-            <h3 class="productSlider__title anime">${productSlider.title}</h3>
-            <h4 class="productSlider__subtitle anime">${productSlider.subtitle}</h4>
-        </div>
-        <div class="productSlider__sliderContainer">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
+        <div class="productSlider__wrapper">
+            <div class="productSlider__heading">
+                <h3 class="productSlider__title anime">${productSlider.title}</h3>
+                <h4 class="productSlider__subtitle anime">${productSlider.subtitle}</h4>
+            </div>
+            <div class="productSlider__sliderContainer">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
 
-            <div class="productSlider__slider swiper-container">
-                <div class="swiper-wrapper">
+                <div class="productSlider__slider swiper-container">
+                    <div class="swiper-wrapper">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="ctaContainer anime">
-            <a href="${productSlider.url}" class="cta cta02">${productSlider.button}</a>
-        </div>`
-    document.querySelector(".productSlider__wrapper").insertAdjacentHTML("beforeend", template);
+            <div class="ctaContainer anime">
+                <a href="${productSlider.url}" class="cta cta02">${productSlider.button}</a>
+            </div>
+        </div>`;
+    document.querySelector(".productSlider").insertAdjacentHTML("beforeend", template);
 };
 
 templateProductSlider();
