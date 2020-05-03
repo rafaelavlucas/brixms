@@ -4,7 +4,7 @@
 function ctaBlock() {
     const ctaBlock = [{
             class: "neu-08",
-            img: "",
+            img: null,
             title: "CTA Block",
             subtitle: "Subtitle if needed",
             text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -13,7 +13,7 @@ function ctaBlock() {
         },
         {
             class: "neu-08",
-            img: "",
+            img: null,
             title: "CTA Block with a very large and complex title",
             subtitle: "Very large and complex subtitle",
             text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
