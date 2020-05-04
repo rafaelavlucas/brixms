@@ -1,3 +1,6 @@
+/*********************************/
+// Product Grid
+
 function productGrid() {
 
     const productGrid = [{

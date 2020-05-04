@@ -289,13 +289,25 @@
 
 .footer {
     @include paddingSide;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: $neu-09;
     width: 100%;
-    height: 80px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include sm {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__links {
+        @include sm {
+            margin-top: 32px;
+        }
+    }
 
     &__link {
         margin-right: 32px;

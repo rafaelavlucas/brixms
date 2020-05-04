@@ -27,7 +27,6 @@ if (mainNav.classList.contains("navDark")) {
 // Sticky Nav Bar
 window.onscroll = function () {
     getSticky();
-
 }
 
 function getSticky() {
