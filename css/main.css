@@ -3385,6 +3385,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  max-width: calc(1024px + 10vw);
 }
 
 @media screen and (max-width: 511px) {
@@ -3405,6 +3406,8 @@ body {
   max-width: 1024px;
   max-height: 576px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .simpleMedia__element {
@@ -3447,6 +3450,15 @@ body {
   opacity: 0.5;
 }
 
+.simpleMedia.video .simpleMedia__image:before, .simpleMedia.video .simpleMedia__image:after {
+  z-index: 1;
+}
+
+.simpleMedia.video .simpleMedia__image img {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 .simpleMedia.video .simpleMedia__element {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -3462,7 +3474,7 @@ body {
   background-image: url("/assets/icons-white/icon-179.svg");
 }
 
-.simpleMedia.video:hover .simpleMedia__image {
+.simpleMedia.video:hover .simpleMedia__image img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -3482,11 +3494,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.simpleMedia.map .simpleMedia__image {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .simpleMedia.map .simpleMedia__image:before, .simpleMedia.map .simpleMedia__image:after {
@@ -3511,16 +3518,16 @@ body {
   opacity: 0;
 }
 
+.simpleMedia.map .simpleMedia__image img {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 .simpleMedia.map .simpleMedia__element {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 2;
   color: white;
-}
-
-.simpleMedia.map:hover .simpleMedia__image {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .simpleMedia.map:hover .simpleMedia__image:before, .simpleMedia.map:hover .simpleMedia__image:after {
@@ -3539,6 +3546,11 @@ body {
 .simpleMedia.map:hover .simpleMedia__image:after {
   background-color: #363842;
   opacity: 0.5;
+}
+
+.simpleMedia.map:hover .simpleMedia__image img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .simpleMedia.map:hover .simpleMedia__element {

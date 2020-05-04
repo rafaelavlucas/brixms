@@ -173,6 +173,7 @@ body {
 .simpleMedia {
     @include wrapper;
     position: relative;
+    max-width: calc(1024px + 10vw);
 
     @include sm {
         padding-left: 0;
@@ -183,6 +184,8 @@ body {
         max-width: 1024px;
         max-height: 576px;
         margin: 0 auto;
+        overflow: hidden;
+        position: relative;
     }
 
     &__element {
@@ -200,6 +203,15 @@ body {
             &__image {
                 @include overlay;
                 @include transition;
+
+                &:before,
+                &:after {
+                    z-index: 1;
+                }
+
+                img {
+                    @include transition;
+                }
             }
 
             &__element {
@@ -211,12 +223,15 @@ body {
                 z-index: 2;
                 background-image: url("/assets/icons-white/icon-179.svg");
             }
+
         }
 
         &:hover {
             .simpleMedia {
                 &__image {
-                    transform: scale(1.2);
+                    img {
+                        transform: scale(1.2);
+                    }
                 }
 
                 &__element {
@@ -233,12 +248,15 @@ body {
 
         .simpleMedia {
             &__image {
-                @include transition;
                 @include overlay;
 
                 &:before,
                 &:after {
                     opacity: 0;
+                }
+
+                img {
+                    @include transition;
                 }
             }
 
@@ -255,7 +273,11 @@ body {
             .simpleMedia {
                 &__image {
                     @include overlay;
-                    transform: scale(1.2);
+
+                    img {
+                        transform: scale(1.2);
+                    }
+
                 }
 
                 &__element {
