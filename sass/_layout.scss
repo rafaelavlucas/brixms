@@ -172,6 +172,7 @@ body {
 
 .simpleMedia {
     @include wrapper;
+    position: relative;
 
     @include sm {
         padding-left: 0;
@@ -184,8 +185,85 @@ body {
         margin: 0 auto;
     }
 
+    &__element {
+        position: absolute;
+        display: none;
+    }
 
 
+    &.video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .simpleMedia {
+            &__image {
+                @include overlay;
+                @include transition;
+            }
+
+            &__element {
+                @include transition;
+                display: flex;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                z-index: 2;
+                background-image: url("/assets/icons-white/icon-179.svg");
+            }
+        }
+
+        &:hover {
+            .simpleMedia {
+                &__image {
+                    transform: scale(1.2);
+                }
+
+                &__element {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    &.map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .simpleMedia {
+            &__image {
+                @include transition;
+                @include overlay;
+
+                &:before,
+                &:after {
+                    opacity: 0;
+                }
+            }
+
+            &__element {
+                @include transition;
+                //width: 100%;
+                z-index: 2;
+                color: white;
+
+            }
+        }
+
+        &:hover {
+            .simpleMedia {
+                &__image {
+                    @include overlay;
+                    transform: scale(1.2);
+                }
+
+                &__element {
+                    display: flex;
+                }
+            }
+        }
+    }
 }
 
 .highlightSlider {

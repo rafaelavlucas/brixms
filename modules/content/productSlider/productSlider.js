@@ -3,7 +3,7 @@
 
 function productSlider() {
     const products = [{
-            img: "images/img12.jpg",
+            img: `${pathAssets}/images/img12.jpg`,
             title: "product 1",
             subtitle: "subtitle",
             url: "#",
@@ -13,7 +13,7 @@ function productSlider() {
 
         },
         {
-            img: "images/img13.jpg",
+            img: `${pathAssets}/images/img13.jpg`,
             title: "product 2",
             subtitle: "subtitle",
             url: "#",
@@ -22,7 +22,7 @@ function productSlider() {
             bio: false,
         },
         {
-            img: "images/img14.jpg",
+            img: `${pathAssets}/images/img14.jpg`,
             title: "product 3",
             subtitle: "subtitle",
             url: "#",
@@ -31,7 +31,7 @@ function productSlider() {
             bio: true,
         },
         {
-            img: "images/img15.jpg",
+            img: `${pathAssets}/images/img15.jpg`,
             title: "product 4",
             subtitle: "subtitle",
             url: "#",
@@ -40,7 +40,7 @@ function productSlider() {
             bio: false,
         },
         {
-            img: "images/img16.jpg",
+            img: `${pathAssets}/images/img16.jpg`,
             title: "product 5",
             subtitle: "subtitle",
             url: "#",
@@ -49,7 +49,7 @@ function productSlider() {
             bio: false,
         },
         {
-            img: "images/img17.jpg",
+            img: `${pathAssets}/images/img17.jpg`,
             title: "product 6",
             subtitle: "subtitle",
             url: "#",
@@ -102,7 +102,7 @@ function productSlider() {
         <div class="swiper-slide anime">
             <a class="productSlider__card" href="${el.url}">
                 <figure class="productSlider__image">
-                    <img src="${pathAssets}/${el.img}" alt="${el.alt}">
+                    <img src=${el.img}" alt="${el.alt}">
                 </figure>
                 <div class="productSlider__text">
                     <h4 class="productSlider__productTitle">${el.title}</h4>

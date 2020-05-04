@@ -3055,6 +3055,8 @@ body {
 }
 
 .simpleHeading__bgImage:before, .simpleHeading__bgImage:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   content: '';
   width: 100%;
   height: 100%;
@@ -3382,6 +3384,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (max-width: 511px) {
@@ -3402,6 +3405,146 @@ body {
   max-width: 1024px;
   max-height: 576px;
   margin: 0 auto;
+}
+
+.simpleMedia__element {
+  position: absolute;
+  display: none;
+}
+
+.simpleMedia.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.simpleMedia.video .simpleMedia__image {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.simpleMedia.video .simpleMedia__image:before, .simpleMedia.video .simpleMedia__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.simpleMedia.video .simpleMedia__image:after {
+  background-color: #363842;
+  opacity: 0.5;
+}
+
+.simpleMedia.video .simpleMedia__element {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background-image: url("/assets/icons-white/icon-179.svg");
+}
+
+.simpleMedia.video:hover .simpleMedia__image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.simpleMedia.video:hover .simpleMedia__element {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.simpleMedia.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.simpleMedia.map .simpleMedia__image {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.simpleMedia.map .simpleMedia__image:before, .simpleMedia.map .simpleMedia__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.simpleMedia.map .simpleMedia__image:after {
+  background-color: #363842;
+  opacity: 0.5;
+}
+
+.simpleMedia.map .simpleMedia__image:before, .simpleMedia.map .simpleMedia__image:after {
+  opacity: 0;
+}
+
+.simpleMedia.map .simpleMedia__element {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 2;
+  color: white;
+}
+
+.simpleMedia.map:hover .simpleMedia__image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.simpleMedia.map:hover .simpleMedia__image:before, .simpleMedia.map:hover .simpleMedia__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.simpleMedia.map:hover .simpleMedia__image:after {
+  background-color: #363842;
+  opacity: 0.5;
+}
+
+.simpleMedia.map:hover .simpleMedia__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .highlightSlider {
@@ -4076,6 +4219,8 @@ body {
 }
 
 .highlightSlider__bgImage:before, .highlightSlider__bgImage:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   content: '';
   width: 100%;
   height: 100%;
@@ -4098,6 +4243,8 @@ body {
 }
 
 .highlightSlider__image:before, .highlightSlider__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   content: '';
   width: 100%;
   height: 100%;
@@ -5829,6 +5976,8 @@ body {
 }
 
 .ctaBlock__bgImage:before, .ctaBlock__bgImage:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   content: '';
   width: 100%;
   height: 100%;
@@ -6621,6 +6770,8 @@ body {
 }
 
 .infoIcons__bgImage:before, .infoIcons__bgImage:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   content: '';
   width: 100%;
   height: 100%;
