@@ -7,7 +7,6 @@
     }
 }
 
-
 .cta {
     @include transition2;
     @include ctaStyle;
@@ -92,6 +91,10 @@ figure {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    img[src=""] {
+        //display: none;
     }
 }
 

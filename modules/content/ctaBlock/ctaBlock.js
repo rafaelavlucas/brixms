@@ -3,9 +3,9 @@
 
 function ctaBlock() {
     const ctaBlock = [{
-            class: "neu-08",
-            img: null,
-            title: "CTA Block",
+            class: "neu-02",
+            img: "",
+            title: "CTA Block with light background",
             subtitle: "Subtitle if needed",
             text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
             ctaText: "button",
@@ -13,40 +13,22 @@ function ctaBlock() {
         },
         {
             class: "neu-08",
-            img: null,
-            title: "CTA Block with a very large and complex title",
+            img: "",
+            title: "CTA Block with dark background",
             subtitle: "Very large and complex subtitle",
             text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
             ctaText: "button",
-            ctaStyle: "cta02"
-        },
-        {
-            class: "neu-02",
-            img: `${pathAssets}/images/img08.jpg`,
-            title: "CTA Block",
-            subtitle: "With dark background and center alignment",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-            ctaText: "button",
-            ctaStyle: "cta02"
-        },
-        {
-            class: "neu-08",
-            img: `${pathAssets}/images/img01.jpg`,
-            title: "CTA Block",
-            subtitle: "Subtitle if needed",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-            ctaText: "button",
-            ctaStyle: "cta02"
+            ctaStyle: "cta01"
         },
         {
             class: "neu-08",
             img: `${pathAssets}/images/img09.jpg`,
-            title: "CTA Block with a very large and complex title",
+            title: "CTA Block with background image",
             subtitle: "Subtitle if needed",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
             ctaText: "button",
             ctaStyle: "cta02"
-        },
+        }
 
     ];
 
@@ -73,15 +55,19 @@ function ctaBlock() {
     });
 
     const module = document.querySelectorAll(".ctaBlock");
-
     module.forEach(function (el) {
         const image = el.querySelector(".ctaBlock__bgImage img");
-        console.log(image)
-        if (!image.src) {
-            image.style.display = "none"
+        if (!image.getAttribute('src')) {
+            image.closest("figure").style.display = "none";
         }
     });
 
-
 };
 ctaBlock();
+
+/*********************************/
+//Spacing
+document.querySelectorAll(".ctaBlock").forEach(function (el) {
+    let template = `<div class="spacing"></div>`;
+    el.insertAdjacentHTML("afterend", template);
+});

@@ -9,6 +9,7 @@ $textMaxWidth: 720px;
 
 @mixin font-giant {
     @include textMargins;
+    max-width: $textMaxWidth;
     font-size: 100px;
     font-weight: 300;
     line-height: 108px;
@@ -21,6 +22,7 @@ $textMaxWidth: 720px;
 
 @mixin font-xxl {
     @include textMargins;
+    max-width: $textMaxWidth;
     font-size: 60px;
     font-weight: 300;
     line-height: 68px;
@@ -33,6 +35,7 @@ $textMaxWidth: 720px;
 
 @mixin font-xl {
     @include textMargins;
+    max-width: $textMaxWidth;
     font-size: 42px;
     font-weight: 500;
     line-height: 58px;
@@ -45,6 +48,7 @@ $textMaxWidth: 720px;
 
 @mixin font-l {
     @include textMargins;
+    max-width: $textMaxWidth;
     font-size: 32px;
     font-weight: 500;
     line-height: 44px;
@@ -57,6 +61,7 @@ $textMaxWidth: 720px;
 
 @mixin font-m {
     @include textMarginsSmall;
+    max-width: $textMaxWidth;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
@@ -69,6 +74,7 @@ $textMaxWidth: 720px;
 
 @mixin font-s {
     @include textMarginsSmall;
+    max-width: $textMaxWidth;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -122,6 +128,10 @@ $textMaxWidth: 720px;
     &__heading {
         text-align: center;
         margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
 
         @include sm {
             margin-bottom: 40px;

@@ -1377,6 +1377,7 @@ figure img {
 
 .infoIcon__title {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -1401,6 +1402,7 @@ figure img {
 
 .infoIcon__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -1441,6 +1443,7 @@ figure img {
 
 .infoIcon.vertical .infoIcon__title {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -2997,7 +3000,6 @@ body {
 
 .simpleHeading {
   min-height: 520px;
-  background-color: #5C5C66;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3057,7 +3059,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: white;
   z-index: 1;
 }
 
@@ -3070,6 +3071,7 @@ body {
 
 .simpleHeading__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 42px;
   font-weight: 500;
   line-height: 58px;
@@ -3094,6 +3096,7 @@ body {
 
 .simpleHeading__subtitle {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -3118,6 +3121,7 @@ body {
 
 .simpleHeading__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -3294,6 +3298,7 @@ body {
 
 .sliderHeading__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 42px;
   font-weight: 500;
   line-height: 58px;
@@ -3319,6 +3324,7 @@ body {
 
 .sliderHeading__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -3377,6 +3383,16 @@ body {
 .highlightSlider__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -3387,6 +3403,7 @@ body {
 
 .highlightSlider__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -3411,6 +3428,7 @@ body {
 
 .highlightSlider__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -3435,6 +3453,7 @@ body {
 
 .highlightSlider__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4067,7 +4086,6 @@ body {
 }
 
 .highlightSlider__text {
-  max-width: 720px;
   position: absolute;
   z-index: 1;
   text-align: center;
@@ -4141,6 +4159,13 @@ body {
   width: 100%;
   text-align: left;
   color: white;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: calc(1024px + 10vw);
 }
 
 @media screen and (max-width: 511px) {
@@ -4155,11 +4180,6 @@ body {
     padding-top: 64px;
     padding-bottom: 64px;
   }
-}
-
-.highlightSlider.testimonials .highlightSlider__title {
-  margin: 0 auto;
-  max-width: 1024px;
 }
 
 .highlightSlider.testimonials .highlightSlider__content {
@@ -4234,6 +4254,16 @@ body {
 .productSlider__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -4244,6 +4274,7 @@ body {
 
 .productSlider__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -4268,6 +4299,7 @@ body {
 
 .productSlider__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -4292,6 +4324,7 @@ body {
 
 .productSlider__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4391,6 +4424,7 @@ body {
 
 .productSlider__productTitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -4415,6 +4449,7 @@ body {
 
 .productSlider__productSubtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4512,6 +4547,16 @@ body {
 .productGrid__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -4522,6 +4567,7 @@ body {
 
 .productGrid__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -4546,6 +4592,7 @@ body {
 
 .productGrid__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -4570,6 +4617,7 @@ body {
 
 .productGrid__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4663,6 +4711,7 @@ body {
 
 .productGrid__productTitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -4687,6 +4736,7 @@ body {
 
 .productGrid__productSubtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4806,6 +4856,16 @@ body {
 .contentTabs__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -4816,6 +4876,7 @@ body {
 
 .contentTabs__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -4840,6 +4901,7 @@ body {
 
 .contentTabs__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -4864,6 +4926,7 @@ body {
 
 .contentTabs__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -4937,6 +5000,7 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -5626,6 +5690,16 @@ body {
 .ctaBlock__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -5636,6 +5710,7 @@ body {
 
 .ctaBlock__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -5660,6 +5735,7 @@ body {
 
 .ctaBlock__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -5684,6 +5760,7 @@ body {
 
 .ctaBlock__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -5824,6 +5901,16 @@ body {
 .contentMedia__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -5834,6 +5921,7 @@ body {
 
 .contentMedia__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -5858,6 +5946,7 @@ body {
 
 .contentMedia__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -5882,6 +5971,7 @@ body {
 
 .contentMedia__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -6068,6 +6158,26 @@ body {
   }
 }
 
+@media screen and (max-width: 799px) {
+  .contentMedia.vertical.productGrid .contentMedia__content {
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .contentMedia.vertical.productGrid .contentMedia__image {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .contentMedia.vertical.productGrid .contentMedia__image img {
+    width: 100%;
+  }
+}
+
 .contentMedia.overlap {
   padding-top: 0;
   margin-top: -100px;
@@ -6140,6 +6250,16 @@ body {
 .wot__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -6150,6 +6270,7 @@ body {
 
 .wot__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -6174,6 +6295,7 @@ body {
 
 .wot__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -6198,6 +6320,7 @@ body {
 
 .wot__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -6252,6 +6375,9 @@ body {
 .wot__heading {
   text-align: left;
   margin-bottom: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .wot__text {
@@ -6341,6 +6467,9 @@ body {
 
 .wot.center .wot__heading {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .infoIcons {
@@ -6362,6 +6491,16 @@ body {
 .infoIcons__heading {
   text-align: center;
   margin-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 799px) {
@@ -6372,6 +6511,7 @@ body {
 
 .infoIcons__title {
   margin-top: 32px;
+  max-width: 720px;
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
@@ -6396,6 +6536,7 @@ body {
 
 .infoIcons__subtitle {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -6420,6 +6561,7 @@ body {
 
 .infoIcons__description {
   margin-top: 24px;
+  max-width: 720px;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
