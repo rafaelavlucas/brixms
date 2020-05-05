@@ -9,7 +9,7 @@ const modulesCategories = [{
     },
     {
         name: "Headings",
-        icon: "../assets/modules/headings.svg",
+        icon: `${pathAssets}/modules/headings.svg`,
         label: "headings",
     },
     {
