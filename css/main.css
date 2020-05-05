@@ -7088,7 +7088,7 @@ body {
   top: 32px;
   cursor: pointer;
   opacity: 0.5;
-  background-image: url("/assets/icons-black/icon-13.svg");
+  background-image: url("../assets/icons-black/icon-13.svg");
 }
 
 .categories.collapse .categories__closeIcon:hover {
