@@ -6863,11 +6863,10 @@ body {
 }
 
 .grid {
-  padding-left: 5%;
-  padding-right: 5%;
   position: fixed;
   z-index: 4;
-  width: 100%;
+  width: calc(100% - 10vw);
+  left: 5vw;
   height: 100vh;
   display: none;
   -webkit-box-pack: center;
@@ -6877,17 +6876,11 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-@media screen and (max-width: 511px) {
-  .grid {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+  background-color: rgba(114, 6, 56, 0.2);
 }
 
 .grid__wrapper {
-  background-color: rgba(114, 6, 56, 0.2);
+  max-width: calc(1440px - 10vw);
   width: 100%;
   height: 100%;
   display: -ms-grid;
