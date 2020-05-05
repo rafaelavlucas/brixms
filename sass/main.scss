@@ -31,6 +31,7 @@
     height: 100vh;
     display: none;
     justify-content: center;
+    align-items: center;
     user-select: none;
     background-color: rgba(#720638, 0.2);
 
@@ -112,23 +113,25 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
-    justify-items: center;
     background-color: $neu-02;
     position: relative;
+    padding: 0px 5%;
+
+
 
     &__closeIcon {
         display: none;
     }
 
     &__container {
-
-        margin: 40px auto;
-        padding: 0 5%;
+        margin: 0px auto;
+        padding: 40px 0;
         max-width: 900px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 32px;
+        align-content: center;
 
         @include sm {
 
@@ -176,7 +179,11 @@
     &.collapse {
         width: 300px;
         margin: 0;
-        padding: 32px;
+        padding: 40px 32px;
+
+        @include sm {
+            height: 100%;
+        }
 
         @include sm {
             width: 200px;
@@ -203,6 +210,7 @@
                 @include sm {
                     right: 16px;
                     top: 16px;
+
                 }
             }
 
@@ -213,6 +221,8 @@
                 @include sm {
                     grid-gap: 16px;
                     padding: 0 16px;
+                    height: 100vh;
+                    grid-template-rows: repeat(6, 48px);
 
                 }
             }
@@ -265,6 +275,8 @@
 
     &.close {
         width: 100px;
+        padding: 0px;
+
 
 
         @include sm {
@@ -275,8 +287,8 @@
         .categories {
 
             &__closeIcon {
-                right: initial;
-                transform: rotate(180deg);
+                transform: rotate(180deg) translateX(-50%);
+                right: 50%;
             }
 
             &__container {
