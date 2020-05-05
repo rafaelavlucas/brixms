@@ -6958,8 +6958,8 @@ body {
 }
 
 .categories {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -6980,7 +6980,8 @@ body {
 
 .categories__container {
   margin: 40px auto;
-  max-width: 800px;
+  padding: 0 5%;
+  max-width: 900px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -7061,11 +7062,16 @@ body {
 }
 
 .categories.collapse {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   width: 300px;
   margin: 0;
   padding: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .categories.collapse {
+    width: 200px;
+    padding: 0px;
+  }
 }
 
 .categories.collapse .categories__closeIcon {
@@ -7088,15 +7094,29 @@ body {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 799px) {
+  .categories.collapse .categories__closeIcon {
+    right: 16px;
+    top: 16px;
+  }
+}
+
 .categories.collapse .categories__container {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 24px;
 }
 
+@media screen and (max-width: 799px) {
+  .categories.collapse .categories__container {
+    grid-gap: 16px;
+    padding: 0 16px;
+  }
+}
+
 .categories.collapse .categories__card {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+  transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -7107,8 +7127,21 @@ body {
   padding: 16px;
 }
 
+@media screen and (max-width: 799px) {
+  .categories.collapse .categories__card {
+    padding: 12px;
+  }
+}
+
 .categories.collapse .categories__card.selected {
   background-color: #ECEDEE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.categories.collapse .categories__card.selected:hover {
+  -webkit-transform: none;
+          transform: none;
 }
 
 .categories.collapse .categories__card:hover {
@@ -7123,9 +7156,22 @@ body {
   height: 32px;
 }
 
+@media screen and (max-width: 799px) {
+  .categories.collapse .categories__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+}
+
 .categories.close {
   width: 100px;
-  padding: 16px;
+}
+
+@media screen and (max-width: 799px) {
+  .categories.close {
+    width: 72px;
+  }
 }
 
 .categories.close .categories__closeIcon {
@@ -7135,13 +7181,11 @@ body {
 }
 
 .categories.close .categories__container {
-  grid-gap: 48px;
   justify-items: center;
+  padding: 0px;
 }
 
 .categories.close .categories__card {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   width: 48px;
   height: 48px;
   padding: 0;
@@ -7150,6 +7194,16 @@ body {
   border: 0;
   background-color: transparent;
   padding: 8px;
+  opacity: 0.5;
+  border-radius: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+  transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
 }
 
 .categories.close .categories__card:hover {
@@ -7158,16 +7212,23 @@ body {
 }
 
 .categories.close .categories__card.selected {
-  border-radius: 100%;
   background-color: transparent;
-  border: solid 2px #E0E0E2;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #E0E0E2;
+          box-shadow: inset 0px 0px 0px 2px #E0E0E2;
+  opacity: 1;
+}
+
+.categories.close .categories__card:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .categories.close .categories__icon {
   margin-bottom: 0px;
   margin-right: 0px;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .categories.close .categories__text {

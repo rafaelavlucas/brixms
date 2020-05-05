@@ -78,7 +78,10 @@ function chooseCategory(e) {
     cardTarget.classList.add("selected");
 
     document.querySelector("#" + cardLabel).classList.add("active");
-    cardTarget.classList.add("active");
+    if (window.innerWidth <= 800) {
+        categories.classList.add("close");
+    }
+
 };
 
 function closeCategories() {
@@ -88,7 +91,3 @@ function closeCategories() {
         categories.classList.add("close")
     }
 };
-
-if (window.innerWidth <= 800) {
-    categories.classList.add("close");
-}
