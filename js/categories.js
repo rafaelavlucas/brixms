@@ -4,32 +4,32 @@ const pathAssets = "https://rafaelavlucas.github.io/template/assets";
 
 const modulesCategories = [{
         name: "Navigation",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: `${pathAssets}/modules/navigation.svg`,
         label: "navigation",
     },
     {
         name: "Headings",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: "../assets/modules/headings.svg",
         label: "headings",
     },
     {
         name: "Content",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: `${pathAssets}/modules/content.svg`,
         label: "content",
     },
     {
         name: "Lists",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: `${pathAssets}/modules/lists.svg`,
         label: "lists",
     },
     {
         name: "Related",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: `${pathAssets}/modules/related.svg`,
         label: "related",
     },
     {
         name: "Functional",
-        icon: `${pathAssets}/icons-brand/bra007.svg`,
+        icon: `${pathAssets}/modules/functional.svg`,
         label: "functional",
     },
 ];
