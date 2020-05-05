@@ -19,24 +19,27 @@ window.addEventListener("load", event => {
     }
 
     animeModules();
-
-
 });
 
 
 //show Grid 
 
-const gridBtn = document.querySelector('.showGrid'),
-    grid = document.querySelector('.grid');
-
-gridBtn.addEventListener('click', showGrid);
-
 function showGrid() {
-    if (grid.classList.contains('show')) {
-        grid.classList.remove('show');
-        gridBtn.innerHTML = "show grid";
-    } else {
-        grid.classList.add('show');
-        gridBtn.innerHTML = "hide grid";
-    }
-};
+    const gridBtn = document.querySelector('.showGrid'),
+        grid = document.querySelector('.grid');
+
+    gridBtn.addEventListener('click', gridOn);
+
+    function gridOn() {
+        if (grid.classList.contains('show')) {
+            grid.classList.remove('show');
+            gridBtn.innerHTML = "show grid";
+        } else {
+            grid.classList.add('show');
+            gridBtn.innerHTML = "hide grid";
+        }
+    };
+}
+
+
+showGrid();

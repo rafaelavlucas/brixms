@@ -162,7 +162,7 @@ section {
 }
 
 @mixin cardStyle1 {
-    @include transition;
+    @include transition2;
     overflow: hidden;
     padding: 24px;
     border-radius: $radius;
