@@ -102,7 +102,7 @@ function productSlider() {
         <div class="swiper-slide anime">
             <a class="productSlider__card" href="${el.url}">
                 <figure class="productSlider__image">
-                    <img src=${el.img}" alt="${el.alt}">
+                    <img src="${el.img}" alt="${el.alt}">
                 </figure>
                 <div class="productSlider__text">
                     <h4 class="productSlider__productTitle">${el.title}</h4>

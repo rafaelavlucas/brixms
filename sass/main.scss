@@ -384,13 +384,42 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
         ///max-width: 400px;
+
+        &:hover {
+            .categories {
+                &__image {
+                    box-shadow: inset 0px 0px 0px 1px $neu-05,
+                        0px 8px 20px -20px $neu-09;
+                    transform: scale(1.05);
+
+                    img {
+                        //transform: scale(1.05);
+                    }
+                }
+
+                &__itemTitle {
+                    opacity: 1;
+                }
+            }
+        }
     }
 
 
+    &__image {
+        background-color: white;
+        border-radius: $radius;
+        overflow: hidden;
+        @include transition2;
+    }
+
 
     &__itemTitle {
+        @include transition2;
         @include font-s;
+        color: $neu-08;
+        opacity: 0.6;
         margin-top: 16px;
     }
 }

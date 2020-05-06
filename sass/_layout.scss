@@ -378,6 +378,10 @@ body {
         }
     }
 
+    &__subtitle {
+        @include font-l;
+    }
+
     &.testimonials {
         height: auto;
         position: relative;
