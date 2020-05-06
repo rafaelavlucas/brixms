@@ -359,13 +359,13 @@
     &__modulesContent {
         margin: 48px 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 430px));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 48px 5%;
 
 
         @include sm {
             margin: 32px 0;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 430px));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             //grid-template-columns: repeat(2, 1fr);
         }
 
