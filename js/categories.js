@@ -109,71 +109,71 @@ function populateCategory() {
     const modules = [{
             name: "Main Nav",
             type: "navigation",
-            img: `/../assets/modules/mainNav_thumb.png`,
+            img: `${pathAssets}/modules/mainNav_thumb.png`,
         },
         {
             name: "Footer",
             type: "navigation",
-            img: `/../assets/modules/footer_thumb.png`,
+            img: `${pathAssets}/modules/footer_thumb.png`,
         }, {
             name: "Simple Heading",
             type: "headings",
-            img: `/../assets/modules/simpleHeading_thumb.png`,
+            img: `${pathAssets}/modules/simpleHeading_thumb.png`,
         },
         {
             name: "Slider Heading",
             type: "headings",
-            img: `/../assets/modules/sliderHeading_thumb.png`,
+            img: `${pathAssets}/modules/sliderHeading_thumb.png`,
         },
         {
             name: "Wall of Text",
             type: "content",
-            img: `/../assets/modules/wot_thumb.png`,
+            img: `${pathAssets}/modules/wot_thumb.png`,
         },
         {
             name: "Simple Media",
             type: "content",
-            img: `/../assets/modules/simpleMedia_thumb.png`,
+            img: `${pathAssets}/modules/simpleMedia_thumb.png`,
         },
         {
             name: "CTA Block",
             type: "content",
-            img: `/../assets/modules/ctaBlock_thumb.png`,
+            img: `${pathAssets}/modules/ctaBlock_thumb.png`,
         },
         {
             name: "CTA Block Dual",
             type: "content",
-            img: `/../assets/modules/ctaBlockDual_thumb.png`,
+            img: `${pathAssets}/modules/ctaBlockDual_thumb.png`,
         },
         {
             name: "Content Media",
             type: "content",
-            img: `/../assets/modules/contentMedia_thumb.png`,
+            img: `${pathAssets}/modules/contentMedia_thumb.png`,
         },
         {
             name: "Info Icons",
             type: "content",
-            img: `/../assets/modules/infoIcons_thumb.png`,
+            img: `${pathAssets}/modules/infoIcons_thumb.png`,
         },
         {
             name: "Content Tabs",
             type: "content",
-            img: `/../assets/modules/contentTabs_thumb.png`,
+            img: `${pathAssets}/modules/contentTabs_thumb.png`,
         },
         {
             name: "Highlight Slider",
             type: "content",
-            img: `/../assets/modules/highlightSlider_thumb.png`,
+            img: `${pathAssets}/modules/highlightSlider_thumb.png`,
         },
         {
             name: "Product Grid",
             type: "lists",
-            img: `/../assets/modules/productGrid_thumb.png`,
+            img: `${pathAssets}/modules/productGrid_thumb.png`,
         },
         {
             name: "Product Slider",
             type: "related",
-            img: `/../assets/modules/productSlider_thumb.png`,
+            img: `${pathAssets}/modules/productSlider_thumb.png`,
         },
 
     ];
