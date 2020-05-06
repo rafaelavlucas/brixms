@@ -48,7 +48,7 @@ function getCategory() {
 
         let template2 = `
             <div class="categories__modules" id="${el.label}">
-            <h1>${el.name}</h1>
+            <h1 class="categories__title">${el.name}</h1>
             <div class="categories__modulesContent"></div>
              </div>`;
 
@@ -186,7 +186,7 @@ function populateCategory() {
             <figure class="categories__image">
                 <img src="${el.img}">
             </figure>
-        <p>${el.name}</p>
+            <p class="categories__itemTitle">${el.name}</p>
         </div>`;
 
         // Navigation
