@@ -7029,6 +7029,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  min-width: 168px;
 }
 
 .categories__card:hover {
@@ -7053,15 +7054,8 @@ body {
   margin-bottom: 32px;
 }
 
-.categories__modules {
-  display: none;
-}
-
-.categories__modules.active {
-  display: block;
-}
-
 .categories__content {
+  width: 100%;
   display: none;
   padding: 40px 5vw;
 }
@@ -7181,6 +7175,8 @@ body {
 .categories.close {
   width: 100px;
   padding: 0px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 @media screen and (max-width: 799px) {
@@ -7203,6 +7199,7 @@ body {
 .categories.close .categories__card {
   width: 48px;
   height: 48px;
+  min-width: 48px;
   padding: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -7217,8 +7214,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
-  transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+  -webkit-transition: all 0.2s ease, border-radius 1s, background-color 1s ease;
+  transition: all 0.2s ease, border-radius 1s, background-color 1s ease;
 }
 
 .categories.close .categories__card:hover {
@@ -7242,11 +7239,57 @@ body {
 .categories.close .categories__icon {
   margin-bottom: 0px;
   margin-right: 0px;
-  width: 80%;
-  height: 80%;
 }
 
 .categories.close .categories__text {
   display: none;
+}
+
+.categories__modules {
+  display: none;
+}
+
+.categories__modules.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categories__modulesContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 799px) {
+  .categories__modulesContent {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .categories__modulesContent {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.categories__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

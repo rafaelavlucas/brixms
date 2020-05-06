@@ -117,7 +117,7 @@
     position: relative;
     padding: 0px 5%;
 
-
+    // Layout
 
     &__closeIcon {
         display: none;
@@ -151,6 +151,7 @@
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        min-width: 168px;
 
 
     }
@@ -162,19 +163,13 @@
         margin-bottom: 32px;
     }
 
-    &__modules {
-        display: none;
-
-        &.active {
-            display: block;
-        }
-    }
-
     &__content {
+        width: 100%;
         display: none;
         padding: 40px 5vw;
     }
 
+    // When Collapsed and Closed
 
     &.collapse {
         width: 300px;
@@ -186,6 +181,7 @@
         }
 
         @include sm {
+            //grid-template-columns: minmax(200px, 1fr);
             width: 200px;
             padding: 0px;
         }
@@ -213,6 +209,7 @@
 
                 }
             }
+
 
             &__container {
                 grid-template-columns: 1fr;
@@ -276,8 +273,7 @@
     &.close {
         width: 100px;
         padding: 0px;
-
-
+        grid-template-columns: 1fr;
 
         @include sm {
             width: 72px;
@@ -292,16 +288,14 @@
             }
 
             &__container {
-                //grid-gap: 48px;
                 justify-items: center;
                 padding: 0px;
-
-
             }
 
             &__card {
                 width: 48px;
                 height: 48px;
+                min-width: 48px;
                 padding: 0;
                 box-shadow: none;
                 border: 0;
@@ -311,7 +305,7 @@
                 border-radius: 100%;
                 align-items: center;
                 justify-content: center;
-                transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+                transition: all 0.2s ease, border-radius 1s, background-color 1s ease;
 
                 &:hover {
                     @include transition2;
@@ -332,8 +326,7 @@
             &__icon {
                 margin-bottom: 0px;
                 margin-right: 0px;
-                width: 80%;
-                height: 80%;
+
             }
 
             &__text {
@@ -341,4 +334,38 @@
             }
         }
     }
+
+    // Content and Item
+    &__modules {
+        display: none;
+
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__modulesContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include xs {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__image {}
 }
