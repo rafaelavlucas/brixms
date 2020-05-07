@@ -7110,6 +7110,7 @@ body {
   overflow-x: hidden;
   height: 100vh;
   overflow: hidden;
+  min-height: 690px;
 }
 
 .categories {
