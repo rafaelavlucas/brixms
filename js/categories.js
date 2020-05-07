@@ -267,3 +267,5 @@ function populateCategory() {
 getCategory();
 chooseCategory();
 populateCategory();
+
+document.querySelector(".wrapper").style.height = window.innerHeight + "px";
