@@ -118,8 +118,19 @@
     background-color: $neu-03;
     position: relative;
     padding: 0px 5%;
+    font-family: $font2;
 
     // Layout
+
+    &__logo {
+
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+
+    }
 
     &__closeIcon {
         display: none;
@@ -127,7 +138,7 @@
 
     &__container {
         margin: 0px auto;
-        padding: 80px 0;
+        padding: 180px 0;
         max-width: 900px;
         width: 100%;
         display: grid;
@@ -192,6 +203,14 @@
         }
 
         .categories {
+
+            &__logo {
+                max-width: 120px;
+                top: calc(100% - 90px);
+                width: 40%;
+                transition: all 0.4s 0.2s ease, top 0.4s ease;
+            }
+
             &__closeIcon {
                 @include transition;
                 display: flex;
@@ -218,6 +237,7 @@
             &__container {
                 grid-template-columns: 1fr;
                 grid-gap: 24px;
+                padding: 80px 0;
 
                 @include sm {
                     grid-gap: 16px;
@@ -230,7 +250,7 @@
 
             &__card {
                 min-width: 168px;
-                transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+                transition: all 0.4s ease, transform 0.2s ease, border-radius 0s;
                 flex-direction: row;
                 align-items: center;
                 padding: 16px;
@@ -285,6 +305,12 @@
         }
 
         .categories {
+
+            &__logo {
+
+                top: calc(100% - 64px);
+                width: 60%;
+            }
 
             &__closeIcon {
                 transform: rotate(180deg) translateX(-50%);
@@ -343,7 +369,6 @@
     &__modules {
         display: none;
 
-
         &.active {
             @include animationEnter;
             display: flex;
@@ -378,6 +403,7 @@
 
     &__title {
         @include font-xl;
+        font-family: $font2;
     }
 
     &__item {
@@ -406,7 +432,6 @@
         }
     }
 
-
     &__image {
         background-color: white;
         border-radius: $radius;
@@ -414,12 +439,12 @@
         @include transition2;
     }
 
-
     &__itemTitle {
         @include transition2;
         @include font-s;
         color: $neu-08;
         opacity: 0.6;
         margin-top: 16px;
+        font-family: $font2;
     }
 }

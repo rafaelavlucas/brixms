@@ -1,3 +1,9 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.letterSpacing": 0.2,
+    "editor.renderLineHighlight": "gutter",
+    "workbench.colorCustomizations": {
+
+    },
+    "git.decorations.enabled": false
 }

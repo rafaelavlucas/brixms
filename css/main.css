@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7120,6 +7121,16 @@ body {
   background-color: #ECEDEE;
   position: relative;
   padding: 0px 5%;
+  font-family: "Space Mono", monospace;
+}
+
+.categories__logo {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 180px;
 }
 
 .categories__closeIcon {
@@ -7128,7 +7139,7 @@ body {
 
 .categories__container {
   margin: 0px auto;
-  padding: 80px 0;
+  padding: 180px 0;
   max-width: 900px;
   width: 100%;
   display: -ms-grid;
@@ -7750,6 +7761,14 @@ body {
   }
 }
 
+.categories.collapse .categories__logo {
+  max-width: 120px;
+  top: calc(100% - 90px);
+  width: 40%;
+  -webkit-transition: all 0.4s 0.2s ease, top 0.4s ease;
+  transition: all 0.4s 0.2s ease, top 0.4s ease;
+}
+
 .categories.collapse .categories__closeIcon {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -7781,6 +7800,7 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 24px;
+  padding: 80px 0;
 }
 
 @media screen and (max-width: 799px) {
@@ -7795,8 +7815,10 @@ body {
 
 .categories.collapse .categories__card {
   min-width: 168px;
-  -webkit-transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
-  transition: all 0.4s ease, transforom 0.2s ease, border-radius 0s;
+  -webkit-transition: all 0.4s ease, border-radius 0s, -webkit-transform 0.2s ease;
+  transition: all 0.4s ease, border-radius 0s, -webkit-transform 0.2s ease;
+  transition: all 0.4s ease, transform 0.2s ease, border-radius 0s;
+  transition: all 0.4s ease, transform 0.2s ease, border-radius 0s, -webkit-transform 0.2s ease;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -7855,6 +7877,11 @@ body {
   .categories.close {
     width: 72px;
   }
+}
+
+.categories.close .categories__logo {
+  top: calc(100% - 64px);
+  width: 60%;
 }
 
 .categories.close .categories__closeIcon {
@@ -8486,6 +8513,7 @@ body {
   font-size: 42px;
   font-weight: 500;
   line-height: 58px;
+  font-family: "Space Mono", monospace;
 }
 
 @media screen and (max-width: 799px) {
@@ -8549,6 +8577,7 @@ body {
   color: #5C5C66;
   opacity: 0.6;
   margin-top: 16px;
+  font-family: "Space Mono", monospace;
 }
 
 @media screen and (max-width: 799px) {
