@@ -7109,6 +7109,7 @@ body {
   background-color: #F5F5F6;
   overflow-x: hidden;
   height: 100vh;
+  overflow: hidden;
 }
 
 .categories {
@@ -7135,7 +7136,8 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 180px;
+  max-width: 180px;
+  width: 10%;
 }
 
 @media screen and (max-width: 799px) {
@@ -7151,7 +7153,7 @@ body {
 
 .categories__container {
   margin: 0px auto;
-  padding: 180px 0;
+  padding: 48px 0;
   max-width: 900px;
   width: 100%;
   display: -ms-grid;
@@ -7165,7 +7167,7 @@ body {
 
 @media screen and (max-width: 799px) {
   .categories__container {
-    padding: 90px 0 48px 0;
+    padding: 32px 0 32px 0;
     grid-gap: 16px;
   }
 }

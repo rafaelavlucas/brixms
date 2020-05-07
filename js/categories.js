@@ -93,7 +93,6 @@ function chooseCategory() {
         if (window.innerWidth <= 800) {
             categories.classList.add("close");
         }
-
     };
 
     function closeSidebar() {
