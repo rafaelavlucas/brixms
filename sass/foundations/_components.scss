@@ -172,3 +172,83 @@ figure {
         }
     }
 }
+
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+
+    &__container {
+        @include transition;
+        width: 100%;
+        height: 100%;
+        padding: 0 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: white;
+        transform: scale(0.9);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        transform: perspective(0em) rotateX(0px);
+        transition: all 0.3s ease;
+        background-image: url("/assets/icons-black/icon-61.svg");
+
+        &:hover {
+            transform: rotate(90deg) scale(1.2);
+        }
+    }
+
+    &__video {
+        position: relative;
+        padding-bottom: 56.25vh;
+        padding-top: 30px;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+
+        @include sm {
+            ///padding-bottom: 26.25vh;
+        }
+
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.open {
+        visibility: visible;
+
+        .modal {
+            &__container {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+    }
+}

@@ -8,36 +8,74 @@ function simpleMedia() {
             img: `${pathAssets}/images/img02.jpg`,
             alt: "image alt",
             class: "",
-            text: ""
+            text: "",
+            video: "",
+            type: "section",
+            url: ""
         },
         {
             img: `${pathAssets}/images/img10.jpg`,
             alt: "image alt",
             class: "video",
-            text: ""
+            text: "",
+            video: "https://player.vimeo.com/video/277650563",
+            type: "section",
+            url: ""
         },
         {
             img: `${pathAssets}/images/img04.jpg`,
             alt: "image alt",
             class: "map",
-            text: "View"
+            text: "View",
+            video: "",
+            type: "a",
+            url: "https://www.google.com"
         },
     ];
 
     simpleMedia.forEach(function (el) {
         let template = `
-            <section class="simpleMedia ${el.class}">
+            <${el.type} class="simpleMedia ${el.class}" data-video="${el.video}" href="${el.url}" target="_blank">
                 <div class="simpleMedia__element">${el.text}</div>
                 <figure class="simpleMedia__image">
                     <img src="${el.img}" alt="${el.alt}">
                 </figure>
-            </section>`;
+            </${el.type}>`;
         document.querySelector('.module').insertAdjacentHTML('beforeend', template);
     });
 
 };
 
+function openModalVideo() {
+    const videoItem = document.querySelectorAll('.simpleMedia.video'),
+        modalVideo = document.querySelector('.modal.video'),
+        iconCloseVideo = document.querySelector('.modal__icon'),
+        videoFrame = document.querySelector('.video .modal__video iframe');
+
+    videoItem.forEach(function (el) {
+        el.addEventListener("click", openVideo);
+    })
+
+    iconCloseVideo.addEventListener("click", closeVideo);
+
+
+    function openVideo(e) {
+        const videoSrc = e.currentTarget.dataset.video;
+        videoFrame.src = videoSrc;
+        modalVideo.classList.add('open');
+        document.querySelector('body').style.overflow = "hidden";
+    }
+
+    function closeVideo() {
+        modalVideo.classList.remove('open');
+        videoFrame.src = "";
+        document.querySelector('body').style.overflow = "initial";
+    }
+}
+
+
 simpleMedia();
+openModalVideo();
 
 
 /*********************************/
