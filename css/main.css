@@ -7133,6 +7133,13 @@ body {
   width: 180px;
 }
 
+@media screen and (max-width: 799px) {
+  .categories__logo {
+    top: 32px;
+    width: 100px;
+  }
+}
+
 .categories__closeIcon {
   display: none;
 }
@@ -7153,7 +7160,7 @@ body {
 
 @media screen and (max-width: 799px) {
   .categories__container {
-    padding: 48px 0;
+    padding: 90px 0 48px 0;
     grid-gap: 16px;
   }
 }
@@ -7723,6 +7730,14 @@ body {
   width: 48px;
   height: 48px;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 799px) {
+  .categories__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
 }
 
 .categories__content {

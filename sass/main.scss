@@ -130,6 +130,11 @@
         transform: translateX(-50%);
         width: 180px;
 
+        @include sm {
+            top: 32px;
+            width: 100px;
+        }
+
     }
 
     &__closeIcon {
@@ -147,7 +152,7 @@
         align-content: center;
 
         @include sm {
-            padding: 48px 0;
+            padding: 90px 0 48px 0;
             grid-gap: 16px;
         }
 
@@ -163,6 +168,7 @@
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+
     }
 
     &__icon {
@@ -170,6 +176,12 @@
         width: 48px;
         height: 48px;
         margin-bottom: 32px;
+
+        @include sm {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 24px;
+        }
     }
 
     &__content {
