@@ -1,4 +1,4 @@
-pathAssets = "https://rafaelavlucas.github.io/template/assets";
+pathAssets = "https://rafaelavlucas.github.io/brixms/assets";
 
 // Main Nav 
 const

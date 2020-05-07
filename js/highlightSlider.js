@@ -1,5 +1,5 @@
 pathAssets =
-    "https://rafaelavlucas.github.io/template/assets";
+    "https://rafaelavlucas.github.io/brixms/assets";
 
 const highlightSliderContent = [{
         img: "images/img08.jpg",

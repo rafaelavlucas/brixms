@@ -1,4 +1,4 @@
-const pathAssets = "https://rafaelavlucas.github.io/template/assets";
+const pathAssets = "https://rafaelavlucas.github.io/brixms/assets";
 
 
 function getCategory() {

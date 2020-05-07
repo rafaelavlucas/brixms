@@ -1,5 +1,5 @@
 pathAssets =
-    "https://rafaelavlucas.github.io/template/assets";
+    "https://rafaelavlucas.github.io/brixms/assets";
 
 /*********************************/
 // Simple Heading
