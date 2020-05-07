@@ -15,11 +15,15 @@
     border: 1px solid rgba(black, 0.2);
     padding: 8px;
     position: fixed;
-    z-index: 5;
+    z-index: 4;
     border-radius: $radius;
     bottom: 10px;
     left: 10px;
     cursor: pointer;
+}
+
+.btnDs {
+    z-index: 2;
 }
 
 .grid {
