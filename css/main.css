@@ -1524,7 +1524,7 @@ figure img {
           transform: perspective(0em) rotateX(0px);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-image: url("/assets/icons-black/icon-61.svg");
+  background-image: url("../assets/icons-black/icon-61.svg");
 }
 
 .modal__icon:hover {
@@ -3563,7 +3563,7 @@ body {
   width: 40px;
   height: 40px;
   z-index: 2;
-  background-image: url("/assets/icons-white/icon-179.svg");
+  background-image: url("../assets/icons-white/icon-179.svg");
 }
 
 .simpleMedia.video:hover .simpleMedia__image img {
@@ -4430,7 +4430,7 @@ body {
   position: absolute;
   top: -40px;
   left: 5vw;
-  background-image: url("/assets/images/quote.svg");
+  background-image: url("../assets/images/quote.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
