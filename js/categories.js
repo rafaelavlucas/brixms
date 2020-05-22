@@ -33,6 +33,7 @@ function getCategory() {
         },
     ];
 
+
     modulesCategories.forEach(function (el) {
         let template = `
             <div class="categories__card" data-label="${el.label}">
