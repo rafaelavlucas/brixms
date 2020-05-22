@@ -1390,7 +1390,7 @@ figure img {
 .infoIcon__title {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -3244,7 +3244,7 @@ body {
 .simpleHeading__description {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -3447,7 +3447,7 @@ body {
 .sliderHeading__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   z-index: 1;
@@ -3710,7 +3710,7 @@ body {
 .highlightSlider__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -4552,7 +4552,7 @@ body {
 .highlightSlider.testimonials .highlightSlider__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -4635,7 +4635,7 @@ body {
 .productSlider__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -4760,7 +4760,7 @@ body {
 .productSlider__productTitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -4928,7 +4928,7 @@ body {
 .productGrid__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -5047,7 +5047,7 @@ body {
 .productGrid__productTitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -5237,7 +5237,7 @@ body {
 .contentTabs__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -5336,7 +5336,7 @@ body {
   transition: all 0.2s ease;
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   cursor: pointer;
@@ -6071,7 +6071,7 @@ body {
 .ctaBlock__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -6284,7 +6284,7 @@ body {
 .contentMedia__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -6633,7 +6633,7 @@ body {
 .wot__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }
@@ -6874,7 +6874,7 @@ body {
 .infoIcons__subtitle {
   margin-top: 24px;
   max-width: 720px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
 }

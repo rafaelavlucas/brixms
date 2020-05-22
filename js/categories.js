@@ -1,35 +1,34 @@
 const pathAssets = "https://rafaelavlucas.github.io/brixms/assets";
 
-
 function getCategory() {
     const modulesCategories = [{
             name: "Navigation",
-            icon: `${pathAssets}/modules/navigation.svg`,
+            icon: `${pathAssets}/categories/icons/navigation.svg`,
             label: "navigation",
         },
         {
             name: "Headings",
-            icon: `${pathAssets}/modules/headings.svg`,
+            icon: `${pathAssets}/categories/headings.svg`,
             label: "headings",
         },
         {
             name: "Content",
-            icon: `${pathAssets}/modules/content.svg`,
+            icon: `${pathAssets}/categories/content.svg`,
             label: "content",
         },
         {
             name: "Lists",
-            icon: `${pathAssets}/modules/lists.svg`,
+            icon: `${pathAssets}/categories/lists.svg`,
             label: "lists",
         },
         {
             name: "Related",
-            icon: `${pathAssets}/modules/related.svg`,
+            icon: `${pathAssets}/categories/related.svg`,
             label: "related",
         },
         {
             name: "Functional",
-            icon: `${pathAssets}/modules/functional.svg`,
+            icon: `${pathAssets}/categories/functional.svg`,
             label: "functional",
         },
     ];
@@ -53,8 +52,6 @@ function getCategory() {
              </div>`;
 
         document.querySelector('.categories__content').insertAdjacentHTML("beforeend", template2)
-
-
     });
 
 }
@@ -145,8 +142,6 @@ function populateCategory() {
             type: "content",
             img: `${pathAssets}/modules/ctaBlock_thumb.png`,
             url: "modules/content/ctaBlock/ctaBlock.html"
-
-
         },
         {
             name: "CTA Block Dual",
@@ -193,9 +188,11 @@ function populateCategory() {
     ];
 
     // Module Item template
+    const modulesArray = [];
+
     modules.forEach(function (el) {
         let template = `
-        <a class="categories__item" href="${el.url}" target="_blank">
+            <a class="categories__item" href="${el.url}" target="_blank">
                 <figure class="categories__image">
                     <img src="${el.img}">
                 </figure>
@@ -204,34 +201,38 @@ function populateCategory() {
 
         // Navigation
         if (el.type == "navigation") {
+            //modulesArray.push(template);
             document.querySelector("#navigation .categories__modulesContent").insertAdjacentHTML("beforeend", template);
-        };
-
+        }
         // Headings
-        if (el.type == "headings") {
+        else if (el.type == "headings") {
+            //modulesArray.push(template);
             document.querySelector("#headings .categories__modulesContent").insertAdjacentHTML("beforeend", template);
-        };
-
+        }
         // Content
-        if (el.type == "content") {
+        else if (el.type == "content") {
+            //modulesArray.push(template);
             document.querySelector("#content .categories__modulesContent").insertAdjacentHTML("beforeend", template);
-        };
-
+        }
         // Lists
-        if (el.type == "lists") {
+        else if (el.type == "lists") {
+            //modulesArray.push(template);
             document.querySelector("#lists .categories__modulesContent").insertAdjacentHTML("beforeend", template);
-        };
-
+        }
         // Related
-        if (el.type == "related") {
+        else if (el.type == "related") {
+            //modulesArray.push(template);
             document.querySelector("#related .categories__modulesContent").insertAdjacentHTML("beforeend", template);
-        };
-
+        }
         // Functional
-        if (el.type == "functional") {
+        else if (el.type == "functional") {
+            //modulesArray.push(template);
             document.querySelector("#functional .categories__modulesContent").insertAdjacentHTML("beforeend", template);
         };
     });
+
+    //document.querySelector("#navigation .categories__modulesContent").insertAdjacentHTML("beforeend", modulesArray.join());
+
 };
 
 getCategory();
