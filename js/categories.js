@@ -3,7 +3,7 @@ const pathAssets = "https://rafaelavlucas.github.io/brixms/assets";
 function getCategory() {
     const modulesCategories = [{
             name: "Navigation",
-            icon: `${pathAssets}/categories/icons/navigation.svg`,
+            icon: `${pathAssets}/categories/navigation.svg`,
             label: "navigation",
         },
         {
