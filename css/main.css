@@ -3470,6 +3470,127 @@ body {
   }
 }
 
+.heroSlider {
+  height: 80vh;
+  min-height: 480px;
+}
+
+.heroSlider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.heroSlider__image {
+  height: 100%;
+}
+
+.heroSlider__image:before, .heroSlider__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.heroSlider__image:after {
+  background-color: #363842;
+  opacity: 0.5;
+}
+
+.heroSlider__text {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  color: white;
+}
+
+@media screen and (max-width: 511px) {
+  .heroSlider__text {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.heroSlider__title {
+  margin-top: 32px;
+  max-width: 720px;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 58px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 799px) {
+  .heroSlider__title {
+    margin-top: 24px;
+  }
+}
+
+.heroSlider__title:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .heroSlider__title {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
+
+.heroSlider__subtitle {
+  margin-top: 24px;
+  max-width: 720px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 799px) {
+  .heroSlider__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.heroSlider__subtitle:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 799px) {
+  .heroSlider__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 .simpleMedia {
   padding-left: 5%;
   padding-right: 5%;

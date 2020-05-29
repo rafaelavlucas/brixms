@@ -129,9 +129,9 @@ footer();
 /*********************************/
 // Slider Heading
 
-function sliderHeading() {
+function heroSlider() {
 
-    const sliderHeadingItems = [{
+    const heroSliderItems = [{
             img: "images/img09.jpg",
             alt: "teste",
         },
@@ -151,55 +151,55 @@ function sliderHeading() {
         subtitle: "subtitle or description"
     };
 
-    let templateSliderHeading = `
+    let templateheroSlider = `
         
-            <div class="sliderHeading__wrapper">
-            <div class="sliderHeading__text">
-                <h2 class="sliderHeading__title anime">${heading.title}</h2>
-                <h3 class="sliderHeading__subtitle anime">${heading.subtitle}</h3>
-                <div class="sliderHeading__arrows anime">
+            <div class="heroSlider__wrapper">
+            <div class="heroSlider__text">
+                <h2 class="heroSlider__title anime">${heading.title}</h2>
+                <h3 class="heroSlider__subtitle anime">${heading.subtitle}</h3>
+                <div class="heroSlider__arrows anime">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="sliderHeading__slider swiper-container">
+            <div class="heroSlider__slider swiper-container">
                 <div class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
             </div>
             </div>`;
-    document.querySelector(".sliderHeading").insertAdjacentHTML("beforeend", templateSliderHeading);
+    document.querySelector(".heroSlider").insertAdjacentHTML("beforeend", templateheroSlider);
 
 
-    sliderHeadingItems.forEach(function (el) {
+    heroSliderItems.forEach(function (el) {
         let templateSlider = `
             <div class="swiper-slide">
-                <figure class="sliderHeading__image anime">
+                <figure class="heroSlider__image anime">
                     <img src="${pathAssets}/${el.img}" alt="${el.alt}">
                 </figure>
             </div>`;
-        document.querySelector(".sliderHeading .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
+        document.querySelector(".heroSlider .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
 
     });
 
-    var mySwiper = new Swiper('.sliderHeading__slider.swiper-container', {
+    var mySwiper = new Swiper('.heroSlider__slider.swiper-container', {
         // Optional parameters
         loop: true,
         speed: 500,
 
         // If we need pagination
         pagination: {
-            el: '.sliderHeading .swiper-pagination',
+            el: '.heroSlider .swiper-pagination',
         },
 
         // Navigation arrows
         navigation: {
-            nextEl: '.sliderHeading .swiper-button-next',
-            prevEl: '.sliderHeading .swiper-button-prev',
+            nextEl: '.heroSlider .swiper-button-next',
+            prevEl: '.heroSlider .swiper-button-prev',
         },
     });
 };
 
-sliderHeading();
+heroSlider();
 
 /*********************************/
 // Wall of Text
@@ -517,12 +517,14 @@ function ctaBlock2() {
         let template = `
         <div class="ctaBlock__wrapper">
             <div class="ctaBlock__content">
-            <div class="ctaBlock__text">
-                <h2 class="ctaBlock__title anime">${el.title}</h2>
-                <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
-                <p class="ctaBlock__description anime">${el.text}</p>
-                <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a></div>
+            <div class="heroSlider__text">
+                <h2 class="heroSlider__title anime">${heading.title}</h2>
+                <h3 class="heroSlider__subtitle anime">${heading.subtitle}</h3>
+                <div class="heroSlider__arrows anime">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+            </div>
             </div>
         </div>`;
 

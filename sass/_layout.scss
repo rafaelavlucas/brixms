@@ -171,6 +171,45 @@ body {
 
 }
 
+.heroSlider {
+    height: 80vh;
+    min-height: 480px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+    &__image {
+        @include overlay;
+        height: 100%;
+    }
+
+    &__text {
+        @include wrapper;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+        color: white;
+    }
+
+    &__title {
+        @include font-xl;
+        z-index: 1;
+    }
+
+    &__subtitle {
+        @include font-m;
+        z-index: 1;
+    }
+
+}
+
 .simpleMedia {
     @include wrapper;
     position: relative;

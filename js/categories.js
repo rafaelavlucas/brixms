@@ -127,6 +127,12 @@ function populateCategory() {
             url: "modules/headings/sliderHeading/sliderHeading.html"
         },
         {
+            name: "Hero Slider",
+            type: "headings",
+            img: `${pathAssets}/modules/sliderHeading_thumb.png`,
+            url: "modules/headings/heroSlider/heroSlider.html"
+        },
+        {
             name: "Wall of Text",
             type: "content",
             img: `${pathAssets}/modules/wot_thumb.png`,
