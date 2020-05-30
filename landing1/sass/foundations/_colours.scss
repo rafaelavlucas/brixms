@@ -1,6 +1,7 @@
 // Main Colours
-$m-01: rgb(230, 118, 77);
-$m-02: #8F62CA;
+$m-01: #e6764d;
+$m-02: #FFA825;
+$m-03: #ffac6c;
 
 // Neutral Colours
 $neu-01: #ffffff;
@@ -13,24 +14,46 @@ $neu-07: #7F8088;
 $neu-08: #5C5C66;
 $neu-09: #363842;
 
+$g-01: linear-gradient(148deg, $m-01, $m-02);
+
 @mixin cta01 {
-    background-color: $m-01;
+    background: $g-01;
     color: white;
+
+    &:before,
+    &:after {
+        background-color: white;
+    }
 }
 
 @mixin cta01alt {
-    background-color: white;
+    background: white;
     color: $m-01;
+
+    &:before,
+    &:after {
+        background-color: $m-01;
+    }
 }
 
 @mixin cta02 {
     border: solid 1px $m-01;
     color: $m-01;
+
+    &:before,
+    &:after {
+        background-color: $m-01;
+    }
 }
 
 @mixin cta02alt {
     border: solid 1px white;
     color: white;
+
+    &:before,
+    &:after {
+        background-color: white;
+    }
 }
 
 .neu-02 {

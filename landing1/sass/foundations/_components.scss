@@ -14,10 +14,42 @@
     height: 48px;
     display: inline-flex;
     align-items: center;
-    border-radius: 30px;
+    position: relative;
+    justify-content: center;
+    box-shadow: inset 0px 0px 0px rgba($m-03, 0);
+
+    //border-radius: $radius;
+    &:before,
+    &:after {
+        @include transition;
+        content: '';
+        width: 8px;
+        height: 2px;
+        position: absolute;
+        right: 16px;
+        opacity: 0;
+
+    }
+
+    &:before {
+        transform: rotate(45deg) translateY(-4px);
+    }
+
+    &:after {
+        transform: rotate(-45deg) translateY(4px);
+
+    }
 
     &:hover {
-        transform: translateY(-4px)
+        box-shadow: inset -48px 0px 0px rgba($m-03, 0.2);
+        //transform: translateY(-4px);
+        padding: 0 64px 0 32px;
+
+        &:before,
+        &:after {
+            opacity: 1;
+            right: 24px;
+        }
     }
 
     &.cta01 {

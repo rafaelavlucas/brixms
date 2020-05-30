@@ -1,4 +1,4 @@
-const pathAssets = "https://rafaelavlucas.github.io/brixms/assets";
+const pathAssets = "https://rafaelavlucas.github.io/brixms/landing1/assets";
 
 window.addEventListener("load", event => {
     // Anime Modules
@@ -129,116 +129,84 @@ footer();
 /*********************************/
 // Slider Heading
 
-function heroSlider() {
+function sliderHeading() {
 
-    const heroSliderItems = [{
-            img: "images/img09.jpg",
+    const sliderHeadingItems = [{
+            img: "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             alt: "teste",
         },
         {
-            img: "images/img11.jpg",
+            img: "https://images.unsplash.com/photo-1517463700628-5103184eac47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
             alt: "teste",
         },
         {
-            img: "images/img10.jpg",
+            img: "https://images.unsplash.com/photo-1524738258074-f8125c6a7588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
             alt: "teste",
-        },
+        }
 
     ];
 
     const heading = {
-        title: "Slider Heading",
-        subtitle: "subtitle or description"
+        title: "A choice for every taste.",
     };
 
-    let templateheroSlider = `
+    let templatesliderHeading = `
         
-            <div class="heroSlider__wrapper">
-            <div class="heroSlider__text">
-                <h2 class="heroSlider__title anime">${heading.title}</h2>
-                <h3 class="heroSlider__subtitle anime">${heading.subtitle}</h3>
-                <div class="heroSlider__arrows anime">
+            <div class="sliderHeading__wrapper">
+            <div class="sliderHeading__text anime">
+                <h2 class="sliderHeading__title">${heading.title}</h2>
+            </div>
+                
+            <div class="sliderHeading__slider swiper-container anime">
+            <div class="sliderHeading__arrows ">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-            </div>
-            <div class="heroSlider__slider swiper-container">
                 <div class="swiper-wrapper"></div>
                 <div class="swiper-pagination"></div>
             </div>
+            <p class="sliderHeading__scroll anime2">explore</p>
             </div>`;
-    document.querySelector(".heroSlider").insertAdjacentHTML("beforeend", templateheroSlider);
+    document.querySelector(".sliderHeading").insertAdjacentHTML("beforeend", templatesliderHeading);
 
 
-    heroSliderItems.forEach(function (el) {
+    sliderHeadingItems.forEach(function (el) {
         let templateSlider = `
             <div class="swiper-slide">
-                <figure class="heroSlider__image anime">
-                    <img src="${pathAssets}/${el.img}" alt="${el.alt}">
+                <figure class="sliderHeading__image anime">
+                    <img src="${el.img}" alt="${el.alt}">
                 </figure>
             </div>`;
-        document.querySelector(".heroSlider .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
+        document.querySelector(".sliderHeading .swiper-wrapper").insertAdjacentHTML("beforeend", templateSlider);
 
     });
 
-    var mySwiper = new Swiper('.heroSlider__slider.swiper-container', {
+    var mySwiper = new Swiper('.sliderHeading__slider.swiper-container', {
         // Optional parameters
         loop: true,
         speed: 500,
 
         // If we need pagination
         pagination: {
-            el: '.heroSlider .swiper-pagination',
+            el: '.sliderHeading .swiper-pagination',
         },
 
         // Navigation arrows
         navigation: {
-            nextEl: '.heroSlider .swiper-button-next',
-            prevEl: '.heroSlider .swiper-button-prev',
+            nextEl: '.sliderHeading .swiper-button-next',
+            prevEl: '.sliderHeading .swiper-button-prev',
         },
     });
 };
 
-heroSlider();
-
-/*********************************/
-// Wall of Text
-
-function wot() {
-    const wot = [{
-        title: "Wall of Text",
-        subtitle: "Subtitle if needed",
-        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        ctaText: "button",
-        ctaStyle: "cta01"
-    }];
-
-    wot.forEach(function (el) {
-        let template = `
-    
-        <div class="wot__wrapper">
-            <div class="wot__heading anime">
-                <h2 class="wot__title">${el.title}</h2>
-                <h3 class="wot__subtitle">${el.subtitle}</h3>
-            </div>
-            <div class="wot__text anime">
-                <p class="wot__description">${el.text}</p>
-                <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a></div>
-            </div>
-        </div>`;
-
-        document.querySelector('.wot').insertAdjacentHTML("beforeend", template);
-    })
-};
-
-wot();
+sliderHeading();
 
 /*********************************/
 // Content Media
 
 function contentMedia() {
     const contentMedia = [{
-            img: `${pathAssets}/images/img01.jpg`,
+            img: "https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             alt: "image alt",
             title: "Content Media",
             subtitle: "With left alignment",
@@ -278,7 +246,7 @@ contentMedia();
 
 function contentMedia2() {
     const contentMedia = [{
-            img: `${pathAssets}/images/img01.jpg`,
+            img: "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             alt: "image alt",
             title: "Content Media",
             subtitle: "With left alignment",
@@ -317,59 +285,40 @@ contentMedia2();
 
 function productSlider() {
     const products = [{
-            img: `${pathAssets}/images/img12.jpg`,
+            img: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             title: "product 1",
             subtitle: "subtitle",
             url: "#",
-            premium: true,
-            young: false,
-            bio: false,
-
         },
         {
-            img: `${pathAssets}/images/img13.jpg`,
+            img: "https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             title: "product 2",
             subtitle: "subtitle",
             url: "#",
-            premium: true,
-            young: false,
-            bio: false,
         },
         {
-            img: `${pathAssets}/images/img14.jpg`,
+            img: "https://images.unsplash.com/photo-1525740664269-1bb17f251737?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
             title: "product 3",
             subtitle: "subtitle",
             url: "#",
-            premium: false,
-            young: false,
-            bio: true,
         },
         {
-            img: `${pathAssets}/images/img15.jpg`,
+            img: "https://images.unsplash.com/photo-1507428861205-e8aab693190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2120&q=80",
             title: "product 4",
             subtitle: "subtitle",
             url: "#",
-            premium: false,
-            young: true,
-            bio: false,
         },
         {
-            img: `${pathAssets}/images/img16.jpg`,
+            img: "https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             title: "product 5",
             subtitle: "subtitle",
             url: "#",
-            premium: false,
-            young: true,
-            bio: false,
         },
         {
-            img: `${pathAssets}/images/img17.jpg`,
+            img: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             title: "product 6",
             subtitle: "subtitle",
             url: "#",
-            premium: false,
-            young: true,
-            bio: false,
         },
     ];
 
@@ -469,7 +418,7 @@ productSlider();
 
 function ctaBlock() {
     const ctaBlock = [{
-        img: `${pathAssets}/images/img12.jpg`,
+        img: "https://images.unsplash.com/photo-1495856458515-0637185db551?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
         title: "CTA Block with light background",
         subtitle: "Subtitle if needed",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -494,10 +443,7 @@ function ctaBlock() {
         </div>`;
 
         document.querySelector('.ctaBlock.one').insertAdjacentHTML("beforeend", template);
-
     });
-
-
 };
 ctaBlock();
 
@@ -515,18 +461,17 @@ function ctaBlock2() {
 
     ctaBlock.forEach(function (el) {
         let template = `
-        <div class="ctaBlock__wrapper">
-            <div class="ctaBlock__content">
-            <div class="heroSlider__text">
-                <h2 class="heroSlider__title anime">${heading.title}</h2>
-                <h3 class="heroSlider__subtitle anime">${heading.subtitle}</h3>
-                <div class="heroSlider__arrows anime">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+        <div class="ctaBlock__wrapper neu-01">
+    
+        <div class="ctaBlock__content">
+        <div class="ctaBlock__text">
+            <h2 class="ctaBlock__title anime">${el.title}</h2>
+            <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
+            <p class="ctaBlock__description anime">${el.text}</p>
+            <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a></div>
             </div>
-            </div>
-        </div>`;
+        </div>
+    </div>`;
 
         document.querySelector('.ctaBlock.two').insertAdjacentHTML("beforeend", template);
 

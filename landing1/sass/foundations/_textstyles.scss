@@ -2,8 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 //Fonts
-$font: 'Muli',
+$font: 'Montserrat',
 sans-serif;
 $font2:'Space Mono',
 monospace;
@@ -17,10 +19,11 @@ $textMaxWidth: 720px;
     font-size: 80px;
     font-weight: 300;
     line-height: 88px;
+    text-transform: uppercase;
 
     @include sm {
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 52px;
+        line-height: 60px;
     }
 }
 
@@ -28,8 +31,9 @@ $textMaxWidth: 720px;
     @include textMargins;
     max-width: $textMaxWidth;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 68px;
+    text-transform: uppercase;
 
     @include sm {
         font-size: 48px;
@@ -43,6 +47,7 @@ $textMaxWidth: 720px;
     font-size: 42px;
     font-weight: 500;
     line-height: 58px;
+    text-transform: uppercase;
 
     @include sm {
         font-size: 30px;
@@ -56,6 +61,7 @@ $textMaxWidth: 720px;
     font-size: 32px;
     font-weight: 500;
     line-height: 44px;
+    text-transform: uppercase;
 
     @include sm {
         font-size: 22px;
