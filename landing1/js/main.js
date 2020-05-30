@@ -70,6 +70,7 @@ function mainNav() {
 
     getSticky();
 
+
     // Open Menu Mobile
     const iconNav = document.querySelector('.mainNav__icon');
     iconNav.addEventListener('click', openNavMobile);
@@ -91,6 +92,31 @@ function mainNav() {
                 document.querySelector('.mainNav.navOpen .mainNav__wrapper').style.height = window.innerHeight + "px";
             }
         }
+    }
+
+    // Hover Effect
+    const linkItem = document.querySelectorAll(".mainNav__linkItem"),
+        links = document.querySelector(".mainNav__links");
+
+
+    links.addEventListener("mouseover", addHover);
+
+    links.addEventListener("mouseout", removeHover);
+
+
+    function addHover(e) {
+        linkItem.forEach(function (el) {
+            el.style.opacity = "0.3";
+        })
+
+        e.target.style.opacity = "1";
+    }
+
+    function removeHover() {
+        linkItem.forEach(function (el) {
+            el.style.opacity = "1";
+        });
+        e.currentTarget.style.opacity = "1";
     }
 }
 
@@ -230,7 +256,7 @@ function contentMedia() {
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
                 <div class="ctaContainer anime">
-                    <a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a>
+                    <a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a>
                 </div>
             </div> 
          </div>`;
@@ -270,7 +296,7 @@ function contentMedia2() {
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
                 <div class="ctaContainer anime">
-                    <a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a>
+                    <a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a>
                 </div>
             </div> 
          </div>`;
@@ -349,7 +375,7 @@ function productSlider() {
                     </div>
                 </div>
                 <div class="ctaContainer anime">
-                    <a href="${productSlider.url}" class="cta cta02">${productSlider.button}</a>
+                    <a href="${productSlider.url}" class="cta cta02"><span>${productSlider.button}</span></a>
                 </div>
             </div>`;
         document.querySelector(".productSlider").insertAdjacentHTML("beforeend", template);
@@ -437,7 +463,7 @@ function ctaBlock() {
                 <h2 class="ctaBlock__title anime">${el.title}</h2>
                 <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
                 <p class="ctaBlock__description anime">${el.text}</p>
-                <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a></div>
+                <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>
                 </div>
             </div>
         </div>`;
@@ -468,7 +494,7 @@ function ctaBlock2() {
             <h2 class="ctaBlock__title anime">${el.title}</h2>
             <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
             <p class="ctaBlock__description anime">${el.text}</p>
-            <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}">${el.ctaText}</a></div>
+            <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>
             </div>
         </div>
     </div>`;

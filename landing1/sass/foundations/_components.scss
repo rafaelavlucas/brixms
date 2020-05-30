@@ -14,41 +14,63 @@
     height: 48px;
     display: inline-flex;
     align-items: center;
-    position: relative;
     justify-content: center;
     box-shadow: inset 0px 0px 0px rgba($m-03, 0);
+    position: relative;
 
-    //border-radius: $radius;
-    &:before,
-    &:after {
-        @include transition;
-        content: '';
-        width: 8px;
-        height: 2px;
-        position: absolute;
-        right: 16px;
-        opacity: 0;
-
-    }
-
-    &:before {
-        transform: rotate(45deg) translateY(-4px);
-    }
-
-    &:after {
-        transform: rotate(-45deg) translateY(4px);
-
-    }
-
-    &:hover {
-        box-shadow: inset -48px 0px 0px rgba($m-03, 0.2);
-        //transform: translateY(-4px);
-        padding: 0 64px 0 32px;
+    span {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
 
         &:before,
         &:after {
-            opacity: 1;
-            right: 24px;
+            @include transition;
+            content: '';
+            width: 8px;
+            height: 2px;
+            position: absolute;
+            right: 8px;
+            opacity: 0;
+        }
+
+        &:before {
+            transform: rotate(45deg) translateY(-4px);
+        }
+
+        &:after {
+            transform: rotate(-45deg) translateY(4px);
+        }
+    }
+
+    &:before {
+        @include transition;
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background: $m-01;
+        opacity: 0.1;
+    }
+
+    &:hover {
+        //box-shadow: inset -48px 0px 0px rgba($m-03, 0.2);
+        //transform: translateY(-4px);
+        padding: 0 48px 0 32px;
+
+        &:before {
+            width: 100%;
+        }
+
+        span {
+
+            &:before,
+            &:after {
+                opacity: 1;
+                right: -24px;
+            }
         }
     }
 
