@@ -104,19 +104,21 @@ function mainNav() {
     links.addEventListener("mouseout", removeHover);
 
 
-    function addHover(e) {
-        linkItem.forEach(function (el) {
-            el.style.opacity = "0.3";
-        })
+    if (window.innerWidth > 800) {
+        function addHover(e) {
+            linkItem.forEach(function (el) {
+                el.style.opacity = "0.3";
+            })
 
-        e.target.style.opacity = "1";
-    }
+            e.target.style.opacity = "1";
+        }
 
-    function removeHover() {
-        linkItem.forEach(function (el) {
-            el.style.opacity = "1";
-        });
-        e.currentTarget.style.opacity = "1";
+        function removeHover() {
+            linkItem.forEach(function (el) {
+                el.style.opacity = "1";
+            });
+            e.currentTarget.style.opacity = "1";
+        }
     }
 }
 
@@ -393,8 +395,7 @@ function productSlider() {
                 </figure>
                 <div class="productSlider__text">
                     <h4 class="productSlider__productTitle">${el.title}</h4>
-                    <h5 class="productSlider__productSubtitle">${el.subtitle}</h5>
-                    <p class="productSlider__link">see details</p>
+                    <p class="productSlider__link ctaLink">see details</p>
                 </div>
             </a>
         </div>`;

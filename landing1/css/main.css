@@ -1963,7 +1963,7 @@ figure img {
   .mainNav__wrapper:after {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-color: #5C5C66;
+    background: linear-gradient(148deg, #e6764d, #FFA825);
   }
 }
 
@@ -2047,8 +2047,6 @@ figure img {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   font-weight: 700;
   margin-right: 64px;
   position: relative;
@@ -2702,12 +2700,16 @@ figure img {
 
 @-webkit-keyframes enter {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
 }
 
 @keyframes enter {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
 }
@@ -3698,28 +3700,40 @@ body {
   transition: all 0.2s ease;
 }
 
-.sliderHeading__arrows .swiper-button-prev:before, .sliderHeading__arrows .swiper-button-prev:after,
-.sliderHeading__arrows .swiper-button-next:before,
-.sliderHeading__arrows .swiper-button-next:after {
-  -webkit-transform: none;
-          transform: none;
-}
-
-.sliderHeading__arrows .swiper-button-prev:last-child,
-.sliderHeading__arrows .swiper-button-next:last-child {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .sliderHeading__arrows .swiper-button-prev:after,
 .sliderHeading__arrows .swiper-button-next:after {
   width: 32px;
   height: 32px;
   color: transparent;
+  -webkit-transform: none;
+          transform: none;
 }
 
-.sliderHeading__arrows .swiper-button-prev:hover,
-.sliderHeading__arrows .swiper-button-next:hover {
+.sliderHeading__arrows .swiper-button-prev:before,
+.sliderHeading__arrows .swiper-button-next:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  content: '';
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  top: initial;
+  left: 0;
   background: linear-gradient(148deg, #e6764d, #FFA825);
+  z-index: -1;
+}
+
+.sliderHeading__arrows .swiper-button-prev:last-child,
+.sliderHeading__arrows .swiper-button-next:last-child {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sliderHeading__arrows .swiper-button-prev:hover:before,
+.sliderHeading__arrows .swiper-button-next:hover:before {
+  top: 0;
+  height: 100%;
+  bottom: initial;
 }
 
 @media screen and (max-width: 799px) {
@@ -5083,12 +5097,41 @@ body {
 }
 
 .productSlider__image {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   width: 100%;
-  height: 150px;
+  height: 100%;
   top: 0;
+  position: absolute;
+}
+
+.productSlider__image:before, .productSlider__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.productSlider__image:after {
+  background-color: #363842;
+  opacity: 0.5;
+}
+
+.productSlider__image:before, .productSlider__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
 }
 
 .productSlider__text {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5101,6 +5144,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 24px;
+  z-index: 1;
+  color: white;
 }
 
 .productSlider__productTitle {
@@ -5168,11 +5213,6 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   overflow: hidden;
-  padding: 24px;
-  border-radius: 4px;
-  border: 1px solid #CECFD2;
-  -webkit-box-shadow: 0px 8px 20px -20px #363842;
-          box-shadow: 0px 8px 20px -20px #363842;
   background-color: white;
   height: 360px;
   display: -webkit-box;
@@ -5181,9 +5221,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -5207,10 +5247,51 @@ body {
   }
 }
 
-.productSlider__card:hover .productSlider__link {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.productSlider__card:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  content: '';
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(148deg, #e6764d, #FFA825);
   opacity: 1;
+  z-index: 1;
+}
+
+.productSlider__card:hover:before {
+  height: 6px;
+}
+
+.productSlider__card:hover .productSlider__text {
+  -webkit-transform: translateY(-56px);
+          transform: translateY(-56px);
+}
+
+.productSlider__card:hover .productSlider__link {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 1;
+}
+
+.productSlider__card:hover .productSlider__image:before, .productSlider__card:hover .productSlider__image:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.productSlider__card:hover .productSlider__image:after {
+  background-color: #363842;
+  opacity: 0.5;
 }
 
 .productGrid {
@@ -6318,6 +6399,8 @@ body {
 
 @keyframes enter {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
 }
@@ -7534,11 +7617,6 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   overflow: hidden;
-  padding: 24px;
-  border-radius: 4px;
-  border: 1px solid #CECFD2;
-  -webkit-box-shadow: 0px 8px 20px -20px #363842;
-          box-shadow: 0px 8px 20px -20px #363842;
   background-color: white;
   -webkit-animation: enter 0.4s ease backwards;
           animation: enter 0.4s ease backwards;
@@ -8083,6 +8161,8 @@ body {
 
 @keyframes enter {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
 }
@@ -8865,6 +8945,8 @@ body {
 
 @keyframes enter {
   0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
     opacity: 0;
   }
 }

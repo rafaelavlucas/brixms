@@ -78,7 +78,7 @@
 
             &:after {
                 transition: all 0.4s ease;
-                background-color: $neu-08;
+                background: $g-01;
             }
 
         }
@@ -139,7 +139,6 @@
 
     &__linkItem {
         @include ctaStyle;
-        @include transition2;
         font-weight: 700;
         margin-right: 64px;
         position: relative;
@@ -187,7 +186,6 @@
             &:last-child {
                 margin-bottom: 0px;
             }
-
         }
     }
 

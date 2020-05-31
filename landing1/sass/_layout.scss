@@ -108,7 +108,6 @@ body {
         display: flex;
         flex-direction: column;
         width: auto;
-
     }
 
     .swiper-pagination-bullet {
@@ -245,29 +244,38 @@ body {
             z-index: 1;
             @include transition2;
 
-            &:before,
-            &:after {
-                transform: none;
-            }
-
-            &:first-child {
-                //box-shadow: inset 0px 0px 0px 1px $m-01;
-                //background-color: rgba($m-01, 0.8);
-            }
-
-            &:last-child {
-                background-color: rgba(white, 0.1);
-                //background-color: $m-01;
-            }
-
             &:after {
                 width: 32px;
                 height: 32px;
-                color: transparent
+                color: transparent;
+                transform: none;
             }
 
-            &:hover {
+            &:before {
+                @include transition2;
+                content: '';
+                width: 100%;
+                height: 0%;
+                position: absolute;
+                bottom: 0;
+                top: initial;
+                left: 0;
                 background: $g-01;
+                z-index: -1;
+            }
+
+
+            &:last-child {
+                background-color: rgba(white, 0.15);
+            }
+
+
+            &:hover {
+                &:before {
+                    top: 0;
+                    height: 100%;
+                    bottom: initial;
+                }
             }
         }
 
@@ -311,11 +319,7 @@ body {
         }
 
     }
-
 }
-
-
-
 
 .simpleMedia {
     @include wrapper;
@@ -687,17 +691,30 @@ body {
     }
 
     &__image {
+        @include transition;
+        @include overlay;
         width: 100%;
-        height: 150px;
+        height: 100%;
         top: 0;
+        position: absolute;
+
+        &:before,
+        &:after {
+            @include transition;
+            opacity: 0;
+        }
+
     }
 
     &__text {
+        @include transition2;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 24px;
+        z-index: 1;
+        color: white;
     }
 
     &__productTitle {
@@ -713,6 +730,7 @@ body {
         opacity: 0;
         position: absolute;
         bottom: 24px;
+
         transform: translateY(20px);
 
         @include sm {
@@ -726,15 +744,40 @@ body {
         height: 360px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-direction: column;
         position: relative;
 
+        &:before {
+            @include transition2;
+            content: '';
+            width: 100%;
+            height: 0%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $g-01;
+            opacity: 1;
+            z-index: 1;
+        }
+
         &:hover {
+            &:before {
+                height: 6px;
+            }
+
             .productSlider {
+                &__text {
+                    transform: translateY(-56px);
+                }
+
                 &__link {
-                    transform: translateY(0);
+                    transform: translateY(40px);
                     opacity: 1;
+                }
+
+                &__image {
+                    @include overlay;
                 }
             }
         }

@@ -92,8 +92,8 @@ transform 0.4s $cubicModules;
 
     @keyframes enter {
         0% {
+            transform: translateY(40px);
             opacity: 0;
-
         }
     }
 }
@@ -164,10 +164,10 @@ section {
 @mixin cardStyle1 {
     @include transition2;
     overflow: hidden;
-    padding: 24px;
-    border-radius: $radius;
-    border: 1px solid $neu-05;
-    box-shadow: $shadow;
+    //padding: 24px;
+    //border-radius: $radius;
+    // border: 1px solid $neu-05;
+    //box-shadow: $shadow;
     background-color: white;
 
 
