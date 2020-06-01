@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-//Fonts
+// Fonts
 $font: 'Montserrat',
 sans-serif;
 $font2:'Space Mono',
@@ -72,7 +72,7 @@ $textMaxWidth: 720px;
 @mixin font-m {
     @include textMarginsSmall;
     max-width: $textMaxWidth;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 32px;
 
@@ -132,7 +132,7 @@ $textMaxWidth: 720px;
 }
 
 
-//Default Text Styles for Modules
+// Default Text Styles for Modules
 
 @mixin moduleDefault {
     &__heading {
@@ -149,7 +149,13 @@ $textMaxWidth: 720px;
     }
 
     &__title {
-        @include font-l;
+        @include font-xl;
+
+        //color: $m-01;
+
+        .white {
+            color: white;
+        }
     }
 
     &__subtitle {

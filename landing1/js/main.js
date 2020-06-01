@@ -108,7 +108,7 @@ function mainNav() {
 
         if (window.innerWidth > 800) {
             linkItem.forEach(function (el) {
-                el.style.opacity = "0.3";
+                el.style.opacity = "0.6";
             })
 
             e.target.style.opacity = "1";
@@ -185,7 +185,7 @@ function sliderHeading() {
         
             <div class="sliderHeading__wrapper">
             <div class="sliderHeading__text anime">
-                <h2 class="sliderHeading__title">${heading.title}</h2>
+                <h2 class="sliderHeading__title mainTitle">${heading.title}</h2>
             </div>
                 
             <div class="sliderHeading__slider swiper-container anime">
@@ -257,6 +257,88 @@ function sliderHeading() {
 
 sliderHeading();
 
+
+/*********************************/
+// Info Icons - Food Pairing
+
+function infoIcons() {
+
+    const infoIcons = [{
+        title: "What we have to Offer",
+        subtitle: "The benefits of buying with us",
+        alt: "alt",
+    }];
+    const icons = [{
+            name: "Diversity",
+            description: "Lots of choices for every taste",
+            icon: `${pathAssets}/icons-brand/bra007.svg`
+        },
+        {
+            name: "Modern",
+            description: "Always the newest models available",
+            icon: `${pathAssets}/icons-brand/bra007.svg`
+        },
+        {
+            name: "Trust",
+            description: "All our clients are satisfied",
+            icon: `${pathAssets}/icons-brand/bra007.svg`
+        },
+        {
+            name: "Easy",
+            description: "Choose how you want to pay",
+            icon: `${pathAssets}/icons-brand/bra007.svg`
+        }
+    ];
+
+    infoIcons.forEach(function (el) {
+        let template = `
+                <div class="infoIcons__wrapper">
+                    <div class="infoIcons__content">
+                        <div class="infoIcons__heading">
+                            <h3 class="infoIcons__title mainTitle anime">${el.title}</h3>
+                            <h4 class="infoIcons__subtitle anime">${el.subtitle}</h4>
+                        </div>
+                        <div class="infoIcons__icons">
+                        </div>
+                    </div>
+                </div>`;
+
+        document.querySelector(".infoIcons").insertAdjacentHTML("beforeend", template);
+    });
+
+
+    icons.forEach(function (el) {
+        let template = `
+                <div class="infoIcons__infoIcon infoIcon vertical anime">
+                    <figure class="infoIcon__icon">
+                        <img src="${el.icon}" alt="${el.name}">
+                    </figure>
+                    <div class="infoIcon__text">
+                        <p class="infoIcon__title">${el.name}</p>
+                        <p class="infoIcon__description">${el.description}</p>
+                    </div>
+                </div>`;
+
+        document.querySelector(".infoIcons__icons").insertAdjacentHTML("beforeend", template);
+    });
+
+    const module = document.querySelectorAll(".infoIcons");
+    module.forEach(function (el) {
+        const image = el.querySelectorAll("figure img");
+        image.forEach(function (el) {
+            if (!el.getAttribute('src')) {
+                el.closest("figure").style.display = "none";
+            }
+            if (el.getAttribute('src')) {
+                el.closest(".infoIcons__wrapper").style.background = "transparent";
+            }
+        })
+    });
+};
+infoIcons();
+
+
+
 /*********************************/
 // Content Media
 
@@ -282,7 +364,7 @@ function contentMedia() {
                 <img src="${el.img}" alt="${el.alt}">
             </figure>
             <div class="contentMedia__content">
-                <h2 class="contentMedia__title anime">${el.title}</h2>
+                <h2 class="contentMedia__title mainTitle anime">${el.title}</h2>
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
                 <div class="ctaContainer anime">
@@ -322,7 +404,7 @@ function contentMedia2() {
                 <img src="${el.img}" alt="${el.alt}">
             </figure>
             <div class="contentMedia__content">
-                <h2 class="contentMedia__title anime">${el.title}</h2>
+                <h2 class="contentMedia__title mainTitle anime">${el.title}</h2>
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
                 <div class="ctaContainer anime">
@@ -341,46 +423,45 @@ contentMedia2();
 
 function productSlider() {
     const products = [{
-            img: "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            title: "product 1",
+            img: "https://images.unsplash.com/photo-1488132828189-4e416661b680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            title: "GANT",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            title: "product 2",
+            img: "https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1459&q=80",
+            title: "Tube Watch S38",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1525740664269-1bb17f251737?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
-            title: "product 3",
+            img: "https://images.unsplash.com/photo-1533237742545-cdc658d90afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            title: "LIGE",
             subtitle: "subtitle",
             url: "#",
         },
         {
             img: "https://images.unsplash.com/photo-1507428861205-e8aab693190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2120&q=80",
-            title: "product 4",
+            title: "Citizen Echo Drive",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            title: "product 5",
+            img: "https://images.unsplash.com/photo-1529655608570-ca66f0aae5e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            title: "Seiko SNK809",
             subtitle: "subtitle",
             url: "#",
         },
         {
             img: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            title: "product 6",
+            title: "Hunters Race Zeus",
             subtitle: "subtitle",
             url: "#",
         },
     ];
 
     const productSlider = {
-        title: "Our Products",
-        subtitle: "subtitle",
+        title: "Our Watches",
         button: "View all",
         url: "#"
     };
@@ -391,8 +472,7 @@ function productSlider() {
         let template = `
             <div class="productSlider__wrapper">
                 <div class="productSlider__heading">
-                    <h3 class="productSlider__title anime">${productSlider.title}</h3>
-                    <h4 class="productSlider__subtitle anime">${productSlider.subtitle}</h4>
+                    <h3 class="productSlider__title mainTitle anime">${productSlider.title}</h3>
                 </div>
                 <div class="productSlider__sliderContainer">
                     <div class="swiper-button-prev"></div>
@@ -405,7 +485,7 @@ function productSlider() {
                     </div>
                 </div>
                 <div class="ctaContainer anime">
-                    <a href="${productSlider.url}" class="cta cta02"><span>${productSlider.button}</span></a>
+                    <a href="${productSlider.url}" class="cta cta01"><span>${productSlider.button}</span></a>
                 </div>
             </div>`;
         document.querySelector(".productSlider").insertAdjacentHTML("beforeend", template);
@@ -473,11 +553,11 @@ productSlider();
 
 function ctaBlock() {
     const ctaBlock = [{
-        img: "https://images.unsplash.com/photo-1495856458515-0637185db551?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-        title: "CTA Block with light background",
+        img: "https://images.unsplash.com/photo-1517682165294-35e1ba483543?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        title: "Contact Us",
         subtitle: "Subtitle if needed",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        ctaText: "button",
+        ctaText: "See contacts",
         ctaStyle: "cta01"
     }];
 
@@ -489,7 +569,7 @@ function ctaBlock() {
             </figure>
             <div class="ctaBlock__content">
             <div class="ctaBlock__text">
-                <h2 class="ctaBlock__title anime">${el.title}</h2>
+                <h2 class="ctaBlock__title mainTitle anime">${el.title}</h2>
                 <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
                 <p class="ctaBlock__description anime">${el.text}</p>
                 <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>
@@ -520,7 +600,7 @@ function ctaBlock2() {
     
         <div class="ctaBlock__content">
         <div class="ctaBlock__text">
-            <h2 class="ctaBlock__title anime">${el.title}</h2>
+            <h2 class="ctaBlock__title mainTitle anime">${el.title}</h2>
             <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
             <p class="ctaBlock__description anime">${el.text}</p>
             <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>

@@ -223,6 +223,10 @@ figure {
             }
 
             &__title {
+                @include font-m;
+            }
+
+            &__description {
                 @include font-s;
             }
         }
