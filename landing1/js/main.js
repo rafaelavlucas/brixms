@@ -15,6 +15,7 @@ window.addEventListener("load", event => {
 
     function animeModules() {
         document.querySelectorAll('section').forEach(el => observer.observe(el))
+        document.querySelectorAll('footer').forEach(el => observer.observe(el))
         document.querySelectorAll('header').forEach(el => observer.observe(el))
     }
 
@@ -154,25 +155,31 @@ function footer() {
     };
 
     const social = [{
-        name: "facebook",
-        icon: `${pathAssets}/social-white/facebook.svg`,
-        url: "#"
-    }, {
-        name: "instagram",
-        icon: `${pathAssets}/social-white/facebook.svg`,
-        url: "#"
-    }];
+            name: "Facebook",
+            icon: `${pathAssets}/social-white/facebook.svg`,
+            url: "#"
+        }, {
+            name: "Instagram",
+            icon: `${pathAssets}/social-white/facebook.svg`,
+            url: "#"
+        },
+        {
+            name: "Twitter",
+            icon: `${pathAssets}/social-white/twitter.svg`,
+            url: "#"
+        }
+    ];
 
     const day = new Date(),
         year = day.getFullYear();
 
     let templateFooter = `
-    <div class="footer__top">
+    <div class="footer__top anime">
         <a href=""><img class="footer__logo" src="${footer.logo}" ></a>
         <div class="footer__social">
         </div>
     </div>
-        <div class="footer__bottom">
+        <div class="footer__bottom anime">
             <p class="footer__text">${year} © ${footer.name} —  ${footer.text} by <a href="${footer.creditsUrl}" target="_blank">${footer.creditsName}</a></p>
             <div class="footer__links">
                 <a href="${footer.link1url}" class="footer__link hiperlink">${footer.link1}</a>

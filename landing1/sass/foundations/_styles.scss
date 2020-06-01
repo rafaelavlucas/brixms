@@ -107,7 +107,8 @@ header {
     overflow: hidden;
 }
 
-section {
+section,
+footer {
     @include anime;
     @include animeImg;
     transition: $transitionModules;

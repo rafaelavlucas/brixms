@@ -661,7 +661,8 @@ header .animeImg {
   opacity: 0;
 }
 
-section {
+section,
+footer {
   -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
@@ -672,7 +673,8 @@ section {
   overflow: hidden;
 }
 
-section .anime {
+section .anime,
+footer .anime {
   -webkit-transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), -webkit-transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
   transition: opacity 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94), transform 0.4s cubic-bezier(0.48, 0.14, 0.27, 0.94);
@@ -682,507 +684,608 @@ section .anime {
           transform: translateY(40px) scaleY(1.2);
 }
 
-section .anime:nth-child(1) {
+section .anime:nth-child(1),
+footer .anime:nth-child(1) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-section .anime:nth-child(2) {
+section .anime:nth-child(2),
+footer .anime:nth-child(2) {
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-section .anime:nth-child(3) {
+section .anime:nth-child(3),
+footer .anime:nth-child(3) {
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
 
-section .anime:nth-child(4) {
+section .anime:nth-child(4),
+footer .anime:nth-child(4) {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
 }
 
-section .anime:nth-child(5) {
+section .anime:nth-child(5),
+footer .anime:nth-child(5) {
   -webkit-transition-delay: 1.4s;
           transition-delay: 1.4s;
 }
 
-section .anime:nth-child(6) {
+section .anime:nth-child(6),
+footer .anime:nth-child(6) {
   -webkit-transition-delay: 1.6s;
           transition-delay: 1.6s;
 }
 
-section .anime:nth-child(7) {
+section .anime:nth-child(7),
+footer .anime:nth-child(7) {
   -webkit-transition-delay: 1.8s;
           transition-delay: 1.8s;
 }
 
-section .anime:nth-child(8) {
+section .anime:nth-child(8),
+footer .anime:nth-child(8) {
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
 }
 
-section .anime:nth-child(9) {
+section .anime:nth-child(9),
+footer .anime:nth-child(9) {
   -webkit-transition-delay: 2.2s;
           transition-delay: 2.2s;
 }
 
-section .anime:nth-child(10) {
+section .anime:nth-child(10),
+footer .anime:nth-child(10) {
   -webkit-transition-delay: 2.4s;
           transition-delay: 2.4s;
 }
 
-section .anime:nth-child(11) {
+section .anime:nth-child(11),
+footer .anime:nth-child(11) {
   -webkit-transition-delay: 2.6s;
           transition-delay: 2.6s;
 }
 
-section .anime:nth-child(12) {
+section .anime:nth-child(12),
+footer .anime:nth-child(12) {
   -webkit-transition-delay: 2.8s;
           transition-delay: 2.8s;
 }
 
-section .anime:nth-child(13) {
+section .anime:nth-child(13),
+footer .anime:nth-child(13) {
   -webkit-transition-delay: 3s;
           transition-delay: 3s;
 }
 
-section .anime:nth-child(14) {
+section .anime:nth-child(14),
+footer .anime:nth-child(14) {
   -webkit-transition-delay: 3.2s;
           transition-delay: 3.2s;
 }
 
-section .anime:nth-child(15) {
+section .anime:nth-child(15),
+footer .anime:nth-child(15) {
   -webkit-transition-delay: 3.4s;
           transition-delay: 3.4s;
 }
 
-section .anime:nth-child(16) {
+section .anime:nth-child(16),
+footer .anime:nth-child(16) {
   -webkit-transition-delay: 3.6s;
           transition-delay: 3.6s;
 }
 
-section .anime:nth-child(17) {
+section .anime:nth-child(17),
+footer .anime:nth-child(17) {
   -webkit-transition-delay: 3.8s;
           transition-delay: 3.8s;
 }
 
-section .anime:nth-child(18) {
+section .anime:nth-child(18),
+footer .anime:nth-child(18) {
   -webkit-transition-delay: 4s;
           transition-delay: 4s;
 }
 
-section .anime:nth-child(19) {
+section .anime:nth-child(19),
+footer .anime:nth-child(19) {
   -webkit-transition-delay: 4.2s;
           transition-delay: 4.2s;
 }
 
-section .anime:nth-child(20) {
+section .anime:nth-child(20),
+footer .anime:nth-child(20) {
   -webkit-transition-delay: 4.4s;
           transition-delay: 4.4s;
 }
 
-section .anime:nth-child(21) {
+section .anime:nth-child(21),
+footer .anime:nth-child(21) {
   -webkit-transition-delay: 4.6s;
           transition-delay: 4.6s;
 }
 
-section .anime:nth-child(22) {
+section .anime:nth-child(22),
+footer .anime:nth-child(22) {
   -webkit-transition-delay: 4.8s;
           transition-delay: 4.8s;
 }
 
-section .anime:nth-child(23) {
+section .anime:nth-child(23),
+footer .anime:nth-child(23) {
   -webkit-transition-delay: 5s;
           transition-delay: 5s;
 }
 
-section .anime:nth-child(24) {
+section .anime:nth-child(24),
+footer .anime:nth-child(24) {
   -webkit-transition-delay: 5.2s;
           transition-delay: 5.2s;
 }
 
-section .anime:nth-child(25) {
+section .anime:nth-child(25),
+footer .anime:nth-child(25) {
   -webkit-transition-delay: 5.4s;
           transition-delay: 5.4s;
 }
 
-section .anime:nth-child(26) {
+section .anime:nth-child(26),
+footer .anime:nth-child(26) {
   -webkit-transition-delay: 5.6s;
           transition-delay: 5.6s;
 }
 
-section .anime:nth-child(27) {
+section .anime:nth-child(27),
+footer .anime:nth-child(27) {
   -webkit-transition-delay: 5.8s;
           transition-delay: 5.8s;
 }
 
-section .anime:nth-child(28) {
+section .anime:nth-child(28),
+footer .anime:nth-child(28) {
   -webkit-transition-delay: 6s;
           transition-delay: 6s;
 }
 
-section .anime:nth-child(29) {
+section .anime:nth-child(29),
+footer .anime:nth-child(29) {
   -webkit-transition-delay: 6.2s;
           transition-delay: 6.2s;
 }
 
-section .anime:nth-child(30) {
+section .anime:nth-child(30),
+footer .anime:nth-child(30) {
   -webkit-transition-delay: 6.4s;
           transition-delay: 6.4s;
 }
 
-section .anime:nth-child(31) {
+section .anime:nth-child(31),
+footer .anime:nth-child(31) {
   -webkit-transition-delay: 6.6s;
           transition-delay: 6.6s;
 }
 
-section .anime:nth-child(32) {
+section .anime:nth-child(32),
+footer .anime:nth-child(32) {
   -webkit-transition-delay: 6.8s;
           transition-delay: 6.8s;
 }
 
-section .anime:nth-child(33) {
+section .anime:nth-child(33),
+footer .anime:nth-child(33) {
   -webkit-transition-delay: 7s;
           transition-delay: 7s;
 }
 
-section .anime:nth-child(34) {
+section .anime:nth-child(34),
+footer .anime:nth-child(34) {
   -webkit-transition-delay: 7.2s;
           transition-delay: 7.2s;
 }
 
-section .anime:nth-child(35) {
+section .anime:nth-child(35),
+footer .anime:nth-child(35) {
   -webkit-transition-delay: 7.4s;
           transition-delay: 7.4s;
 }
 
-section .anime:nth-child(36) {
+section .anime:nth-child(36),
+footer .anime:nth-child(36) {
   -webkit-transition-delay: 7.6s;
           transition-delay: 7.6s;
 }
 
-section .anime:nth-child(37) {
+section .anime:nth-child(37),
+footer .anime:nth-child(37) {
   -webkit-transition-delay: 7.8s;
           transition-delay: 7.8s;
 }
 
-section .anime:nth-child(38) {
+section .anime:nth-child(38),
+footer .anime:nth-child(38) {
   -webkit-transition-delay: 8s;
           transition-delay: 8s;
 }
 
-section .anime:nth-child(39) {
+section .anime:nth-child(39),
+footer .anime:nth-child(39) {
   -webkit-transition-delay: 8.2s;
           transition-delay: 8.2s;
 }
 
-section .anime:nth-child(40) {
+section .anime:nth-child(40),
+footer .anime:nth-child(40) {
   -webkit-transition-delay: 8.4s;
           transition-delay: 8.4s;
 }
 
-section .anime:nth-child(41) {
+section .anime:nth-child(41),
+footer .anime:nth-child(41) {
   -webkit-transition-delay: 8.6s;
           transition-delay: 8.6s;
 }
 
-section .anime:nth-child(42) {
+section .anime:nth-child(42),
+footer .anime:nth-child(42) {
   -webkit-transition-delay: 8.8s;
           transition-delay: 8.8s;
 }
 
-section .anime:nth-child(43) {
+section .anime:nth-child(43),
+footer .anime:nth-child(43) {
   -webkit-transition-delay: 9s;
           transition-delay: 9s;
 }
 
-section .anime:nth-child(44) {
+section .anime:nth-child(44),
+footer .anime:nth-child(44) {
   -webkit-transition-delay: 9.2s;
           transition-delay: 9.2s;
 }
 
-section .anime:nth-child(45) {
+section .anime:nth-child(45),
+footer .anime:nth-child(45) {
   -webkit-transition-delay: 9.4s;
           transition-delay: 9.4s;
 }
 
-section .anime:nth-child(46) {
+section .anime:nth-child(46),
+footer .anime:nth-child(46) {
   -webkit-transition-delay: 9.6s;
           transition-delay: 9.6s;
 }
 
-section .anime:nth-child(47) {
+section .anime:nth-child(47),
+footer .anime:nth-child(47) {
   -webkit-transition-delay: 9.8s;
           transition-delay: 9.8s;
 }
 
-section .anime:nth-child(48) {
+section .anime:nth-child(48),
+footer .anime:nth-child(48) {
   -webkit-transition-delay: 10s;
           transition-delay: 10s;
 }
 
-section .anime:nth-child(49) {
+section .anime:nth-child(49),
+footer .anime:nth-child(49) {
   -webkit-transition-delay: 10.2s;
           transition-delay: 10.2s;
 }
 
-section .anime:nth-child(50) {
+section .anime:nth-child(50),
+footer .anime:nth-child(50) {
   -webkit-transition-delay: 10.4s;
           transition-delay: 10.4s;
 }
 
-section .anime:nth-child(51) {
+section .anime:nth-child(51),
+footer .anime:nth-child(51) {
   -webkit-transition-delay: 10.6s;
           transition-delay: 10.6s;
 }
 
-section .anime:nth-child(52) {
+section .anime:nth-child(52),
+footer .anime:nth-child(52) {
   -webkit-transition-delay: 10.8s;
           transition-delay: 10.8s;
 }
 
-section .anime:nth-child(53) {
+section .anime:nth-child(53),
+footer .anime:nth-child(53) {
   -webkit-transition-delay: 11s;
           transition-delay: 11s;
 }
 
-section .anime:nth-child(54) {
+section .anime:nth-child(54),
+footer .anime:nth-child(54) {
   -webkit-transition-delay: 11.2s;
           transition-delay: 11.2s;
 }
 
-section .anime:nth-child(55) {
+section .anime:nth-child(55),
+footer .anime:nth-child(55) {
   -webkit-transition-delay: 11.4s;
           transition-delay: 11.4s;
 }
 
-section .anime:nth-child(56) {
+section .anime:nth-child(56),
+footer .anime:nth-child(56) {
   -webkit-transition-delay: 11.6s;
           transition-delay: 11.6s;
 }
 
-section .anime:nth-child(57) {
+section .anime:nth-child(57),
+footer .anime:nth-child(57) {
   -webkit-transition-delay: 11.8s;
           transition-delay: 11.8s;
 }
 
-section .anime:nth-child(58) {
+section .anime:nth-child(58),
+footer .anime:nth-child(58) {
   -webkit-transition-delay: 12s;
           transition-delay: 12s;
 }
 
-section .anime:nth-child(59) {
+section .anime:nth-child(59),
+footer .anime:nth-child(59) {
   -webkit-transition-delay: 12.2s;
           transition-delay: 12.2s;
 }
 
-section .anime:nth-child(60) {
+section .anime:nth-child(60),
+footer .anime:nth-child(60) {
   -webkit-transition-delay: 12.4s;
           transition-delay: 12.4s;
 }
 
-section .anime:nth-child(61) {
+section .anime:nth-child(61),
+footer .anime:nth-child(61) {
   -webkit-transition-delay: 12.6s;
           transition-delay: 12.6s;
 }
 
-section .anime:nth-child(62) {
+section .anime:nth-child(62),
+footer .anime:nth-child(62) {
   -webkit-transition-delay: 12.8s;
           transition-delay: 12.8s;
 }
 
-section .anime:nth-child(63) {
+section .anime:nth-child(63),
+footer .anime:nth-child(63) {
   -webkit-transition-delay: 13s;
           transition-delay: 13s;
 }
 
-section .anime:nth-child(64) {
+section .anime:nth-child(64),
+footer .anime:nth-child(64) {
   -webkit-transition-delay: 13.2s;
           transition-delay: 13.2s;
 }
 
-section .anime:nth-child(65) {
+section .anime:nth-child(65),
+footer .anime:nth-child(65) {
   -webkit-transition-delay: 13.4s;
           transition-delay: 13.4s;
 }
 
-section .anime:nth-child(66) {
+section .anime:nth-child(66),
+footer .anime:nth-child(66) {
   -webkit-transition-delay: 13.6s;
           transition-delay: 13.6s;
 }
 
-section .anime:nth-child(67) {
+section .anime:nth-child(67),
+footer .anime:nth-child(67) {
   -webkit-transition-delay: 13.8s;
           transition-delay: 13.8s;
 }
 
-section .anime:nth-child(68) {
+section .anime:nth-child(68),
+footer .anime:nth-child(68) {
   -webkit-transition-delay: 14s;
           transition-delay: 14s;
 }
 
-section .anime:nth-child(69) {
+section .anime:nth-child(69),
+footer .anime:nth-child(69) {
   -webkit-transition-delay: 14.2s;
           transition-delay: 14.2s;
 }
 
-section .anime:nth-child(70) {
+section .anime:nth-child(70),
+footer .anime:nth-child(70) {
   -webkit-transition-delay: 14.4s;
           transition-delay: 14.4s;
 }
 
-section .anime:nth-child(71) {
+section .anime:nth-child(71),
+footer .anime:nth-child(71) {
   -webkit-transition-delay: 14.6s;
           transition-delay: 14.6s;
 }
 
-section .anime:nth-child(72) {
+section .anime:nth-child(72),
+footer .anime:nth-child(72) {
   -webkit-transition-delay: 14.8s;
           transition-delay: 14.8s;
 }
 
-section .anime:nth-child(73) {
+section .anime:nth-child(73),
+footer .anime:nth-child(73) {
   -webkit-transition-delay: 15s;
           transition-delay: 15s;
 }
 
-section .anime:nth-child(74) {
+section .anime:nth-child(74),
+footer .anime:nth-child(74) {
   -webkit-transition-delay: 15.2s;
           transition-delay: 15.2s;
 }
 
-section .anime:nth-child(75) {
+section .anime:nth-child(75),
+footer .anime:nth-child(75) {
   -webkit-transition-delay: 15.4s;
           transition-delay: 15.4s;
 }
 
-section .anime:nth-child(76) {
+section .anime:nth-child(76),
+footer .anime:nth-child(76) {
   -webkit-transition-delay: 15.6s;
           transition-delay: 15.6s;
 }
 
-section .anime:nth-child(77) {
+section .anime:nth-child(77),
+footer .anime:nth-child(77) {
   -webkit-transition-delay: 15.8s;
           transition-delay: 15.8s;
 }
 
-section .anime:nth-child(78) {
+section .anime:nth-child(78),
+footer .anime:nth-child(78) {
   -webkit-transition-delay: 16s;
           transition-delay: 16s;
 }
 
-section .anime:nth-child(79) {
+section .anime:nth-child(79),
+footer .anime:nth-child(79) {
   -webkit-transition-delay: 16.2s;
           transition-delay: 16.2s;
 }
 
-section .anime:nth-child(80) {
+section .anime:nth-child(80),
+footer .anime:nth-child(80) {
   -webkit-transition-delay: 16.4s;
           transition-delay: 16.4s;
 }
 
-section .anime:nth-child(81) {
+section .anime:nth-child(81),
+footer .anime:nth-child(81) {
   -webkit-transition-delay: 16.6s;
           transition-delay: 16.6s;
 }
 
-section .anime:nth-child(82) {
+section .anime:nth-child(82),
+footer .anime:nth-child(82) {
   -webkit-transition-delay: 16.8s;
           transition-delay: 16.8s;
 }
 
-section .anime:nth-child(83) {
+section .anime:nth-child(83),
+footer .anime:nth-child(83) {
   -webkit-transition-delay: 17s;
           transition-delay: 17s;
 }
 
-section .anime:nth-child(84) {
+section .anime:nth-child(84),
+footer .anime:nth-child(84) {
   -webkit-transition-delay: 17.2s;
           transition-delay: 17.2s;
 }
 
-section .anime:nth-child(85) {
+section .anime:nth-child(85),
+footer .anime:nth-child(85) {
   -webkit-transition-delay: 17.4s;
           transition-delay: 17.4s;
 }
 
-section .anime:nth-child(86) {
+section .anime:nth-child(86),
+footer .anime:nth-child(86) {
   -webkit-transition-delay: 17.6s;
           transition-delay: 17.6s;
 }
 
-section .anime:nth-child(87) {
+section .anime:nth-child(87),
+footer .anime:nth-child(87) {
   -webkit-transition-delay: 17.8s;
           transition-delay: 17.8s;
 }
 
-section .anime:nth-child(88) {
+section .anime:nth-child(88),
+footer .anime:nth-child(88) {
   -webkit-transition-delay: 18s;
           transition-delay: 18s;
 }
 
-section .anime:nth-child(89) {
+section .anime:nth-child(89),
+footer .anime:nth-child(89) {
   -webkit-transition-delay: 18.2s;
           transition-delay: 18.2s;
 }
 
-section .anime:nth-child(90) {
+section .anime:nth-child(90),
+footer .anime:nth-child(90) {
   -webkit-transition-delay: 18.4s;
           transition-delay: 18.4s;
 }
 
-section .anime:nth-child(91) {
+section .anime:nth-child(91),
+footer .anime:nth-child(91) {
   -webkit-transition-delay: 18.6s;
           transition-delay: 18.6s;
 }
 
-section .anime:nth-child(92) {
+section .anime:nth-child(92),
+footer .anime:nth-child(92) {
   -webkit-transition-delay: 18.8s;
           transition-delay: 18.8s;
 }
 
-section .anime:nth-child(93) {
+section .anime:nth-child(93),
+footer .anime:nth-child(93) {
   -webkit-transition-delay: 19s;
           transition-delay: 19s;
 }
 
-section .anime:nth-child(94) {
+section .anime:nth-child(94),
+footer .anime:nth-child(94) {
   -webkit-transition-delay: 19.2s;
           transition-delay: 19.2s;
 }
 
-section .anime:nth-child(95) {
+section .anime:nth-child(95),
+footer .anime:nth-child(95) {
   -webkit-transition-delay: 19.4s;
           transition-delay: 19.4s;
 }
 
-section .anime:nth-child(96) {
+section .anime:nth-child(96),
+footer .anime:nth-child(96) {
   -webkit-transition-delay: 19.6s;
           transition-delay: 19.6s;
 }
 
-section .anime:nth-child(97) {
+section .anime:nth-child(97),
+footer .anime:nth-child(97) {
   -webkit-transition-delay: 19.8s;
           transition-delay: 19.8s;
 }
 
-section .anime:nth-child(98) {
+section .anime:nth-child(98),
+footer .anime:nth-child(98) {
   -webkit-transition-delay: 20s;
           transition-delay: 20s;
 }
 
-section .anime:nth-child(99) {
+section .anime:nth-child(99),
+footer .anime:nth-child(99) {
   -webkit-transition-delay: 20.2s;
           transition-delay: 20.2s;
 }
 
-section .anime:nth-child(100) {
+section .anime:nth-child(100),
+footer .anime:nth-child(100) {
   -webkit-transition-delay: 20.4s;
           transition-delay: 20.4s;
 }
 
-section .animeImg {
+section .animeImg,
+footer .animeImg {
   -webkit-transition: opacity 1s ease-in, -webkit-transform 2s ease;
   transition: opacity 1s ease-in, -webkit-transform 2s ease;
   transition: transform 2s ease, opacity 1s ease-in;
