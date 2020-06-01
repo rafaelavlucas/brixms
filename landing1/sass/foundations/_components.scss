@@ -17,6 +17,8 @@
     justify-content: center;
     box-shadow: inset 0px 0px 0px rgba($m-03, 0);
     position: relative;
+    overflow: hidden;
+    border-radius: 32px;
 
     span {
         display: flex;
@@ -53,11 +55,11 @@
         left: 0;
         background: $m-01;
         opacity: 0.1;
+        border-radius: inherit;
     }
 
     &:hover {
-        //box-shadow: inset -48px 0px 0px rgba($m-03, 0.2);
-        //transform: translateY(-4px);
+
         padding: 0 48px 0 32px;
 
         &:before {

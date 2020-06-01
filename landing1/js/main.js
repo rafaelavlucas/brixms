@@ -34,10 +34,9 @@ function mainNav() {
         <div class="mainNav__icon"><span></span></div>
         <div class="mainNav__wrapper">
         <div class="mainNav__links">
-        <a class="mainNav__linkItem" href="">Link</a>
-        <a class="mainNav__linkItem" href="">Link</a>
-        <a class="mainNav__linkItem" href="">Link</a>
-        <a class="mainNav__linkItem" href="">Link</a>
+        <a class="mainNav__linkItem" href="">About</a>
+        <a class="mainNav__linkItem" href="">Products</a>
+        <a class="mainNav__linkItem" href="">Contacts</a>
         </div>
         </div>`;
 
@@ -104,22 +103,26 @@ function mainNav() {
     links.addEventListener("mouseout", removeHover);
 
 
-    if (window.innerWidth > 800) {
-        function addHover(e) {
+
+    function addHover(e) {
+
+        if (window.innerWidth > 800) {
             linkItem.forEach(function (el) {
                 el.style.opacity = "0.3";
             })
 
             e.target.style.opacity = "1";
         }
-
-        function removeHover() {
-            linkItem.forEach(function (el) {
-                el.style.opacity = "1";
-            });
-            e.currentTarget.style.opacity = "1";
-        }
     }
+
+    function removeHover() {
+        linkItem.forEach(function (el) {
+            el.style.opacity = "1";
+        });
+        e.currentTarget.style.opacity = "1";
+    }
+
+    console.log(window.innerWidth)
 }
 
 mainNav();
@@ -225,6 +228,31 @@ function sliderHeading() {
             prevEl: '.sliderHeading .swiper-button-prev',
         },
     });
+
+    const sliderWrapper = document.querySelector(".sliderHeading__slider"),
+        title = document.querySelector(".sliderHeading__text");
+
+    sliderWrapper.addEventListener("mouseover", addBlur);
+    title.addEventListener("mouseover", addBlur);
+
+    sliderWrapper.addEventListener("mouseout", removeBlur);
+    title.addEventListener("mouseout", removeBlur);
+
+
+    function addBlur() {
+        if (window.innerWidth > 800) {
+            title.style.filter = "blur(10px)";
+            title.style.opacity = "0.2";
+            title.style.transition = "all 0.8s 0s ease";
+            title.style.transform = "scaleY(2)";
+        }
+    }
+
+    function removeBlur() {
+        title.style.filter = "blur(0px)";
+        title.style.opacity = "1";
+        title.style.transform = "scaleY(1)";
+    }
 };
 
 sliderHeading();

@@ -136,6 +136,10 @@
   color: #e6764d;
 }
 
+.neu-06 .cta01:before {
+  opacity: 0.1;
+}
+
 .neu-06 .cta01 span:before, .neu-06 .cta01 span:after {
   background-color: #e6764d;
 }
@@ -157,6 +161,10 @@
 .neu-07 .cta.cta01 {
   background: white;
   color: #e6764d;
+}
+
+.neu-07 .cta.cta01:before {
+  opacity: 0.1;
 }
 
 .neu-07 .cta.cta01 span:before, .neu-07 .cta.cta01 span:after {
@@ -182,6 +190,10 @@
   color: #e6764d;
 }
 
+.neu-08 .cta.cta01:before {
+  opacity: 0.1;
+}
+
 .neu-08 .cta.cta01 span:before, .neu-08 .cta.cta01 span:after {
   background-color: #e6764d;
 }
@@ -203,6 +215,10 @@
 .neu-09 .cta01 {
   background: white;
   color: #e6764d;
+}
+
+.neu-09 .cta01:before {
+  opacity: 0.1;
 }
 
 .neu-09 .cta01 span:before, .neu-09 .cta01 span:after {
@@ -1329,6 +1345,8 @@ section .animeImg {
   -webkit-box-shadow: inset 0px 0px 0px rgba(255, 172, 108, 0);
           box-shadow: inset 0px 0px 0px rgba(255, 172, 108, 0);
   position: relative;
+  overflow: hidden;
+  border-radius: 32px;
 }
 
 .cta span {
@@ -1375,6 +1393,7 @@ section .animeImg {
   left: 0;
   background: #e6764d;
   opacity: 0.1;
+  border-radius: inherit;
 }
 
 .cta:hover {
@@ -1406,6 +1425,10 @@ section .animeImg {
 .cta.cta01alt {
   background: white;
   color: #e6764d;
+}
+
+.cta.cta01alt:before {
+  opacity: 0.1;
 }
 
 .cta.cta01alt span:before, .cta.cta01alt span:after {
@@ -3646,6 +3669,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 @media screen and (max-width: 511px) {
@@ -3669,8 +3694,8 @@ body {
 }
 
 .sliderHeading__arrows {
-  right: 0px;
-  bottom: 0;
+  right: 24px;
+  bottom: 24px;
   z-index: 3;
   position: absolute;
   display: -webkit-box;
@@ -3689,13 +3714,14 @@ body {
   left: initial;
   right: initial;
   position: initial;
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   background-color: transparent;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 1;
+  border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -3714,26 +3740,23 @@ body {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   content: '';
-  width: 100%;
+  width: 0%;
   height: 0%;
   position: absolute;
-  bottom: 0;
-  top: initial;
-  left: 0;
   background: linear-gradient(148deg, #e6764d, #FFA825);
   z-index: -1;
+  border-radius: inherit;
 }
 
 .sliderHeading__arrows .swiper-button-prev:last-child,
 .sliderHeading__arrows .swiper-button-next:last-child {
-  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 16px;
 }
 
 .sliderHeading__arrows .swiper-button-prev:hover:before,
 .sliderHeading__arrows .swiper-button-next:hover:before {
-  top: 0;
+  width: 100%;
   height: 100%;
-  bottom: initial;
 }
 
 @media screen and (max-width: 799px) {

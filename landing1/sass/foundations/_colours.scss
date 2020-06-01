@@ -38,6 +38,10 @@ $g-01: linear-gradient(148deg, $m-01, $m-02);
     background: white;
     color: $m-01;
 
+    &:before {
+        opacity: 0.1;
+    }
+
     span {
 
         &:before,
