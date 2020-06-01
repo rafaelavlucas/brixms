@@ -1070,6 +1070,10 @@ body {
         left: 0;
         top: 0;
         z-index: -1;
+
+        img {
+            filter: grayscale(100%);
+        }
     }
 
     &__content {

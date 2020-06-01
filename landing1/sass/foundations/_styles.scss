@@ -152,12 +152,14 @@ section {
         top: 0;
         left: 0;
         background-color: black;
-        opacity: 0.4;
+        opacity: 0.5;
+        z-index: 1;
     }
 
     &:after {
         background-color: $neu-09;
         opacity: 0.6;
+        z-index: 2;
     }
 }
 

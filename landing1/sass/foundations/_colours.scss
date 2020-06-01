@@ -115,7 +115,7 @@ $g-01: linear-gradient(148deg, $m-01, $m-02);
 
     .cta {
         &.cta01 {
-            @include cta01alt;
+            @include cta01;
         }
 
         &.cta02 {

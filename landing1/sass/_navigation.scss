@@ -292,19 +292,37 @@
 }
 
 .footer {
-    @include paddingSide;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: $neu-09;
     width: 100%;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    @include sm {
-        flex-direction: column;
-        text-align: center;
+    &__top,
+    &__bottom {
+        @include paddingSide;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: $neu-09;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include sm {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__top {
+        height: 200px;
+    }
+
+    &__bottom {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        background: $g-01;
+    }
+
+    &__logo {
+        width: 160px;
     }
 
     &__links {

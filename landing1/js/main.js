@@ -27,6 +27,17 @@ window.addEventListener("load", event => {
 
 function mainNav() {
     const mainNav = document.querySelector('.mainNav');
+    const navLinks = [{
+        name: "About",
+        url: "#"
+    }, {
+        name: "Products",
+        url: "#"
+    }, {
+        name: "Contacts",
+        url: "#"
+    }];
+
     let templateNav = `
         <div class="mainNav__logo">
         <img src="${pathAssets}/images/logo-white.svg" alt="Logo">
@@ -34,13 +45,17 @@ function mainNav() {
         <div class="mainNav__icon"><span></span></div>
         <div class="mainNav__wrapper">
         <div class="mainNav__links">
-        <a class="mainNav__linkItem" href="">About</a>
-        <a class="mainNav__linkItem" href="">Products</a>
-        <a class="mainNav__linkItem" href="">Contacts</a>
         </div>
         </div>`;
 
     document.querySelector('.mainNav').insertAdjacentHTML('beforeend', templateNav);
+
+    navLinks.forEach(function (el) {
+        let template = `
+        <a class="mainNav__linkItem" href="${el.url}">${el.name}</a>`;
+        document.querySelector('.mainNav__links').insertAdjacentHTML('beforeend', template);
+    });
+
 
     const logo = document.querySelector(".mainNav__logo img");
 
@@ -66,7 +81,6 @@ function mainNav() {
             }
         };
     }
-
     getSticky();
 
 
@@ -102,15 +116,11 @@ function mainNav() {
 
     links.addEventListener("mouseout", removeHover);
 
-
-
     function addHover(e) {
-
-        if (window.innerWidth > 800) {
+        if (window.innerWidth > 799) {
             linkItem.forEach(function (el) {
                 el.style.opacity = "0.6";
             })
-
             e.target.style.opacity = "1";
         }
     }
@@ -121,8 +131,6 @@ function mainNav() {
         });
         e.currentTarget.style.opacity = "1";
     }
-
-    console.log(window.innerWidth)
 }
 
 mainNav();
@@ -134,25 +142,52 @@ mainNav();
 function footer() {
 
     const footer = {
-        name: "Brand Name",
+        logo: `${pathAssets}/images/logo-white.svg`,
+        name: "Catche",
         text: "All Rights Reserved",
+        creditsName: "Brix",
+        creditsUrl: "#",
         link1: "Privacy Policy",
         link1url: "#",
         link2: "Cookie Policy",
         link2url: "#"
     };
 
+    const social = [{
+        name: "facebook",
+        icon: `${pathAssets}/social-white/facebook.svg`,
+        url: "#"
+    }, {
+        name: "instagram",
+        icon: `${pathAssets}/social-white/facebook.svg`,
+        url: "#"
+    }];
+
     const day = new Date(),
         year = day.getFullYear();
 
     let templateFooter = `
-        <p class="footer__text">${year} © ${footer.name} —  ${footer.text}</p>
-        <div class="footer__links">
-            <a href="${footer.link1url}" class="footer__link hiperlink">${footer.link1}</a>
-            <a href="${footer.link2url}" class="footer__link hiperlink">${footer.link2}</a>
+    <div class="footer__top">
+        <a href=""><img class="footer__logo" src="${footer.logo}" ></a>
+        <div class="footer__social">
+        </div>
+    </div>
+        <div class="footer__bottom">
+            <p class="footer__text">${year} © ${footer.name} —  ${footer.text} by <a href="${footer.creditsUrl}" target="_blank">${footer.creditsName}</a></p>
+            <div class="footer__links">
+                <a href="${footer.link1url}" class="footer__link hiperlink">${footer.link1}</a>
+                <a href="${footer.link2url}" class="footer__link hiperlink">${footer.link2}</a>
+            </div>
         </div>`;
-
     document.querySelector('.footer').insertAdjacentHTML('beforeend', templateFooter);
+
+    social.forEach(function (el) {
+        let templateSocial = `
+        <a class="footer_socialItem" href="${el.url}">
+        <figure class="footer__iconSocial"><img src="${el.icon}" alt="${el.name}"></figure>
+        </a>`;
+        document.querySelector('.footer__social').insertAdjacentHTML('beforeend', templateSocial);
+    });
 };
 
 footer();
@@ -240,7 +275,7 @@ function sliderHeading() {
 
 
     function addBlur() {
-        if (window.innerWidth > 800) {
+        if (window.innerWidth > 799) {
             title.style.filter = "blur(10px)";
             title.style.opacity = "0.2";
             title.style.transition = "all 0.8s 0s ease";
@@ -553,7 +588,7 @@ productSlider();
 
 function ctaBlock() {
     const ctaBlock = [{
-        img: "https://images.unsplash.com/photo-1517682165294-35e1ba483543?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        img: "https://images.unsplash.com/photo-1522115174737-2497162f69ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         title: "Contact Us",
         subtitle: "Subtitle if needed",
         text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
@@ -581,37 +616,3 @@ function ctaBlock() {
     });
 };
 ctaBlock();
-
-/*********************************/
-// CTA Block
-
-function ctaBlock2() {
-    const ctaBlock = [{
-        title: "CTA Block with light background",
-        subtitle: "Subtitle if needed",
-        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        ctaText: "button",
-        ctaStyle: "cta01"
-    }];
-
-    ctaBlock.forEach(function (el) {
-        let template = `
-        <div class="ctaBlock__wrapper neu-01">
-    
-        <div class="ctaBlock__content">
-        <div class="ctaBlock__text">
-            <h2 class="ctaBlock__title mainTitle anime">${el.title}</h2>
-            <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
-            <p class="ctaBlock__description anime">${el.text}</p>
-            <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>
-            </div>
-        </div>
-    </div>`;
-
-        document.querySelector('.ctaBlock.two').insertAdjacentHTML("beforeend", template);
-
-    });
-
-
-};
-ctaBlock2();
